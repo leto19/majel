@@ -1,0 +1,10 @@
+#JSGF V1.0;
+grammar command;
+
+public <command> =[<sudo>]<prog>[<option>]*[<file>]*;
+
+<prog> = LS| FIREFOX | PYTHON;
+<option> = (DASH A| DASH V | DASH C)[<file>];
+<file> = FILENAME;
+<sudo> = SUDO;
+<dash> = DASH;

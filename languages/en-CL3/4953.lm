@@ -1,0 +1,161 @@
+Language model created by QuickLM on Tue Jan 28 09:57:18 EST 2020
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 34 sentences and 36 words
+
+\data\
+ngram 1=36
+ngram 2=68
+ngram 3=34
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-2.3096 APT -0.2218
+-2.3096 APT-GET -0.2218
+-2.3096 ARGUMENTS -0.2218
+-2.3096 CP -0.2218
+-2.3096 CURL -0.2218
+-2.3096 DIFF -0.2218
+-2.3096 FILE -0.2218
+-2.3096 FIND -0.2218
+-2.3096 FIREFOX -0.2218
+-2.3096 GCC -0.2218
+-2.3096 GIT -0.2218
+-2.3096 GREP -0.2218
+-2.3096 LA -0.2218
+-2.3096 LS -0.2218
+-2.3096 MATLAB -0.2218
+-2.3096 MKDIR -0.2218
+-2.3096 MV -0.2218
+-2.3096 NANO -0.2218
+-2.3096 OPENMW -0.2218
+-2.3096 OPENMW-LAUNCHER -0.2218
+-2.3096 PWD -0.2218
+-2.3096 PYTHON -0.2218
+-2.3096 PYTHON3 -0.2218
+-2.3096 RM -0.2218
+-2.3096 RMDIR -0.2218
+-2.3096 SUDO -0.2218
+-2.3096 TIME -0.2218
+-2.3096 TOUCH -0.2218
+-2.3096 UNAME -0.2218
+-2.3096 UPDATE -0.2218
+-2.3096 VI -0.2218
+-2.3096 WGET -0.2218
+-2.3096 WHICH -0.2218
+-2.3096 WHOAMI -0.2218
+
+\2-grams:
+-1.8325 <s> APT 0.0000
+-1.8325 <s> APT-GET 0.0000
+-1.8325 <s> ARGUMENTS 0.0000
+-1.8325 <s> CP 0.0000
+-1.8325 <s> CURL 0.0000
+-1.8325 <s> DIFF 0.0000
+-1.8325 <s> FILE 0.0000
+-1.8325 <s> FIND 0.0000
+-1.8325 <s> FIREFOX 0.0000
+-1.8325 <s> GCC 0.0000
+-1.8325 <s> GIT 0.0000
+-1.8325 <s> GREP 0.0000
+-1.8325 <s> LA 0.0000
+-1.8325 <s> LS 0.0000
+-1.8325 <s> MATLAB 0.0000
+-1.8325 <s> MKDIR 0.0000
+-1.8325 <s> MV 0.0000
+-1.8325 <s> NANO 0.0000
+-1.8325 <s> OPENMW 0.0000
+-1.8325 <s> OPENMW-LAUNCHER 0.0000
+-1.8325 <s> PWD 0.0000
+-1.8325 <s> PYTHON 0.0000
+-1.8325 <s> PYTHON3 0.0000
+-1.8325 <s> RM 0.0000
+-1.8325 <s> RMDIR 0.0000
+-1.8325 <s> SUDO 0.0000
+-1.8325 <s> TIME 0.0000
+-1.8325 <s> TOUCH 0.0000
+-1.8325 <s> UNAME 0.0000
+-1.8325 <s> UPDATE 0.0000
+-1.8325 <s> VI 0.0000
+-1.8325 <s> WGET 0.0000
+-1.8325 <s> WHICH 0.0000
+-1.8325 <s> WHOAMI 0.0000
+-0.3010 APT </s> -0.3010
+-0.3010 APT-GET </s> -0.3010
+-0.3010 ARGUMENTS </s> -0.3010
+-0.3010 CP </s> -0.3010
+-0.3010 CURL </s> -0.3010
+-0.3010 DIFF </s> -0.3010
+-0.3010 FILE </s> -0.3010
+-0.3010 FIND </s> -0.3010
+-0.3010 FIREFOX </s> -0.3010
+-0.3010 GCC </s> -0.3010
+-0.3010 GIT </s> -0.3010
+-0.3010 GREP </s> -0.3010
+-0.3010 LA </s> -0.3010
+-0.3010 LS </s> -0.3010
+-0.3010 MATLAB </s> -0.3010
+-0.3010 MKDIR </s> -0.3010
+-0.3010 MV </s> -0.3010
+-0.3010 NANO </s> -0.3010
+-0.3010 OPENMW </s> -0.3010
+-0.3010 OPENMW-LAUNCHER </s> -0.3010
+-0.3010 PWD </s> -0.3010
+-0.3010 PYTHON </s> -0.3010
+-0.3010 PYTHON3 </s> -0.3010
+-0.3010 RM </s> -0.3010
+-0.3010 RMDIR </s> -0.3010
+-0.3010 SUDO </s> -0.3010
+-0.3010 TIME </s> -0.3010
+-0.3010 TOUCH </s> -0.3010
+-0.3010 UNAME </s> -0.3010
+-0.3010 UPDATE </s> -0.3010
+-0.3010 VI </s> -0.3010
+-0.3010 WGET </s> -0.3010
+-0.3010 WHICH </s> -0.3010
+-0.3010 WHOAMI </s> -0.3010
+
+\3-grams:
+-0.3010 <s> APT </s>
+-0.3010 <s> APT-GET </s>
+-0.3010 <s> ARGUMENTS </s>
+-0.3010 <s> CP </s>
+-0.3010 <s> CURL </s>
+-0.3010 <s> DIFF </s>
+-0.3010 <s> FILE </s>
+-0.3010 <s> FIND </s>
+-0.3010 <s> FIREFOX </s>
+-0.3010 <s> GCC </s>
+-0.3010 <s> GIT </s>
+-0.3010 <s> GREP </s>
+-0.3010 <s> LA </s>
+-0.3010 <s> LS </s>
+-0.3010 <s> MATLAB </s>
+-0.3010 <s> MKDIR </s>
+-0.3010 <s> MV </s>
+-0.3010 <s> NANO </s>
+-0.3010 <s> OPENMW </s>
+-0.3010 <s> OPENMW-LAUNCHER </s>
+-0.3010 <s> PWD </s>
+-0.3010 <s> PYTHON </s>
+-0.3010 <s> PYTHON3 </s>
+-0.3010 <s> RM </s>
+-0.3010 <s> RMDIR </s>
+-0.3010 <s> SUDO </s>
+-0.3010 <s> TIME </s>
+-0.3010 <s> TOUCH </s>
+-0.3010 <s> UNAME </s>
+-0.3010 <s> UPDATE </s>
+-0.3010 <s> VI </s>
+-0.3010 <s> WGET </s>
+-0.3010 <s> WHICH </s>
+-0.3010 <s> WHOAMI </s>
+
+\end\
