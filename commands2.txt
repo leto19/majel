@@ -47,3 +47,9 @@ dash s
 dash t 
 dash c
 dash f
+slash
+home
+downloads
+g
+desktop
+year

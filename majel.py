@@ -10,7 +10,6 @@ import time
 import re
 from ctypes import *
 
-
 recog = sr.Recognizer()  # this is the object that recognises the speech
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 def py_error_handler(filename, line, function, err, fmt):
@@ -24,30 +23,9 @@ asound.snd_lib_error_set_handler(c_error_handler)
 p = pyaudio.PyAudio()
 p.terminate()
 
-def get_command():
-    mic = sr.Microphone(chunk_size=1024, sample_rate=44100)
-    lang = ("./languages/en-CL2/acoustic-model","./languages/en-CL3/4953.lm","./languages/en-CL3/4953.dic")   
-    with mic as source:
-        print("listening...")
-        audio = recog.listen(source, phrase_time_limit=float(sys.argv[1]))
-    print("done!")    
-    try:
-        out = recog.recognize_sphinx(audio,language=lang)
-    except sr.UnknownValueError:
-        print("didn't quite get that")
-        exit()
-    if "cancel" not in out.lower().split():
-
-        return out.lower().split()
-    else:
-        exit()      
-
-
-
-def get_generic_command(lang):
-
-    if len(sys.argv) == 3: #use audio file
-        audio_file = sr.AudioFile(sys.argv[2])
+def get_generic_command(lang,gram):
+    if len(sys.argv) == 2: #use audio file
+        audio_file = sr.AudioFile(sys.argv[1])
         with audio_file as source:
             audio = recog.record(source)
     else: #use mic 
@@ -57,11 +35,12 @@ def get_generic_command(lang):
             time.sleep(0.5)
             print("listening...")
 
-            audio = recog.listen(source)
+            audio = recog.listen(source,phrase_time_limit=8)
     print("done!")    
 
     try:
-        out = recog.recognize_sphinx(audio,language=lang,grammar='grammars/command.jsgf')
+        print("working...")
+        out = recog.recognize_sphinx(audio,language=lang,grammar=gram)
         #show_possible(out)
     except sr.UnknownValueError:
         print("didn't quite get that")
@@ -93,12 +72,12 @@ def run_command(command):
         process = subprocess.call(["./cd.sh",d],shell=False)
 
     try:
-        process = subprocess.Popen(command)
+        process = subprocess.run(command)
+        exit()
     except FileNotFoundError:
         print("not a valid command!")
         exit()
    
-    exit()
     
 def replace_space_with_slash(path):
     path = path.replace("/", "\"/\"") + "\""
@@ -120,15 +99,16 @@ def word_to_character(phrase):
 
 
 #l = ("./languages/acoustic-model","./languages/fish3/fish3.lm","./languages/fish3/fish3.dic")
-l = ("./languages/acoustic-model","./languages/cmd1/cmd1.lm","./languages/cmd1/cmd1.dic")
-
+l = ("./languages/acoustic-model","./languages/cmd1/cmd1.lm","./languages/cmd2/cmd2.dict")
+gram = "./grammars/command.jsgf"
 #command_words = ['cd','dot','dot']
-command_words  = get_generic_command(l);
+command_words  = get_generic_command(l,gram);
+
 print("You said:\n%s" % command_words)   
 command_words = word_to_character(command_words)
-print("running command:\n",command_words)
+print("running command:\n%s" % command_words)
 print("--------------------------------------------------------------------------")
-run_command(command_words)
+#run_command(command_words)
 
 
 """
