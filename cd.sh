@@ -1,5 +1,7 @@
 #!/bin/bash
 echo arg is $1
 P=$@
-cd $P
+echo P is $P
+builtin cd $P
 ls
+     

@@ -1,17 +1,17 @@
 #JSGF V1.0;
 grammar command;
 
-public <command> = [SUDO]<prog>[<option>][<path>]*;
+public <command> = EXIT | ([SUDO])<prog>[<option>]*[<path>]*;
 
-<option> = <dash> <chars>;
+<option> = <dash> <chars>[<path>];
 <path> = [<foldername> <slash>]*[<file>];
 <file> = <filename><dot><fileextension>;
 
-<foldername> = <dot> | <dot> <dot> | HOME | DOWNLOADS | DESKTOP;
+<foldername> = <dot> | <dot> <dot>| HOME | DOWNLOADS | DESKTOP;
 <filename> = HELLO | WORLD;
 <dot> = DOT;
 <fileextension> = PY | M  | TXT;
 <chars> = A | B | C | F | G | M | O | T | V | S;
 <slash> = SLASH;
 <dash> = DASH;
-<prog> = (<dot><slash><file>) | (CD | MV | LA | UNAME | LS| FIREFOX | PYTHON | NANO);
+<prog> = (<dot><slash><file>) | (CODE | GIT | CD | MV | LA | UNAME | LS| FIREFOX | PYTHON | NANO);
