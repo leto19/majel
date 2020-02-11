@@ -33,13 +33,13 @@ def get_generic_command(lang,gram):
         with mic as source:
             #recog.adjust_for_ambient_noise(source)
             #time.sleep(0.5)
-            #print("listening...")
+            print("listening...")
 
             audio = recog.listen(source,phrase_time_limit=3)
     #print("done!")    
 
     try:
-        #print("working...")
+        print("working...")
         out = recog.recognize_sphinx(audio,language=lang,grammar=gram)
         #show_possible(out)
     except sr.UnknownValueError:
@@ -54,34 +54,16 @@ def show_possible(decoder):
         print(best.hypstr,best.score)
         
 def run_command(command):
-    """
+    
     if command[0] == "cd":
-        
-        d = "--working-directory="+os.getcwd()+"/"+"".join(command[1:])
-        d = replace_space_with_slash(d)
-        #print(d)
-        process = subprocess.Popen(["gnome-terminal",d])
-        #time.sleep(1)
-        #os.kill(os.getppid(), signal.SIGHUP)
-        
-        d = os.getcwd()+"/"
-        #d = replace_space_with_slash(d)
-        d = "\"" +d 
-        #print(d)
-        d+="".join(command[1:]) + "\""
-
-        #print("d after:",d)
-        process = subprocess.call(["./cd.sh",d],shell=False)
-    """
+        os.chdir(command[1])
+        os.listdir()
     try:
-        #process = subprocess.run(command)
-        full_command = command + [">","/dev/tty"]
-        #print(full_command)
-        process = subprocess.run(full_command)
-        exit()
+        process = subprocess.run(command)
+        
     except FileNotFoundError:
-        #print("not a valid command!")
-        exit()
+        print("not a valid command!")
+        
    
     
 def replace_space_with_slash(path):
@@ -92,36 +74,72 @@ def replace_space_with_slash(path):
     
 
 def word_to_character(phrase):
-    for n,i in enumerate(phrase):
-        #print(i,n)
-        if i =="slash":
-            phrase[n] = phrase[n-1] + "/" + phrase[n+1]
-            phrase.pop(n+1)
-            phrase.pop(n-1)
-        if i == "dot":
-            phrase[n] = phrase[n-1] + "." + phrase[n+1]
-            #print(phrase[n])
-            phrase.pop(n+1)
-            phrase.pop(n-1)
-        
-        if i == "dash":
-            phrase[n] = "-"+phrase[n+1] + " "
-            phrase.pop(n+1)
+    phrase = " ".join(phrase)
+    phrase = phrase.replace("dash","-")
+    phrase = phrase.replace("dot",".")
+    phrase = phrase.replace("slash","/")
     
+    print(phrase)
+    phrase = phrase.split()
+    for n,i in enumerate(phrase):
+        print(n,i)
+        if i == "-":
+            phrase[n+1] = "-" + phrase[n+1]
+            phrase.pop(n)
+        if i == "/":
+            phrase[n+1] = "/" + phrase[n+1]
+            phrase.pop(n)
+    prev_word = "test"
+    print("\n-------")
+    print(phrase)
+    while more_than_one_starting_slash(phrase):
+        for index,word in enumerate(phrase):
+            print("word is ", word, "at index", index)
+            print("prev_word is", prev_word)
+            if prev_word[0]== "/" and word[0] == "/":
+                new_word = prev_word +"/" + word[1:]
+                print("new word is ",new_word)
+                phrase[index] = new_word
+                phrase.pop(prev_index)
+                prev_word = new_word
+            else:
+                prev_word = word
+                prev_index = index
+        print(phrase)
     return phrase
     
+
+def more_than_one_starting_slash(phrase):
+    flag = 0
+    for words in phrase:
+        if words[0] is "/":
+            flag +=1
+    if flag > 1:
+        return True
+    else:
+        return False
+
 if __name__ == "__main__":
+
     l = ("./languages/acoustic-model","./languages/cmd1/cmd1.lm","./languages/cmd2/cmd2.dict")
     gram = "./grammars/command.jsgf"
     command_words = str()
+    """
+    command_words = ["ls","dash", "a","slash","home","slash","g","slash","Downloads"]
+    #print("You said:\n%s" % command_words)  
+    command_words = word_to_character(command_words)
+    #print("running command:\n%s" % command_words)
+    run_command(command_words)
+    """
+    
+
     while "exit" not in command_words:
         command_words  = get_generic_command(l,gram);
-        #command_words = ["ls","dash", "a","slash","home"]
-        #print("You said:\n%s" % command_words)  
-        command_words.append(" ") 
+        print("You said:\n%s" % command_words)  
         command_words = word_to_character(command_words)
-        #print("running command:\n%s" % command_words)
+        print("running command:\n%s" % command_words)
         print("--------------------------------------------------------------------------")
-        #run_command(command_words)
-        print(" ".join(command_words))
+        run_command(command_words)
+        #print(" ".join(command_words))
 
+    
