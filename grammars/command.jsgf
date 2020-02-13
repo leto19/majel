@@ -5,8 +5,10 @@ public <command> = EXIT | ([SUDO])<prog><paramater>*;
 
 <paramater> = <option><path>;
 <path> = <pathexpr>[<file>];
+
 <option> = <dash> <chars>
           |<NULL>;
+
 <pathexpr> = <dot><slash><pathexpr>
             |<dot><dot><slash><pathexpr>
             |<foldername><slash><pathexpr>

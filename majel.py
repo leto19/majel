@@ -5,11 +5,11 @@ import subprocess
 import speech_recognition as sr
 import pyaudio
 from contextlib import contextmanager
-import signal
 import time
 import re
 from ctypes import *
-
+from datetime import datetime
+import getpass
 recog = sr.Recognizer()  # this is the object that recognises the speech
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 def py_error_handler(filename, line, function, err, fmt):
@@ -54,9 +54,13 @@ def show_possible(decoder):
         print(best.hypstr,best.score)
         
 def run_command(command):
-    
+    if "exit" in command:
+        exit()
     if command[0] == "cd":
-        os.chdir(command[1])
+        if len(command) is 1:
+            os.chdir("/home/%s/"% getpass.getuser())
+        else:
+            os.chdir(command[1])
         os.listdir()
     try:
         process = subprocess.run(command)
@@ -79,7 +83,7 @@ def word_to_character(phrase):
     phrase = phrase.replace("dot",".")
     phrase = phrase.replace("slash","/")
     
-    print(phrase)
+    print("PHRASE IS ", phrase)
     phrase = phrase.split()
     for n,i in enumerate(phrase):
         print(n,i)
@@ -87,29 +91,32 @@ def word_to_character(phrase):
             phrase[n+1] = "-" + phrase[n+1]
             phrase.pop(n)
         if i == "/":
-            phrase[n+1] = "/" + phrase[n+1]
+            print("phrase[n+1] is ",phrase[n+1])
+            phrase[n+1] =  "/" + phrase[n+1] 
             phrase.pop(n)
     prev_word = "test"
     print("\n-------")
     print(phrase)
-    while more_than_one_starting_slash(phrase):
+    count = 0
+    while count < len(phrase):
         for index,word in enumerate(phrase):
             print("word is ", word, "at index", index)
             print("prev_word is", prev_word)
             if prev_word[0]== "/" and word[0] == "/":
-                new_word = prev_word +"/" + word[1:]
+                new_word = prev_word + word
                 print("new word is ",new_word)
                 phrase[index] = new_word
                 phrase.pop(prev_index)
                 prev_word = new_word
             else:
                 prev_word = word
-                prev_index = index
+                prev_index = index  
         print(phrase)
+        count+= 1
     return phrase
     
 
-def more_than_one_starting_slash(phrase):
+def more_than_one_ending_slash(phrase):
     flag = 0
     for words in phrase:
         if words[0] is "/":
@@ -120,9 +127,8 @@ def more_than_one_starting_slash(phrase):
         return False
 
 if __name__ == "__main__":
-
-    l = ("./languages/acoustic-model","./languages/cmd1/cmd1.lm","./languages/cmd2/cmd2.dict")
-    gram = "./grammars/command.jsgf"
+    l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1/cmd1.lm","/home/g/year3/majel/languages/cmd2/cmd2.dict")
+    gram = "/home/g/year3/majel/grammars/command.jsgf"
     command_words = str()
     """
     command_words = ["ls","dash", "a","slash","home","slash","g","slash","Downloads"]
@@ -131,15 +137,17 @@ if __name__ == "__main__":
     #print("running command:\n%s" % command_words)
     run_command(command_words)
     """
-    
-
+    os.system('clear')
+    print("Welcome to Majel!")
     while "exit" not in command_words:
-        command_words  = get_generic_command(l,gram);
-        print("You said:\n%s" % command_words)  
-        command_words = word_to_character(command_words)
+        c_time = datetime.now().strftime("%H:%M:%S")
+        command_words = input("[%s] |%s@%s| > " % (c_time,getpass.getuser(),os.getcwd()) ).split()
+        if command_words is "":
+            command_words  = get_generic_command(l,gram);
+            print("You said:\n%s" % command_words)  
+            command_words = word_to_character(command_words)
+            #print(" ".join(command_words))
         print("running command:\n%s" % command_words)
         print("--------------------------------------------------------------------------")
         run_command(command_words)
-        #print(" ".join(command_words))
-
     
