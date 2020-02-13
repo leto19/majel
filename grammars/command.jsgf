@@ -1,10 +1,10 @@
 #JSGF V1.0;
 grammar command;
 
-public <command> = EXIT | ([SUDO])<prog><paramater>*;
+public <command> = EXIT | ([SUDO])<prog><path>;
 
 <paramater> = <option><path>;
-<path> = <pathexpr>[<file>];
+<path> = <pathexpr>;
 
 <option> = <dash> <chars>
           |<NULL>;
@@ -17,7 +17,7 @@ public <command> = EXIT | ([SUDO])<prog><paramater>*;
 <file> = <filename><dot><fileextension>
         |<filename>;
 
-<foldername> = HOME |G| DOWNLOADS | DESKTOP;
+<foldername> =ROOT|HOME |G| DOWNLOADS | DESKTOP;
 <filename> = HELLO | WORLD;
 <dot> = DOT;    
 <fileextension> = PY | M  | TXT;
