@@ -117,6 +117,11 @@ def word_to_character(phrase):
     phrase = [s.replace("root","/") for s in phrase]
     return phrase
     
+def update_log(phrase):
+
+    with open('majel_log.txt','a') as f:
+        f.write(phrase+"\n")
+
 
 def more_than_one_ending_slash(phrase):
     flag = 0
@@ -151,6 +156,6 @@ if __name__ == "__main__":
         print("running command:\n%s" % command_words)
         print("--------------------------------------------------------------------------")
         command_words = word_to_character(command_words)
-
+        update_log(" ".join(command_words))
         run_command(command_words)
     
