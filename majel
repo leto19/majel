@@ -10,6 +10,7 @@ import re
 from ctypes import *
 from datetime import datetime
 import getpass
+import socket
 recog = sr.Recognizer()  # this is the object that recognises the speech
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 def py_error_handler(filename, line, function, err, fmt):
@@ -84,42 +85,42 @@ def word_to_character(phrase):
     phrase = phrase.replace("dot",".")
     phrase = phrase.replace("slash","/")
     
-    print("PHRASE IS ", phrase)
+    #print("PHRASE IS ", phrase)
     phrase = phrase.split()
     for n,i in enumerate(phrase):
-        print(n,i)
+        #print(n,i)
         if i == "-":
             phrase[n+1] = "-" + phrase[n+1]
             phrase.pop(n)
         if i == "/" and n < len(phrase)-1:
-            print("phrase[n+1] is ",phrase[n+1])
+            #print("phrase[n+1] is ",phrase[n+1])
             phrase[n+1] =  "/" + phrase[n+1] 
             phrase.pop(n)
     prev_word = "test"
-    print("\n-------")
-    print(phrase)
+    #print("\n-------")
+    #print(phrase)
     count = 0
     while count < len(phrase):
         for index,word in enumerate(phrase):
-            print("word is ", word, "at index", index)
-            print("prev_word is", prev_word)
+            #print("word is ", word, "at index", index)
+            #print("prev_word is", prev_word)
             if prev_word[0]== "/" and word[0] == "/":
                 new_word = prev_word + word
-                print("new word is ",new_word)
+                #print("new word is ",new_word)
                 phrase[index] = new_word
                 phrase.pop(prev_index)
                 prev_word = new_word
             else:
                 prev_word = word
                 prev_index = index  
-        print(phrase)
+        #print(phrase)
         count+= 1
     phrase = [s.replace("root","/") for s in phrase]
     return phrase
     
 def update_log(phrase):
 
-    with open('majel_log.txt','a') as f:
+    with open('/home/g/year3/majel/majel_log.txt','a') as f:
         f.write(phrase+"\n")
 
 
@@ -147,16 +148,18 @@ if __name__ == "__main__":
     os.system('clear')
     print("Welcome to Majel!")
     username = getpass.getuser()
+    hostname = socket.gethostname()
     while "exit" not in command_words:
-        current_time = datetime.now().strftime("%H:%M:%S")
-        
-        command_words = input("[%s] |%s@%s| > " % (current_time,username,os.getcwd()) ).split()
+        current_time = "\x1b[1;31;42m[" + datetime.now().strftime("%H:%M:%S") + "]\x1b[0m"
+        path =  "\x1b[3;32;40m" + username + "@" +hostname + "\x1b[0m" +"\x1b[4;32;40m:" + os.getcwd() +  "\x1b[0m"  
+        prompt =  "%s|%s|>>" % (current_time,path) 
+        command_words = input(prompt).split()
         if command_words == []:
             command_words  = get_command(l,gram);
             print("You said:\n%s" % command_words)  
             #print(" ".join(command_words))
-        print("running command:\n%s" % command_words)
-        print("--------------------------------------------------------------------------")
+        #print("running command:\n%s" % command_words)
+        #print("--------------------------------------------------------------------------")
         command_words = word_to_character(command_words)
         update_log(" ".join(command_words))
         run_command(command_words)

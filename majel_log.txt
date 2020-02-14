@@ -1,2 +1,36 @@
 ls
 exit
+ls
+ls
+ls4
+ls -a
+ls
+ls
+ls
+ls
+ls
+ls
+cd ..
+ls
+cd grammars
+ls
+cd grammars
+cd /
+ls
+cd
+exit
+exit
+ls
+cd /
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+ls
+ls
+exit
+ls
+exit
