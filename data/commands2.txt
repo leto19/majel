@@ -1,0 +1,55 @@
+filename
+ls dash a
+la
+sudo
+apt
+apt dash get 
+update
+install 
+diff filename filename 
+grep dash f
+rm 
+mv filename
+cp filename filename
+touch filename
+pwd
+mkdir filename
+rmdir filename
+find filename
+which filename
+uname
+time
+whoami
+curl filename 
+git commit
+git add filename
+vi filename
+nano filename
+firefox
+python three filename
+python three
+python filename
+gcc dash o filename filename
+openmw dash launcher
+matlab
+openmw
+wget
+firefox dash v
+firefox filename
+dash version
+dash size
+dash l 
+b dash zip
+dash capital l
+ls
+dash m
+dash s
+dash t 
+dash c
+dash f
+slash
+home
+downloads
+g
+desktop
+year

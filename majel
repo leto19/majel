@@ -23,7 +23,7 @@ asound.snd_lib_error_set_handler(c_error_handler)
 p = pyaudio.PyAudio()
 p.terminate()
 
-def get_generic_command(lang,gram):
+def get_command(lang,gram):
     if len(sys.argv) == 2: #use audio file
         audio_file = sr.AudioFile(sys.argv[1])
         with audio_file as source:
@@ -146,11 +146,13 @@ if __name__ == "__main__":
     """
     os.system('clear')
     print("Welcome to Majel!")
+    username = getpass.getuser()
     while "exit" not in command_words:
-        c_time = datetime.now().strftime("%H:%M:%S")
-        command_words = input("[%s] |%s@%s| > " % (c_time,getpass.getuser(),os.getcwd()) ).split()
+        current_time = datetime.now().strftime("%H:%M:%S")
+        
+        command_words = input("[%s] |%s@%s| > " % (current_time,username,os.getcwd()) ).split()
         if command_words == []:
-            command_words  = get_generic_command(l,gram);
+            command_words  = get_command(l,gram);
             print("You said:\n%s" % command_words)  
             #print(" ".join(command_words))
         print("running command:\n%s" % command_words)

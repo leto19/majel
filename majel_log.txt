@@ -1,5 +1,2 @@
-exit
 ls
-ls -a
-echo "hello world!"
 exit

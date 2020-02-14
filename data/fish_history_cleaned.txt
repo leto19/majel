@@ -1,0 +1,475 @@
+sudo apt install gnome dash terminal
+gnome dash terminal
+sudo apt install fish
+ount  slash dev slash sda
+fdisk  dash l
+sudo !!
+sudo fdisk  dash l
+la
+sudo apt install code
+sudo apt install fortune cowsaw lolcat
+sudo apt install fortune cowsay lolcat
+sudo apt install vs dash code
+sudo apt install vscode
+sudo apt install software dash properties dash common apt dash transport dash https wget
+kdir  dot icons
+sudo apt install eletweaks
+sudo apt install elementary dash tweaks
+pkg  dash i code_1 dot 41 dot 1 dash 1576681836_amd64 dot deb 
+sudo dpkg  dash i code_1 dot 41 dot 1 dash 1576681836_amd64 dot deb 
+sudo apt install git
+url  dash L https: slash  slash get dot oh dash my dot fish | fish
+omf install lambda 
+ks
+rm  dash rf plank dash themes slash 
+f
+sudo gnome dash font dash viewer Downloads slash Input_Fonts slash InputMono slash * dot ttf
+sudo gnome dash font dash viewer ~ slash Downloads slash Input_Fonts slash InputMono slash *
+xinput 
+sudo echo 1 >  slash sys slash class slash backlight slash acpi_video0 slash brightness 
+sudo 
+su
+su root
+echo 1 >  slash sys slash class slash backlight slash acpi_video0 slash brightness 
+sudo nano  slash boot slash grub slash grub dot cfg 
+at  slash sys slash class slash backlight slash acpi_video0 slash max_brightness 
+xbrightness 1  
+sudo apt install xbrightness
+xbacklight
+sudo apt install xbacklight
+xbacklight 0
+xbacklight set 0
+xbacklight =  dash 40
+xbacklight  dash get
+xbacklight = 0
+xset dmps force off
+xset s
+xset dpms force off
+sudo apt install vbetool
+vbetool dmps off
+sudo vbetool dmps off
+sudo apt install clight
+xset dpms force on
+journalctl  dash b
+journalctl  dash b |grep backlight
+sudo ls  slash sys slash class slash backlight slash 
+update dash grub
+at  slash sys slash class slash backlight slash acpi_video0 slash brightness  
+at  slash sys slash class slash backlight slash thinkpad_screen slash brightness 
+sudo  dash 3 >  slash sys slash class slash backlight slash thinkpad_screen slash brightness 
+sudo  dash 3 >  slash sys slash class slash backlight slash thinkpad_screen slash max_brightness 
+at  slash sys slash class slash backlight slash thinkpad_screen slash max_brightness 
+at  slash sys slash class slash backlight slash thinkpad_screen slash type   
+options thinkpad dash acpi brightness_mode=1
+nano  slash etc slash modprobe dot d slash 
+reb
+at  slash sys slash class slash backlight slash thinkpad_screen slash actual_brightness  
+nano  slash etc slash X11 slash xorg dot conf
+at  slash sys slash class slash backlight slash acpi_video0 slash actual_brightness 
+echo 4 >  slash sys slash class slash backlight slash acpi_video0 slash brightness  
+ls  slash sys slash class slash backlight slash 
+sudo apt install  xfce4 dash power dash manager
+xfce4 dash power dash manager
+an xfce4 dash power dash manager
+sudo xfce4 dash power dash manager
+at 
+sudo echo 4 >  slash sys slash class slash backlight slash acpi_video0 slash brightness  
+echo 5 | sudo tee  slash sys slash class slash backlight slash acpi_video0 slash brightness 
+echo  dash 100 | sudo tee  slash sys slash class slash backlight slash acpi_video0 slash brightness 
+echo 15 | sudo tee  slash sys slash class slash backlight slash acpi_video0 slash brightness 
+echo 0 | sudo tee  slash sys slash class slash backlight slash acpi_video0 slash brightness 
+sudo nano  slash etc slash default slash grub 
+sudo update dash grub
+ls  slash sys slash class slash backlight slash acpi_video0 slash 
+ls  slash sys slash class slash backlight slash acpi_video0 slash brightness 
+at  slash sys slash class slash backlight slash acpi_video0 slash brightness 
+at  slash sys slash class slash backlight slash acpi_video0 slash device slash backlight slash  
+at  slash sys slash class slash backlight slash acpi_video0 slash device slash backlight slash acpi_video0 slash brightness  
+at  slash sys slash class slash backlight slash acpi_video0 slash device slash backlight slash acpi_video0 slash max_brightness   
+esg | grep thinkpad
+sudo apt dist dash upgrade
+uname  dash sr
+sudo apt dash add dash repository ppa:teejee2008 slash ppa
+sudo apt dash get install ukuu
+ukuu
+ukuu  dash check
+ukuu  dash  dash check
+sudo ukuu dash gtk
+functions
+elcode
+sudo apt install vlc
+quit
+exit
+year\\ 3 slash compOp slash cw1 slash 
+url https: slash  slash bootstrap dot pypa dot io slash get dash pip dot py  dash o get dash pip dot py
+python get dash pip dot py 
+sudo python3 get dash pip dot py 
+sudo python get dash pip dot py 
+sudo apt install python3 dash pip python3
+python3  dash m pip install numpy
+python3 anealing dot py Formula_One_1984 dot wmg 
+sudo apt install snap
+sudo apt remove snap
+sudo dpkg  dash i discord dash 0 dot 0 dot 9 dot deb 
+sudo dpkg  discord dash 0 dot 0 dot 9 dot deb 
+sudo apt install discord dash 0 dot 0 dot 9 dot deb 
+sudo snap install discord
+apt  dash  dash fix dash broken install 
+sudo apt  dash  dash fix dash broken install 
+sudo apt install snapd
+snap install discord
+snap install spotify
+spotify
+ slash snap slash bin slash spotify 
+bored
+sudo snap install intellij dash idea dash community  dash  dash classic
+intellij dash idea dash community 
+sudo snap  dash l
+sudo apt install steam
+snap  dash list
+snap list
+snap list colour
+snap list  dash colour
+snap list  dash  dash colour
+snap list  dash color
+an snap
+snap  dash  dash color list
+snap list  dash  dash color
+snap list 
+sudo apt install openmw
+openmw dash launcher 
+sudo apt install unrar
+an unrar
+unrar ThElderScr3IIMoMorrowindGOTYGOG dot rar 
+unrar  dash x ThElderScr3IIMoMorrowindGOTYGOG dot rar 
+urar ThElderScr3IIMoMorrowindGOTYGOG dot rar 
+unrar  dash x ThElderScr3IIMoMorrowindGOTYGOG dot rar  dash x
+unrar  dash x ThElderScr3IIMoMorrowindGOTYGOG dot rar x
+unrar x ThElderScr3IIMoMorrowindGOTYGOG dot rar 
+at INSTALL dot txt 
+rm  dash rf Scripts slash 
+rem INSTALL dot txt 
+rm INSTALL dot txt 
+rn LICENSE dot txt 
+rm LICENSE dot txt 
+rm README dot txt 
+rm ideaIC dash 2019 dot 3 dot 1 dot tar dot gz
+rm ideaIC dash 2019 dot 3 dot 1 dot tar dot gz dot part 
+rm  dash rf Input_Fonts slash 
+rm ChangeLog dot txt 
+v ThElderScr3IIMoMorrowindGOTYGOG slash   slash usr slash games slash 
+sudo mv ThElderScr3IIMoMorrowindGOTYGOG slash   slash usr slash games slash 
+snap install minecraft
+apt install Minecraft dot deb 
+sudo apt install minecraft
+sudo apt install Minecraft dot deb 
+sudo apt dash get install Minecraft dot deb 
+sudo apt dash get install Minecraft dot deb
+apt dash get install Minecraft dot deb
+sudo apt install gdebi
+sudo gdebi Minecraft dot deb 
+sudo apt install caja
+xenv
+env
+xev
+sudo apt install xboxdrv
+sudo xboxdrv  dash  dash evdev  slash dev slash input slash eventX \\\n dash  dash silent  dash  dash detach dash kernel dash driver  dash  dash mimic dash xpad  dash  dash trigger dash as dash button  dash  dash force dash feedback \\\n dash  dash evdev dash absmap ABS_X=x1,ABS_Y=y1,ABS_RX=x2,ABS_RY=y2,ABS_HAT0X=dpad_x,ABS_HAT0Y=dpad_y \\\n dash  dash evdev dash keymap BTN_TL=lt,BTN_TR=rt,BTN_SOUTH=a,BTN_EAST=b,BTN_C=x,BTN_NORTH=y,BTN_WEST=lb,BTN_Z=rb,BTN_SELECT=tl,BTN_START=tr,BTN_TL2=back,BTN_TR2=start,BTN_MODE=guide \\\n dash  dash calibration x1= dash 31320:0:20650,y1= dash 21743:0:30460,x2= dash 28945:0:21951,y2= dash 23636:0:30969 \\\n dash  dash axismap  dash y1=y1, dash y2=y2 \\\n dash  dash deadzone 4000  dash  dash device dash name "Nintendo Switch Pro Controller"
+sudo unrar x 'Patch for Purists dash 45096 dash 3 dash 2 dash 1 dash 1575286395 dot 7z'  slash usr slash games slash ThElderScr3IIMoMorrowindGOTYGOG slash Data\\ Files slash 
+sudo apt install nautilus
+sudo nautilus
+nautilus
+ode ~ slash  dot config slash openmw slash openmw dot cfg 
+ode ~ slash  dot config slash openmw slash settings dot cfg 
+openmw  dash v
+sudo apt update openmw
+sudo apt upgrade openmw
+sudo add dash apt dash repository ppa:openmw slash openmw
+sudp apt dash get install openmw openmw dash launcher
+sudo apt dash get install openmw openmw dash launcher
+sudo apt update
+python3 test dot py ~ slash year\\ 3 slash multimedia slash cwNew slash MMcw slash sounds slash ultimate_question_intro dot wav sun 10
+sudo apt install swig
+sudo apt install libpulse dash dev
+python3  dash m pip install pocketsphinx
+sudo apt install setuptools
+sudo python3  dash m pip install  dash  dash upgrade pip setuptools wheels
+python3  dash m pip install  dash  dash upgrade pip setuptools wheels
+python3  dash m pip install  dash  dash upgrade pip setuptools wheel
+pip install  dash  dash upgrade pocketsphinx
+sudo apt dash get install  dash y python python dash dev python dash pip build dash essential swig git libpulse dash dev
+sudo apt dash get install libasound2 dash dev
+python3  dash m pip install  dash  dash upgrade pocketsphinx
+python3 test dot py ~ slash year\\ 3 slash multimedia slash cwNew slash MMcw slash sounds slash ultimate_question_intro dot wav 10 sun
+python3 test dot py ~ slash year\\ 3 slash multimedia slash cwNew slash MMcw slash sounds slash ultimate_question_intro dot wav 10 birch
+python3 test dot py speech dot wav 10 birch
+ slash usr slash local slash lib slash python3 dot 6 slash dist dash packages slash 
+ slash usr slash lib slash python3 slash dist dash packages slash 
+python  dash m site
+ slash home slash g slash  dot local slash lib slash python3 dot 6 slash site dash packages slash speech_recognition slash 
+pocketsphinx dash data slash 
+en dash CL
+sudo apt install pocketsphinx
+pocketsphinx_continuous  dash inmic yes  dash lm 5031 dot lm  dash dict 5031 dot dic
+en dash US slash 
+function testSR\npocketsphinx_continuous  dash inmic yes  dash lm language dash model dot lm dot bin   dash dict pronounciation dash dictionary dot dict   dash hmm  dot  dot  slash en dash US slash acoustic dash model slash \nend
+function testSR\npocketsphinx_continuous  dash inmic yes  dash lm language dash model dot lm dot bin   dash dict 80 dot dict   dash hmm  dot  dot  slash en dash US slash acoustic dash model slash \nend
+test
+testSR 
+function testSR\npocketsphinx_continuous  dash inmic yes  dash lm 5031 dot lm  dash dict 5031 dot dict   dash hmm  dot  dot  slash en dash US slash acoustic dash model slash \nend
+pocketsphinx_continuous  dash inmic yes  dash lm 5031 dot lm  dash dict 5031 dot dic  dash hmm  dot  dot  slash en dash US slash acoustic dash model slash 
+function testSR\npocketsphinx_continuous  dash inmic yes  dash lm 5031 dot lm  dash dict 5031 dot dic  dash hmm  dot  dot  slash en dash US slash acoustic dash model slash \nend
+funcsave testSR
+ dot  dot  slash en dash US slash 
+pocketsphinx_continuous  dash inmic yes  dash lm language dash model dot lm dot bin   dash dict pronounciation dash dictionary dot dict
+pocketsphinx_continuous  dash inmic yes  dash lm language dash model dot lm dot bin   dash dict pronounciation dash dictionary dot dict 
+pocketsphinx_continuous  dash inmic yes  dash lm language dash model dot lm dot bin   dash dict pronounciation dash dictionary dot dict  dash hmm acoustic dash model slash 
+python3 test dot py speech dot wav 10 the
+sudo snap update
+python3 test dot py speech dot wav 30 the
+sudo apt install audiacity
+sudo apt install audacity
+v  dot  dot  slash speech_edit dot wav ~ slash year\\ 3 slash majel slash 
+python3 test dot py speech_edit dot wav 30 the
+v speech_edit dot wav sentance1 dot wav
+python3 test dot py sentance1 dot wav  30 the
+python3 test dot py sentance2 dot wav  30 glue
+python3 test dot py Armstrong_Small_Step dot ogg 10 small
+python3 test dot py small_step dot wav 10 small
+[1;5R
+python3 test dot py watergate dot wav  10 small
+python3 test dot py watergate dot wav 10 small
+python3 test dot py watergate dot wav 10 watergate
+python3 test dot py watergate2 dot wav 10 watergate
+python3 test dot py watergate2 dot wav 15 watergate
+python3 test dot py Nixon_resignation_audio_with_buzz_removed dot wav  15 watergate
+python3 test dot py watergate dot wav watergate
+python3 test dot py watergate dot wav 60 watergate
+python3 test dot py nix dot wav 60 watergate
+python3 test dot py nix dot wav 60 elected 
+python3 test dot py spectre dot wav 60 elected 
+python3 test dot py spectre dot wav 60 europe
+python3 test dot py manifesto dot wav 30 communism
+python3 test dot py manifesto dot wav 40 communism
+python3 test dot py manifesto dot wav 60 communism
+python3 test dot py manifesto dot wav 120 communism
+python3 test dot py dracula 120 count
+python3 test dot py dracula dot wav 120 count
+rm Nixon_resignation_audio_with_buzz_removed dot ogg 
+python3 test dot py dracula dot wav 4 count
+vlc dracula dot wav 
+vlc dracula dot wav 
+sudo cp 5031 dot lm 5031 dot lm dot bin
+sudo cp 5031 dot lm language_model dot lm dot bin
+rm 5031 dot lm dot bin 
+sudo rm 5031 dot lm dot bin 
+sudo cp 5031 dot lm language dash model dot lm dot bin
+sudo rm language_model dot lm dot bin 
+sudo cp 5031 dot dic pronounciation dash dictionary dot dic
+sudo cp 5031 dot dic pronounciation dash dictionary dot dict
+sudo rm pronounciation dash dictionary dot dic
+python3 test dot py sudo dot wav 10 sudo
+python3 test dot py sudo dot wav 10 SUDO
+python3 test dot py sudo_apt_update dot wav 10 
+python3 test dot py sudo_apt_update dot wav 10 UPDATE
+python3 test dot py sudo_apt_update dot wav 10 UPDATE CL
+python3 test dot py sudo_apt_update dot wav 10 UPDATE 
+python3 test dot py sudo_apt_update dot wav 10 US UPDATE
+python3 test dot py sudo dot wav 10 CL UPDATE
+python3 test dot py sudo_apt_update dot wav 10 CL UPDATE
+python3 test dot py sudo_apt_update dot wav 10 CL SUDO
+python3 test dot py sudo_apt_update dot wav 10 US SUDO
+python3 test dot py ls_downloads dot wav  10 US SUDO
+python3 test dot py ls_downloads dot wav  10 CL SUDO
+python3 test dot py dracula dot wav 10 count
+python3 test dot py ls_downloads dot wav 10 CL SUDO
+ls Downloads slash 
+ode pronounciation dash dictionary dot dict 
+ode language dash model dot lm dot bin 
+python3 test dot py dracula dot wav 10 US to
+
++
+python3 test dot py dracula dot wav 10 US count
+python3 test dot py ls_downloads dot wav 10 CL LS
+Downloads slash 
+Desktop slash 
+at fish_history_cleaned 
+python3 clean_fish dot py ~ slash Desktop slash fish_history 
+sudo cp  dash rf ~ slash Desktop slash cl dash language2 slash * ~ slash  dot local slash lib slash python3 dot 6 slash site dash packages slash speech_recognition slash pocketsphinx dash data slash CL2
+sudo cp  dash rf ~ slash Desktop slash cl dash language2 slash * ~ slash  dot local slash lib slash python3 dot 6 slash site dash packages slash speech_recognition slash pocketsphinx dash data slash CL2 slash 
+sudo cp  dash rf ~ slash Desktop slash cl dash language2 slash  ~ slash  dot local slash lib slash python3 dot 6 slash site dash packages slash speech_recognition slash pocketsphinx dash data slash CL2 slash 
+python3 test dot py ls_downloads dot wav 10 CL2 LS
+python3 test dot py dracula dot wav 10 CL2 LS
+python3 test dot py sudo dot wav 10 CL2 LS
+python3 test dot py ls_downloads dot wav  10 CL2 LS
+ls  dash a
+python3 test dot py sudo dot wav  10 CL2 LS
+python3 test dot py ls dot wav  10 CL2 LS
+python3 test dot py sudo_apt_update dot wav 10 CL2 LS
+python3 test dot py sudo_ls dot wav 10 CL2 LS
+sudo python3  dash m pip install  dash  dash upgrade pyAudio
+python3  dash m pip install pyAudio
+pip install pyAudio
+sudo apt install pyaudio
+sudo apt dash get install portaudio19 dash dev python dash pyaudio
+pip install PyAudio
+python3 test dot py firefox dot wav 10 CL2 LS
+reboot 
+python3 test dot py firefox dot wav 3 CL2 LS
+alsamixer 
+ dot local slash lib slash python3 dot 6 slash site dash packages slash speech_recognition slash pocketsphinx dash data slash 
+en dash CL slash 
+testSR
+vlc file dot wav 
+python3 mictest dot py 
+python3 test dot py none 3 US LS
+uname
+python3 test dot py none 3 CL2 LS
+rm  dash rf find
+apt list  dash  dash installed
+apt list  dash  dash installed | grep firefox
+youtube dash dl 
+python3 test dot py 5 CL2 
+python3 test dot py 3 CL2 
+python3 test dot py 2 CL2 
+openmw
+xboxdrv 
+sudo xboxdrv –detach dash kernel dash driver
+sudo rmmod xpad
+sudo xboxdrv
+sudo apt install xpad
+sudo apt dash get install jstest dash gtk
+jstest dash gtk 
+sudo apt dash get remove xboxdrv 
+sudo apt install dkms
+sudo git clone https: slash  slash github dot com slash paroj slash xpad dot git  slash usr slash src slash xpad dash 0 dot 4\nsudo dkms install  dash m xpad  dash v 0 dot 4\n
+usb dash devices 
+lsusb 
+sudo apt dash get purge xboxdrv xboxdrv:i386
+sudo git clone https: slash  slash github dot com slash paroj slash xpad dot git  slash usr slash src slash xpad dash 0 dot 4
+xpad
+sudo dkms install  dash m xpad  dash v 0 dot 4
+at  slash var slash lib slash dkms slash xpad slash 0 dot 4 slash build slash make dot log 
+sudo apt dash add dash repository  dash y ppa:rael dash gc slash ubuntu dash xboxdrv
+sudo apt dash get update
+sudo apt dash get install ubuntu dash xboxdrv
+xboxdrv
+git ignore * dot wav
+touch  dot gitignore
+nano  dot gitignore 
+git config  dash  dash global user dot email "closeg@cardiff dot ac dot uk"
+git config  dash  dash global user dot name "George Close"
+ezgit "implemented prototype"
+python  dash c "import speech_recognition as sr, os dot path as p; print(p dot dirname(sr dot __file__))\n"
+python3  dash c "import speech_recognition as sr, os dot path as p; print(p dot dirname(sr dot __file__))\n"
+kdir languages
+python3 test dot py 2 CL2
+python3 test dot py
+p ~ slash Desktop slash commands2 dot txt ~ slash year\\ 3 slash majel slash 
+python3 test dot py 2
+an firefox 
+python3
+python3 test dot py 4
+an find
+find  slash 
+find  slash  > filesystem dot txt
+find  slash   dash maxdepth 1  dash type d  dash printf '%f\\n'
+find  slash    dash type d  dash printf '%f\\n'
+find  slash    dash type d  dash printf '%f\\n' > folders dot txt
+v folders dot txt ~ slash year\\ 3 slash majel slash 
+python3 clean_filesystem dot py folders dot txt 
+python3 test dot py 5
+python3 clean_filesystem dot py filesystem dot txt 
+v * dot wav  dot  slash sounds slash 
+gawk
+sudo apt install gawk
+an gawk
+gzip
+ping google dot com
+kdir SRILM
+nano Makefile 
+at Makefile 
+ake
+ls bin slash 
+bin slash 
+find ngram
+SRILM slash 
+lib
+i686 dash m64 slash 
+ dot  dot  
+bin slash i686 dash m64 slash 
+ dot  slash ngram dash count  dash kdiscount  dash interpolate  dash text ~ slash year\\ 3 slash majel slash filesystem_cleaned dot txt  dash lm ~ slash Desktop slash model dot lm
+ dot  slash ngram dash count  dash kndiscount  dash interpolate  dash text ~ slash year\\ 3 slash majel slash filesystem_cleaned dot txt  dash lm ~ slash Desktop slash model dot lm
+at ~ slash Desktop slash model dot lm 
+p ~ slash Desktop slash model dot lm ~ slash year\\ 3 slash majel slash languages slash 
+year\\ 3 slash majel slash 
+python3 get_words dot py filesystem_cleaned dot txt 
+kdir ~ slash g2p
+
+g2p slash 
+g2p dash seq2seq slash 
+python3 setup dot py install
+\n\nwget  dash O g2p dash seq2seq dash cmudict dot tar dot gz https: slash  slash sourceforge dot net slash projects slash cmusphinx slash files slash G2P%20Models slash g2p dash seq2seq dash model dash 6 dot 2 dash cmudict dash nostress dot tar dot gz slash download\ntar xf g2p dash seq2seq dash cmudict dot tar dot gz\n
+ dot  dot 
+g2p dash seq2seq
+g2p dash seq2seq  dash  dash interactive  dash  dash model_dir  dot  dot  slash g2p dash seq2seq dash model dash 6 dot 2 dash cmudict dash nostress slash 
+pip install tensorflow
+python setup dot py test
+python3 setup dot py test
+sudo pip install tensor2tensor
+ls
+g2p dash seq2seq  dash  dash interactive  dash  dash model_dir model_folder_path
+sudo python3  dash m pip install tensorflow
+sudo python3  dash m pip install tensor2tensor
+nano setup dot py 
+sudo python3 setup dot py ins
+sudo python3 setup dot py install
+pip install tensor2tensor
+pip install tensor2tensor[tensorflow]
+pip install tensor2tensor[tensorflow_gpu]
+pip install  dash  dash upgrade pip
+sudo python3  dash m pip install tensorflow1 dot 8
+pip uninstall tensorflow
+sudo python3  dash m pip install tensorflow==1 dot 8
+sudo python3 setup dot py test
+sudo python3 setup dot py install
+g2p dash seq2seq  dash  dash interactive  dash  dash model_dir  dot  dot  slash g2p dash seq2seq dash model dash 6 dot 2 dash cmudict dash nostress slash 
+g2p dash seq2seq  dash  dash decode ~ slash year\\ 3 slash majel slash filesystem_cleaned_words dot txt  dash  dash model  dot  dot  slash g2p dash seq2seq dash model dash 6 dot 2 dash cmudict dash nostress slash 
+uni
+find sidewinder dot h
+python3 test dot py 5
+openmw
+g2p dash seq2seq  dash  dash decode ~ slash year\\ 3 slash majel slash filesystem_cleaned_words dot txt  dash  dash model_dir  dot  dot  slash g2p dash seq2seq dash model dash 6 dot 2 dash cmudict dash nostress slash 
+inecraft dash launcher 
+openmw
+year\\ 3 slash majel slash 
+python3 clean_fish dot py ~ slash Desktop slash fish_history 
+python3 test dot py 5
+python3 test dot py 5 sounds slash sudo dot wav 
+python3 test dot py 5 sounds slash firefox dot wav  
+python3 test dot py 5 sounds slash sudo_apt_update dot wav 
+python3 test dot py 5 sounds slash sudo_ls
+python3 test dot py 5 sounds slash sudo_ls dot wav 
+python3 clean_fish dot py ~ slash Desktop slash fish_history 
+year\\ 3 slash majel slash 
+python3 test dot py 5 sounds slash sudo_ls dot wav 
+python3 test dot py 5 sounds slash sudo_apt_update dot wav 
+python3 test dot py 5 sounds slash firefox dot wav  
+python3 test dot py 10 sounds slash firefox dot wav  
+python3 test dot py 1 sounds slash firefox dot wav  
+python3 test dot py 5 sounds slash sudo_apt_update dot wav 
+python3 test dot py 5 sounds slash sudo_ls dot wav 
+python3 clean_fish dot py ~ slash Desktop slash fish_history 
+sudo mv  dash rf  dot  slash languages slash en dash CL2 slash acoustic dash model slash   dot  slash languages slash 
+sudo cp  dash rf  dot  slash languages slash en dash CL2 slash acoustic dash model slash   dot  slash languages slash 
+python3 test dot py 5 sounds slash sudo_ls dot wav 
+python3 test dot py 5 sounds slash sudo_apt_update dot wav 
+python3 test dot py 5 sounds slash sudo_ls dot wav 
+python3 test dot py 1 sounds slash firefox dot wav  
+python3 test dot py 3
+python3 test dot py 1 sounds slash firefox dot wav  
+python3 test dot py 1 sounds slash ls dot wav 
+python3 test dot py 1 sounds slash file dot wav 
+python3 test dot py 1 sounds slash sudo_ls dot wav 
+python3 test dot py 1 sounds slash sudo dot wav 
+python3 test dot py 3
+python3 clean_fish dot py ~ slash  dot local slash share slash fish slash fish_history  dot  slash 

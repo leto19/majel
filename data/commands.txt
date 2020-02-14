@@ -1,0 +1,11 @@
+ls
+la
+sudo
+apt
+apt-get
+update
+-a
+-b
+-m
+python3
+pip

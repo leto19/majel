@@ -1,0 +1,2755 @@
+git commit  dash m "added footer css and moved images again"
+git commit  dash m "moved logo? maybe"
+git config  dash  dash global alias dot pushall 'push origin master'
+git commit  dash m "changed logo, cleaned up base dot html"
+git add all
+git all  wildcard
+git commit  dash m "changed header css"
+lua determinant3
+lua determinant3 dot lua
+cd dqp
+git commit  dash m "added setters getters and constructor for Question"
+git status [A
+git commit  dash m "refactor"
+sudo apt dash get python2 dot 7
+sudo apt dash get python
+sudo apt dash get install python2 dot 7
+python2 dot 7 pip install virtenv
+pip dash 2 dot 7 install virtenv
+pip2 dot 7 install virtenv
+sudo apt autoremove
+git commit  dash m 'added account'
+git commit  dash m 'added account fixed'
+git commit  dash m 'added s'
+git commit  dash m 'moved logout button'
+git commit  dash m 'removed logout button'
+git commit  dash m 'added buttons'
+git commit  dash m 'moved buttons'
+git commit  dash m 'moved buttons again'
+git commit  dash m 'added <p>'
+git commit  dash m 'moved buttons once more'
+git commit  dash m 'added copy pasta'
+git commit  dash m 'added call to account app'
+git commit  dash m 'changed double quotes to single'
+git commit  dash m 'added name='
+git commit  dash m 'pls'
+git commit  dash m 'pls this time'
+git commit  dash m 'fixed typo'
+git commit  dash m 'please please please let me get what i want'
+git commit  dash m 'change to redirect'
+git commit  dash m 'good times for a change'
+git commit  dash m 'good times for a change2'
+java  wildcard dot java
+java Quiz testquestion
+java Quiz 
+java Quiz dot 
+java Quiz dot class
+cd CMT12020 dash 2018 dash Team dash 2
+git add wildcard
+git commit  dash m "added setters, getters constructor to QuestionSet and function to load a question set from a file to Quiz"
+java Quiz dot java
+java Quiz testquestions dot txt
+java Quizsda
+java Quiz testquestions
+java Quiz dot class testquestions
+java Question
+java GUI
+java Quiz sadasd
+java quiz dot Quiz testqestions
+java quiz dot Quiz testqestions dot txt
+java quiz dot Quiz test
+javac quiz
+javac quiz dot  wildcard
+javac quiz dot 
+javac 
+javac quiz dot  wildcard dot java
+javac  wildcard
+git commit  dash m "added testing calls to question set loader looks to work fine! also added demo questionset file dot "
+git commit  dash m "added editQuestion function"
+java quiz dot Quiz testquestionscd
+git commit  dash m "added newQuestion method"
+javac  wildcard dot javac
+cd  dot  dot quiz
+git commit  dash m "added SaveQuestionSet function"
+java quiz dot Quiz
+java quiz dot Quiz testquestions dot txt
+java quiz dot Quiz testquestions
+cd CMT1202 dash 2016 dash Team dash 2
+git commit  dash m "fixed fileSelector() looking in the wrong directory"
+git commit  dash m "added newQuestionSet function and functionality to FileSelector to add new files"
+git commit  dash m "moved all file loading and edit functions to Quizmaster"
+cd question1
+java StudentEditor
+git commit  dash m "added a function that allows for the selection of a question to edit"
+git commit  dash m "added quizmaster menu function that allows quizmaster users to add, delete and edit question sets as well as save them"
+git pull origin master
+git commit  dash m "minor cleanup to quizmaster"
+cd java slash coursework1 slash question1
+git commit  dash m "trying single quotes again"
+git commit  dash m "removed debug"
+git commit  dash m "commented out cart for now"
+git commit  dash m "moved a :"
+git commit  dash m "fixed images, addded signup button"
+git commit  dash m "stuff"
+git commit  dash m "fixed genre display"
+git commit  dash m "fixed typo"
+git commit  dash m "added cart and moved buttons"
+git commit  dash m "added add to cart button"
+git commit  dash m "fixed add to cart button"
+git commit  dash m "fixed url patterns"
+git commit  dash m "fixed url patterns again"
+cd java slash dqs slash 
+git commit  dash m "improved play function"
+mysql
+yes
+mysql  dash h csmysql dot cs dot cf dot ac dot uk  dash u C1736823  dash p
+mysql  dash h csmysql dot cs dot cf dot ac dot uk  dash u c1736823  dash p
+sudo mysql  dash h csmysql dot cs dot cf dot ac dot uk  dash u c1736823  dash p
+git commit  dash m "added orders app"
+git commit  dash m "removed calls to orders app"
+mkdir djangoexample
+cd djangoexample
+cd django dash by dash example dash book
+git lr
+git commit  dash m "some changes i forgot"
+git commit  dash m "murge"
+git commit  dash m "removed calls to non functional statistics class and fixed statistic dot txt showing in the file selector"
+git commit  dash m "added loop to AnswerQuestion to force the user to enter a valid input"
+git commit  dash m "added (hopefully) tempoary main menu"
+sudo apt dash get install skype
+ping https: slash  slash gitlab dot cs dot cf dot ac dot uk
+ping
+curl  dash Is https: slash  slash gitlab dot cs dot cf dot ac dot uk  and head  dash 1
+curl  dash Is https: slash  slash gitlab dot cs dot cf dot ac dot uk
+curl
+curl  dash  dash help
+cd  dot  dot  slash  dot  dot  slash java
+cd  dot  dot  slash  dot  dot  slash 
+ping www dot gitlab dot cs dot cf dot ac dot uk slash 
+ping wwww dot google dot com
+wget www dot google dot com
+wget https: slash  slash gitlab dot cs dot cf dot ac dot uk slash 
+javago LinkedList
+cd maths
+al
+cd java slash dqs
+cd CMT12002 dash 2018 dash Team dash 2
+cd CMT1202 dash 2018 dash Team dash 2ls
+cd Wuiz
+cd src
+javac quiz  wildcard dot java
+java quiz
+javac quiz slash Quiz dot java
+javac quiz slash  wildcard dot java
+java quiz slash Quiz
+cd webstuff
+git pullall
+cd django dash lab
+cd django
+git commit  dash m "added order app"
+git commit  dash m "fixed cart?"
+java Quiz dot jar
+java Quiz
+Quiz dot jar
+git commit Quiz slash src slash quiz slash Quiz dot java
+git commit  wildcard
+git add  wildcard  dash f
+git commit  dash m "added login calls"
+git commit "fixed"
+git push  dash  dash force
+mkdir newrepo
+cd CMT1202 dash 2018 dash Team dash 2
+cd python slash coursework1
+cd python slash coursework
+cd python slash maths slash coursework1
+python3 DocSearch dot py
+java  dash jar Quiz
+git commit  dash m "program will run from  dot jar when all files are in the same directory"
+git commit  dash m "changes"
+git commit  dash m "commit"
+dc dist
+git commit  dash m "sadasd"
+cd quiz
+git commit  dash m "added stats file to filter"
+cd dist
+cd java slash cousework2
+javago MyLinkedList
+java MyLinkedList
+cd  slash java slash cousework2
+cd  slash java slash cousework
+cd  dot  dot  dot 
+cd python slash cousework2
+cd python slash cousework
+cd couseswork1
+cd cousework1
+python3 DocSearch set3
+python3 dot 5 DocSearch dot py set3
+sudo apt dash get get install python3 dot 5 dash minimal
+sudo apt dash get install python3 dot 5 dash minimal
+python3 dot 5 dash minimal DocSearch dot py set1
+python3 dot 5 DocSearch dot py set1
+python3 dot 5
+cd  dot  dot  slash java
+python3 DocSearch dot py set4
+python3 DocSearch dot py set2
+cd java slash coursework
+cd  slash java
+cd cousework2
+cd  dot  dot  slash  slash 
+cd python slash maths slash coursework1 slash 
+python DocSearch dot py set1
+cd dqs
+cd newrepo
+cd CMT1202 dash 2018 dash Team dash 2 slash 
+cd Quiz
+cd dist slash 
+java  dash jar Quiz dot jar 
+java  dash jar Quiz dot jar
+cd python slash maths
+python3 DocSearch dot py set1
+python3 DocSearch dot py set3
+git config  dash  dash global alias dot kermit 'commit  dash m'
+git kermit "this is a new commit"
+git kermit "pleas eplease please let me get what i want"
+git kermit "pleas eplease please let me get what i want II"
+git kermit "wooo i fixed it"
+git kermit "did stuff for order"
+git kermit "fixes"
+git kermit "hello"
+git kermit "fixed checkout call"
+git kermit "added to payment details"
+git push all
+git kermit "fix"
+git kermit "added functions for other payment inputs"
+git kermit "fixed indent NotLikeThis"
+mysql  dash u c1736823
+mysql  dash u c1736823  dash h csmysql dot cs dot cf dot ac dot uk
+mysql  dash u c1736823  dash h csmysql dot cs dot cf dot ac dot uk  dash p
+git kermit "deleted migrations for accounts"
+git kermit "moved user dot save() in  views for account"
+git kermit "fixed some stuff"
+alias  dash l
+git kermit "added return statment for CVV"
+git kermit "fixed logo header"
+git kermit "fixed base dot html"
+git kermit "turn and face the strange"
+git kermit "turn and face the strange changes"
+sudo apt install gnome dash session
+git kermit "fixewd"
+git config  dash  dash global alias dot addall "add  wildcard"
+git kermit "ss"
+sudo alert "hello world!"
+alert "hello world!"
+git kermit "added static to root"
+git kermit "moved files"
+git kermit "added imgur link"
+git kermit "added imgur link new"
+git hash dash object
+$ echo 'test content' and git hash dash object  dash w  dash  dash stdin
+git hash dash object  dash w  dash  dash stdin
+echo git hash dash object  dash w  dash  dash stdin
+echo and git hash dash object  dash w  dash  dash stdin
+c
+g
+cd webstuff slash django
+git kermit "changed cart"
+git kermit "added comments app"
+git kermit "reverted carts"
+git kermit "removed comments line for now"
+git kermit "added disqus"
+git kermit "removed disqus"
+git kermit "added new comment stuff"
+git kermit "attept to add reviews for book"
+git kermit "attept to add reviews for book2"
+git kermit "added review app"
+git kermit "fixewwd pages in reviews app"
+git kermit "removed reviews :("
+git kermit "added search"
+git kermit "added search button"
+git kermit "fixed typo"
+git kermit "maybe?"
+git kermit "removed seach :("
+git kermit "fix new images?"
+git pushall
+ slash usr slash bin slash python3 dot 6  dash m pip install  dash U autopep8  dash  dash user
+python3 DocSearch dot py 
+java Sorting 
+alias javago='javac  wildcard dot java and java'
+javago Sorting
+cd coursework2
+Sorting dot java
+java Sorting dot java
+java Sorting
+oython
+vi
+invoke dash ir
+parted
+alis pingg="ping 173 dot 194 dot 67 dot 106"
+alias pingg="ping 173 dot 194 dot 67 dot 106"
+pingg
+n = 1
+cd George Close
+cd "George Close"
+cd media
+cd George\\ Close slash 
+cd Lua\\ Programs slash 
+lua inverse3x3 dot lua
+gnome dash system dash monitor 
+oython pip install dblpy
+python pip install dblpy
+pip install dblpy
+cd python
+cd tider
+python3 tide dot py
+git add README dot md
+git push  dash u origin mater
+git commit "inital commit"
+git config  dash  dash global user dot name
+git commit  dash m "pulls and formats"
+git push origin1 master
+git remove iv
+git remove rm origin
+git remote rm origin
+git remote rm origin1
+python tide dot py
+sudo apt dash get install taskel
+sudo apt dash get install tasksel
+sudo taskel install kubuntu dash desktop
+sudo tasksel install kubuntu dash desktop
+ping 
+sudo  dash h  dot  slash install
+sudo  dot  slash install
+ dot  slash install
+sudo  dot  slash matlab
+telnet google dot com
+sudo apt dash get wireshark
+sudo dpkg dash reconfigure wireshark dash common
+sudo gpasswd  dash a $USER wireshark
+cd yearls
+cd year1
+cd year 1
+cd "year 1"
+cd tider slash 
+git
+cd tid
+cd tideapp slash 
+pip install icalandar
+pip install icalendar
+pip3 install icalendar
+pip3 install dateparser
+git commit  dash m "first complete working version"
+git commit  dash m "cleaned up output"
+git commit  dash m "fixed google calendar importing" 
+oython3
+ping glastonbury dot seetickets dot com
+sudo apt install lynx
+python 3
+wlan
+wconfig
+iconfig
+ipconfid
+sudo apt install haskell dash stack
+sudo apt install net dash tools
+sudo apt dash get install  dash y cabal dash install dash 1 dot 22
+sudo apt dash get install cabal dash install dash 1 dot 22 ghc dash 7 dot 10 dot 3
+sudo apt dash get install  dash y software dash properties dash common
+sudo add dash apt dash repository  dash y ppa:hvr slash ghc
+sudo apt dash get install  dash y cabal dash install dash 1 dot 22 ghc dash 7 dot 10 dot 3
+EOF
+hask
+cabal
+$ sudo apt dash get install haskell dash platform
+sudo apt dash get install haskell dash platform
+sudo apt dash get install gnome dash session
+foss
+iwconfig
+lspci
+sudo apt dash get install sqlplus
+ slash  dot sql
+sql
+java  dash  versoin
+ dot  slash sql hr slash oracle
+ dot  slash sql closeg@cardiff dot ac dot uk slash oracle
+ dot  slash sql  lapis dot cs dot cf dot ac dot uk slash oracle
+ dot  slash sql  c1736823@lapis dot cs dot cf dot ac dot uk
+ dot  slash sql  closeg@cardiff dot ac dot uk slash oracle
+cd year2 slash 
+python3 hello dot py
+java randArray
+java RandomArray
+alias javago="javac  wildcard dot java && java "
+javago RandomArray
+javago MeasureTime>timing dot csv
+java randList dot java
+java randList
+javago MeasureTime
+alias mac='ifconfig and grep HWaddr'
+max
+cd year\\ 2 slash java slash 
+mkdir task3
+hone
+home
+cd "year 2" slash 
+cd java slash 
+cd task 3
+cd java slash task3
+cdls year slash 2
+cdls year\\ 2
+cd george slash 
+cd "year 2"
+javago MatrixMulti>results dot csv
+javago MatrixMulti>results2 dot csv
+javago MatrixMulti>results3 dot csv
+cdls java
+dir lab5
+dir Steam
+Settings
+gsettings
+thunderbird
+alias mail='thunderbird'
+mail
+sqlplus
+cd sqldeveloper
+cd sqldeveloper slash 
+cd sql_install slash sql
+cd sql_install slash 
+cd sqlcl slash 
+ dot  slash sql
+ dot  slash sql csoracle dot cs dot cf dot ac dot uk
+sql c1736823 slash csoracle dot cs dot cf dot ac dot uk
+ dot  slash sql c1736823 slash csoracle dot cs dot cf dot ac dot uk
+java  dash s version
+sudo apt dash get install openjfx
+ dot  slash sqldeveloper
+sudo apt dash get install eclipse
+mymac
+mac
+ifconfig  dash  a 
+ifconfig  dash a
+ifconfig  dash a link
+rout
+route
+alias routinfo='arping  dash f  dash I $(ip route show match 0 slash 0 and awk '{print $5, $3}')'
+routinfo 
+dig +short stackoverflow dot com
+dig +short cardiff dot ac dot uk
+alias getip="% dig +short cardiff dot ac dot uk"
+alias getip ="dig +short " 
+alias getip ="dig +short" 
+alias getip =" dig +short" 
+hostname  dash i
+hostname  dash I
+stack ghci  dash  dash ghci dash options hello dot hs
+curl www dot cardiff dot ac dot uk
+getip google dot com
+curl cardiff dot ac dot uk
+getip cardiff dot ac dot uk
+getip www dot cardiff dot ac dot uk
+arw
+arb
+help arb
+man  dash k abr
+man  dash k arb
+cdls
+cdls haskell
+cd haskell
+ghci test dot hs
+python
+alias py3="python3"
+py3 
+gedit 
+sudo apt dash get insall notepad++
+sudo apt dash get install notepad++
+sudo apt dash get install notepad
+cabal update
+cabal install ghc dash mod
+cabal install hlint
+py3 graph_for_q2 dot py 
+sudo apt dash get install hlint
+py3  dash m pip install  dash U python3 dash tk
+py3  dash m pip install python3 dash tk
+py3  dash m pip install tkinter
+py3 pip install tkinter
+py3  dash m pip install 
+py3  dash m pip install  dash U pip
+py3  dash m pip install  dash U matplotlib
+py3  dash m pip install  dash U 
+sudo apt dash get install python3 dash tk
+py3 plot dot py
+py plot dot py
+python plot dot py
+cd pythonlabs slash 
+cd labs
+cd final slash 
+py3 rola dot py
+sudo apt dash get install emacs
+sudo apt dash get install mlint
+emacs
+cd matlab2
+cd biin
+ping  dash l www dot google dot com
+sudo apt install traceroute
+traceroute
+traceroute  dash 4 
+traceroute  dash 4 www dot google dot com
+traceroute  dash 4 www dot cardiff dot ac dot uk
+traceroute www dot cardiff dot ac dot uk
+traceroute www dot gov dot uk
+traceroute  dash 4 www dot gov dot uk
+cd CM2307 slash 
+py3 data_access dot py 
+sudo apt dash get install network dash manager dash vpnc
+sudo apt dash get install network dash manager dash vpnc dash gnome
+vpnc
+sudo vpnc
+ssh
+ssh  dash Y lapis dot cs dot cf dot ac dot uk  dash l cxxxxxx
+gchi
+cd " slash home slash george slash haskell"
+stack ghci  dash  dash ghci dash options doubleme dot hs
+sudo apt dash get install i3
+sudo apt dash get install menu
+menu
+traceroute twitter dot com
+tracerout gov dot uk
+traceroutr gov dot uk
+traceroute gov dot uk
+traceroute www dot youtube dot com
+g++
+man g++
+touch helloworld dot c
+gedir helloworld dot c 
+gedit helloworld dot c 
+fhdsafphdsafoidsa
+netstat
+sudo apt dash get install unite dash shell
+apt install x11 dash utils
+killall  dash HUP gnome dash shell
+sudo apt dash get install chromeium
+sudo apt dash get install chrome
+sudo apt dash get install chromium
+sudo apt dash get install chromium dash bsu
+sudo apt dash get istall minecraft
+sudo apt dash get install dolphin
+makefile
+java makefile
+ dot  slash makefile
+make
+java NonExec 
+java Decompilation 
+sudo apt dash get install php
+cd matlab2 slash 
+ slash usr slash bin slash python3 " slash home slash george slash year 2 slash CM2306 slash lab1 slash sliding dot py"
+cd year2
+[A
+python3 sliding dot py 
+balsa
+gedit test dot html 
+sudo apt dash get install lamp
+sudo apt dash get install xamp
+cd dow
+cd year 2
+cd year year\\ 2 slash 
+python slash ls
+cd python slash 
+python3 hello dot py 
+cat hello dot py 
+cd matlab2 slash bin slash 
+$ omf install cyan
+omf install agnoster
+omf install lambda
+alias javago="javac  wildcard dot java && java"
+alias javago="javac  wildcard dot java and java"
+cd year\\2
+cd CM2104 slash lab5 slash 
+cd CM2306
+cd cM2307
+CM2307
+cd task3
+cd part2
+cd part1
+cd  dot config slash 
+cd fish slash functions slash 
+ dot  slash import_bash_aliases dot fish 
+import_bash_aliases 
+bash py3
+bash py3 dot fish
+haskell dot fish
+import_bash_aliases clean
+py3
+alert "hello"
+cd and ls
+cd core
+cat core 
+ex
+dig  dash short www dot google dot com
+dig www dot google dot com
+dig www dot cardiff dot ac dot uk
+dig www dot reddit dot com
+dig 9 dot 9 dot 9 dot 9 dot 9 dot 9
+thunderbird 
+sudo apt dash get install neovim
+cat oraclepw 
+sudo apt dash get install erlang
+apt dash get
+1
+cat core
+dump
+tac core
+Videos slash 
+lynx
+helo
+sudo apt dash get install mutt
+sudo apt dash get remove mutt
+omf 
+telnet google dot com 80
+cd Pictures slash 
+cat Wind dash turbine dash farm dot jpg 
+java SparseMatrix dot java 
+java DenseVector
+ dot  slash matlab2
+java SparseMatrix
+java SparseMatrix  dash a data slash MatrixRead dot txt 
+java SparseMatrix  dash a data slash MatrixAdd1 dot txt 
+java SparseMatrix  dash a data slash MatrixAdd1 dot txt data slash MatrixAdd1 dot txt 
+ping cardiff dot ac dot uk
+ping speigel dot de
+netstat  dash  tupan
+sudo apt dash get install caja
+cat 
+java SparseMatrix  dash r data slash MatrixRead dot txt 
+iptables
+iptables google dot com
+iptables  dash h
+netflow
+iptables raw
+sudo apt dash get install musescore
+musescore 
+java SparseMatrix  dash a data slash MatrixAdd1 dot txt data slash MatrixAdd2 dot txt 
+java SparseMatrix  dash a data slash MatrixAdd1 dot txt data slash MatrixAdd2 dot txt > result dot txt
+gedit result dot txt 
+cd ~ slash public_html
+php  dash f hello dot php 
+sqldeveloper
+sudo find  slash   dash name php dot ini
+cd  slash etc slash php slash 7 dot 1 slash cli slash php dot ini
+cd etc slash php slash 7 dot 1 slash cli slash 
+sudo gedit php dot ini 
+sudo chown  dash R $USER ~ slash  dot blabla\n
+sudo chown  dash R $USER php dot ini\n
+dolphin 
+ls\n
+cd  dot php
+cd ,,
+cd cli slash 
+cd conf dot d slash 
+ dot  slash configure
+php  dot  slash configure
+php
+CD
+sudo apt install php dash pear
+pecl install oci8\n
+sudo perc install oci8
+sudo apt install php7 dot 1 dash dev
+ln  dash s libclntsh dot so dot 11 dot 1 libclntsh dot so\n
+rm libclntsh dot so 
+ln  dash s libclntsh dot so dot 10 dot 1 libclntsh dot so\n
+gedit php dot ini 
+php  dash v
+sudo pecl install oci8
+ldd
+cd etc slash php slash 7 dot 1
+cd usr slash lib slash ph
+cd 20160303 slash 
+ldd osi8 dot so
+ldd  slash usr slash lib slash php slash 20160303 slash osi8 dot so
+cd  dot  dot  slash  dot  dot  slash  dot  dot 
+cd etc slash ld dot so dot conf dot d slash 
+gedit libnnz10 dot conf
+sudo ldconfig
+php  dash S localhost:8001
+ldd  slash usr slash lib slash php slash 20160303 slash oci8 dot so
+sudo find  slash   dash name oracle
+cd sql_install slash sqldeveloper slash 
+ dot  slash sqldeveloper dot sh
+java SparseMatrix  dash t data slash MatrixTranspose dot txt  
+cd c
+java SparseMatrix  dash a data slash MatrixAdd2 dot txt data slash MatrixAdd1 dot txt
+java SparseMatrix  dash v data slash MatrixMultiply dot txt data slash VectorMultiply dot txt 
+sudo apt install dconf dash editor
+dconf dash editor
+sudo apt install minecraft
+minecraft dash launcher 
+audacity 
+vim
+vim sitempa\\ stuff 
+sudo cp  slash etc slash apt slash sources dot list  slash etc slash apt slash sources dot list dot bak #to be safe
+sudo sed  dash i  dash re 's slash zesty slash artful slash g'  slash etc slash apt slash sources dot list\n
+sudo apt update\n
+sudo apt dist dash upgrade\n
+sudo apt autoremove\n
+do dash release dash upgrade 
+sudo do dash release dash upgrade 
+mate dash about 
+mate dash seahorse dash tool 
+mate dash settings dash daemon 
+ubuntu dash mate dash settings
+ubuntu dash mate dash welcome 
+pannel
+settings
+gnome dash control dash center
+gnome dash control dash centre
+mate dash control dash center 
+sudo mrdir  dash p  slash etc slash X11 slash xorg dot conf dot d slash 
+sudo mkdir  dash p  slash etc slash X11 slash xorg dot conf dot d slash 
+sudo dpkg  dash  dash add dash architecture i386 
+sudo apt dash key add winehq dot key
+sudo apt install  dash  dash install dash recommends winehq dash stable
+tilda 
+lsa
+help ls
+sudo gdebi discord dash 0 dot 0 dot 8 dot deb 
+function uni\ncommand ssh  dash Y lapis dot cs dot cf dot ac dot uk  dash l c1736823\nend
+function javago\ncommand javac  wildcard dot java and java\nend
+javago MatrixMulti
+cd  dot  dot  slash 
+cd  slash usr slash local slash bin slash 
+cd  dot config
+fish_config 
+function javago\ncommand javac  wildcard dot java\ncommand java \nend
+cd year\\ 2 slash CM2307
+functions  dash e javago
+javago SparseMatrix data slash MatrixAdd1 dot txt data slash MatrixAdd2 dot txt 
+functions  dash a
+functions  dash D
+functions  dash details
+functions  dash  dash details
+functions  dash  dash details javago
+java  dash n
+functions  dash n
+sudo apt dash get install git
+sudo apt install curl
+curl  dash L https: slash  slash get dot oh dash my dot fish and fish
+omf help
+omf theme agnoster
+omf theme 
+omf theme default
+omf update
+function haskell\nghci $argv\nend
+muip
+cat  dot bash_aliases 
+ghci
+sudo apt install ghc
+functios
+function haskell\ncommand ghci $argv\nend
+haskell
+cd haskell slash 
+cat test dot hs 
+haskell test dot hs 
+ dot  slash matlab  dash n
+cd matlab
+cd matlab_install slash 
+ dot  slash in
+cd CM2306 slash 
+;l
+cd Cm2307
+javago SparseMatrix  dash a 
+funtion javago
+function javago\njavac  wildcard dot java\njava $argv\nend
+funcsave javago
+touch report dot txt
+pluma  report dot txt 
+:x
+sudo apt dash get install wireshark
+cd matlab2 slash bin
+cd matlab2 slash bin slash  dot  slash matlab
+matlab2 slash bin slash  dot  slash matlab
+sudo apt install tshark
+ssh  dash Y lapis dot cs dot cf dot ac dot uk  dash l c1736823
+function uni\nssh  dash Y lapis dot cs dot cf dot ac dot uk  dash l c1736823 \nend
+funcsave uni
+javago SparseMatrix  dash a data slash MatrixAdd1 dot txt data slash MatrixAdd2 dot txt 
+git config  dash  dash global user dot email "closeg@cardiff dot ac dot uk"
+sudo apt install google dash drive dash ocamlfuse
+mkdir GoogleDrive
+mkdir GoogleDrive ~ slash GoogleDrive slash 
+cd 0110000104ea4b1a slash 
+cat DS2SOFS0000 dot sl2 
+rmf  dash h
+rm  dash h
+rm  dash  dash help
+sd
+sudo apt install chromium
+sudo apt install chromium dash bsu
+chromium dash bsu 
+cd CM210
+cd CM2102 slash 
+cat IMG_0442\\ \\(0c4405fd\\) dot PNG 
+sudo fdisk  dash l
+sudo apt install gparted
+sudo gparted
+cd GoogleDrive slash 
+cd do
+function install\nsudo gdebi $argv\nend
+funcsave install
+mate dash panel 
+mate dash panel  dash  dash help
+mate dash panel  dash  dash help dash all
+mate dash panel   dash  dash reset
+google dash drive dash ocamlfuse ~ slash GoogleDrive slash 
+cd GoogleDrive
+google dash drive dash ocamlfuse ~ slash Drive slash 
+cd Drive slash 
+cd Books slash 
+sudo apt dash get install pylint
+sudo pip3 install pyliny
+sudo pip3 install pylint
+python3 pip
+cd year\\ 2 slash fun slash thinkpython slash 
+python3 point dot py 
+sudo pip install pylint
+python3 pip install pylint
+pylint 
+python3 circle dot py 
+sudo apt install flashplugin dash installer
+google dash drive dash ocamlfuse  dash  dash help
+fusermount  dash u ~ slash GoogleDrive
+python3 time dot py 
+`sudo apt dash get install geoclue dash 2 dot 0` dot 
+sudo apt dash get install geoclue dash 2 dot 0
+redshift dash gtk 
+gsettings set org dot mate dot interface gtk dash shell dash shows dash app dash menu true
+gsettings set org dot mate dot interface gtk dash shell dash shows dash menubar true
+gsettings set org dot mate dot interface gtk dash shell dash shows dash app dash menu false
+gsettings set org dot mate dot interface gtk dash shell dash shows dash menubar false
+python3 tide
+git 
+python3 filmTimes dot py 
+cd tideapp slash tideapp slash 
+cd year\\ 2 slash film slash 
+python3 tide dot py >result dot txt
+cat result dot txt 
+python3 tide dot py 
+python3 filmTimes dot py >page dot txt
+arp
+python3 filmTimes dot py
+$ php  dash S localhost:8000
+w2
+echo 
+echo "hello!"
+cla
+mkdir sqllite
+whereis ls
+sudo apt install sqllite
+sqlite3 hello dot db
+php  dash s localhost:8000
+cd usr slash lib slash php
+l
+sls
+cd 7 dot 2
+cd  slash lib slash 
+cd usr slash bin slash 
+php  dash S localhost:8000
+php  dash S localhost98000
+php  dash S localhost:7000
+php  dash S localhost:6000
+cd  slash bin slash php
+cd  slash bin slash 
+sudo apt install php dash sqlite3
+cd php slash 
+php  dash S localhost:9002
+php  dash S localhost:9001
+touch mainpage dot php
+gv
+sudo apt install gvim
+sudo apt install gvim dash gtk3
+sudo apt install gvim dash gtk3 2:8 dot 0 dot 1766 dash 1ubuntu1\n
+gvim
+sudo apt install vim\n
+sudo add dash apt dash repository  dash y ppa:linuxgndu slash sqlitebrowser
+sudo apt up
+sudo apt install sqlitebrowser
+sqlitebrowser 
+cd year\\ 2 slash CM2305 slash project slash 
+git remote  dash v
+cd year\\ 2 slash CM2305 slash site slash 
+git sta
+git status 
+cd year\\ 2 slash CM2305 slash 
+git commit  dash m "some testing"
+git commit  dash m "no need for javascript!"
+python3  dash m pip install  dash U pygame  dash  dash user 
+python3  dash m pip install  dash  dash upgrade pip
+sudo python3  dash m pip install  dash  dash upgrade pip
+cd f
+cd film slash 
+python3 gameTest dot py 
+cd visual_paradigm slash 
+sudo  dot  slash vp dot sh
+sudo  slash vp dot sh
+chmod +x vp dot sh
+ dot  slash vp dot sh
+cd year\\ 2 slash CM2307 slash ls
+javago
+java game
+java Game
+javac  wildcard dot java  dash Xlint:deprecation
+draw dot io 
+java JFLAP7 dot 1
+java  dash jar JFLAP7 dot 1
+du
+which
+which app
+man which
+fg
+whoami 
+finger george
+uname  dash a
+cal
+w
+free
+mkdir networkminer
+sudo tcpdump  dash nl  dash i wlan  dash s 0 'arp'
+sudo tcpdump  dash nl  dash i eth0  dash s 0 'arp'
+ipconfig
+sudo tcpdump  dash nl  dash i wlp3s0  dash s 0 'arp'
+sudo arp dash scan  dash l
+mkdir captures
+sudo tcpdump  dash nl  dash i wlp3s0  dash s 0  dash w arpscan dot pcap
+cat arpscan dot pcap 
+cd networkminer slash 
+whereis networkmine dot exe
+whereis networkminer
+whereis networkminer dot exe
+whereis "networkminer dot exe"
+cd opt slash 
+cd NetworkMiner_2 dash 4 slash 
+mono networkminer dot exe
+mono NetworkMiner dot exe 
+cd captures slash 
+sudo tcpdump  dash nl  dash i wlp3s0  dash s 0  dash w arpscan dot pcap  
+tracepath 
+traceroute www dot google dot com
+wi
+git commit  dash m "some tweaks, started on function to assign group"
+php composer dash setup dot php
+composer require  dash  dash dev squizlabs slash php_codesniffer\n
+sudo composer require  dash  dash dev squizlabs slash php_codesniffer\n
+cd NewFolder slash 
+sudo apt install java
+sudo apt install default dash jre
+sudo apt get update and sudo apt get upgrade
+cd year slash  2
+cd year slash 2
+sudo apt install tilda
+tilda
+sudo apt install vivaldi
+firefox
+sudo apt install elementry dash tweaks
+sudo apt install elementry dash tweak
+sudo apt insteall flatpak
+sudo apt install flatpak
+sudo apt install tlp tlp dash rdw
+sudo apt install gnome dash tweaks
+gnome dash tweaks
+google dash drive dash ocamlfuse
+sudo add dash apt dash repository ppa:alessandro dash strada slash ppa
+sudo add dash apt dash  repository ppa:alessandro dash strada slash ppa
+sudo add dash apt dash  repository ppa:alessandro dash strada slash ppabash
+sudo chown  dash R $USER 
+sudo chown  dash R $USER icons
+cd icons
+sudo apt dash get install google dash drive dash ocamlfuse
+google dash drive dash ocamlfuse googledrive slash 
+google dash drive dash ocamlfuse 
+sudo apt install software dash properties dash common
+elementry dash tweaks
+sudo apt dash get install wmctrl
+sudo apt install git
+gsettings set org dot gnome dot desktop dot interface icon dash theme "La dash Sierra"
+sudo apt dash get install elementary dash tweaks
+elementary dash tweaks
+sudo gdebi jdk dash 11 dot 0 dot 2_linux dash x64_bin dot deb 
+java
+cd question2
+cd Question2 slash 
+javago game
+sudo apt install default dash jdk
+javago Game
+apt dash get install elementary dash dark dash theme
+sudo apt get update 
+sudo apt  update 
+sudo apt dash get install elementary dash dark dash theme
+cd  slash usr slash share slash 
+sudo chown  dash R $USER themes
+gsettings set org dot gnome dot desktop dot interface gtk dash theme "elementary Dark"
+cler
+sudo add dash apt dash repository ppa:atareao slash atareao
+sudo apt install touchpad dash indicator
+touchpad dash indicator 
+sudo apt install eclipse
+sudo apt install chromium dash browser
+chromium dash browser 
+cd eclipse slash eclipse dash installer slash 
+mkdir googledrive
+cd googledrive
+cd year\\ 2 slash CM2307 slash 
+git commit  dash m "added login html!!"
+sudo apt install php
+git commit  dash m "fixed file names"
+eclipse 
+cat 1550748745441 dot log 
+sudo  dot  slash eclipse dash inst
+cd  dot eclipse slash 
+sudo pluma  slash opt slash eclipse slash eclipse dot ini
+cat 1548201941818 dot log 
+cd eclipse slash 
+cd eclipse dash installer slash 
+ dot  slash eclipse dash inst 
+cd  dot  dot  slash java dash 2018 dash 12 slash eclipse slash 
+ dot  slash eclipse 
+xx
+re
+sudo apt install steam
+sudo apt install discord
+snap install discord
+discord
+sudo apt install dbviwer
+sudo apt dash get install sqlitebrowser
+sudo apt install wireshark
+touch httphosts dot txt
+sudo apt install tshark 
+tshark   dash nl   dash o  tcp dot desegment_tcp_streams:0   dash r  coursework dot pcap   dash T  fields   dash Eseparator= slash t   dash e  http dot ho
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot cookie contains 'utm' " and sort  >httphosts dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot cookie contains "utm" " and sort  >httphosts dot txt
+cat httphosts dot txt 
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot uri contains " slash depositfiles slash " " and sort  >httphosts dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e   dash Y "http dot request dot uri contains " slash depositfiles slash " " and sort  >httphosts dot txt
+tshark  dash i 2  dash T pdml  dash Y "http dot request dot uri contains " slash google slash ""
+tshark  dash i 2  dash T pdml  dash Y "http dot request dot uri contains " slash depositfiles slash ""
+tshark  dash i 2  dash T pdml  dash Y 'http dot request dot uri contains " slash depositfiles slash "'
+tshark  dash i 2  dash T fields  dash Eseparator= slash t  dash e  dash Y 'http dot request dot uri contains " slash depositfiles slash "'
+tshark  dash i 2  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y 'http dot request dot uri contains " slash depositfiles slash "'
+sudo tshark  dash i 2  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y 'http dot request dot uri contains " slash depositfiles slash "'
+sudo tshark  dash i 2  dash T fields  dash Y 'http dot request dot uri contains " slash depositfiles slash "'
+sudo tshark  dash i 2 http dot host  dash Y 'http dot request dot uri contains " slash depositfiles slash "'
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e   dash Y "http dot request dot uri contains " slash depositfiles slash " " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e  dash Y "http dot request dot uri contains " slash google slash " " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e  dash Y "http dot request dot full_uri contains " slash depositfiles slash " " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e  dash Y "http dot cookie contains "utm" " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot cookie contains "utm" " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot full_uri contains " slash depositfiles slash " " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+tshark  dash c  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+tshark  dash nl  dash c tcp dot desegment_tcp_streams:0  dash c coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+tshark  dash nl  dash c tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash c coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+man tshark
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash c fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash c  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "google" " and sort  >question2 dot txt
+code question2 dot txt 
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+io dot elementary dot code question2 dot txt 
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap   dash qz io,stat,30,"COUNT(frame) frame"  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and sort  >question2 dot txt
+man tshark 
+cat tshark dot txt 
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot request dot full_uri contains "depositfiles" " and wc  dash l
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot host == "depositfiles" " and wc  dash l
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot host == "depositfiles dot com" " and wc  dash l
+cat question2 dot txt 
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot host contains "depositfiles dot com" " and sort > question2 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot host contains "depositfiles dot com" " and wc  dash l
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot host  dash Y "http dot host contains "depositfiles" " and wc  dash l
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" " and wc  dash l
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" and http dot cookie contains "__utm " " >question3 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" " >question3 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "__utm " " >question3 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "__utm" " >question3 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap    dash T  fields   dash Eseparator= slash t   dash e  http dot host  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "__utm" " >question3 dot txt
+tshark   dash nl   dash o  tcp dot desegment_tcp_streams:0   dash r  coursework dot pcap   dash T  fields   dash Eseparator= slash t   dash e  http dot host   dash Y  “http dot cookie  contains  “utm” “  and  sort  > httphosts dot txt
+cat question3 dot txt 
+tshark   dash nl   dash o  tcp dot desegment_tcp_streams:0   dash r  coursework dot pcap   dash T  fields   dash Eseparator= slash t   dash e  http dot host   dash Y  "http dot cookie  contains  "utma" "  and  sort  > httphosts dot txt
+tshark   dash nl   dash o  tcp dot desegment_tcp_streams:0   dash r  coursework dot pcap   dash T  fields   dash Eseparator= slash t   dash e  http dot host   dash Y  "http dot cookie  contains  "utm" "  and  sort  > httphosts dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap    dash T  fields   dash Eseparator= slash t   dash e  http dot host  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "__utm" "
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap    dash T  fields   dash Eseparator= slash t   dash e  http dot host  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" "
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap    dash T  fields   dash Eseparator= slash t   dash e  http dot cookie  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" "
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap    dash T  fields   dash Eseparator= slash t   dash e  http dot cookie  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" " >question3 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap    dash T  fields   dash Eseparator= slash t   dash e  http dot cookie  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" " and sort >question3 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" " and sort >question3 dot txt
+snap install spotify
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" "  dash  dash colourand sort >question3 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" "  dash  dash colorand sort >question3 dot txt
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" "  dash  dash color
+time 340 dot 778507
+now
+cd fun slash thinkpython slash 
+cd c16
+wireshark 
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T feilds  dash Eseparator= slash t   dash e  http dot cookie   dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" "
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot cookie   dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utm" "
+redshft
+redshift
+sudo apt install python dash wnck
+sudo apt dash get install python dash wnck
+indicator dash workspaces
+man chmod
+sudo apt install audacity
+cd  slash usr slash local slash 
+sudo mkdir MATLAB
+man pwd
+pw
+pwd
+cd year\\ 2 slash python slash 
+cd fun slash thinkpython slash c16
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash T fields  dash Eseparator= slash t  dash e http dot cookie   dash Y "http dot host contains "depositfiles dot com" && http dot cookie contains "utma" "
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" " 
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot request contains "depositfiles dot com" " 
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot request dot full_uri contains "depositfiles dot com" " 
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot request dot full_uri contains "depositfiles dot com" " and sort >uri dot txt
+cat uri dot txt 
+io dot elementary dot code uri dot txt 
+cd year\\ 2
+cd cm2307
+cd coursework2 slash 
+cd CM2208 slash 
+cd year\\ 2 slash CM2306 slash coursework2
+tshark  dash nl  dash o tcp dot desegment_tcp_streams:0  dash r coursework dot pcap  dash Y "http dot host contains "depositfiles dot com" " and wc  dash l 
+find squid
+find var
+find
+find  wildcard slash squid
+man find
+find  wildcard dot pcap
+sudo apt install squid
+quid
+sudo squid
+cd var slash log slash squid
+cat access dot log
+grep google dot com access dot log 
+sudo grep google dot com access dot log
+sudo cat access dot log 
+gvim access dot log 
+sudo apt install vim dash gtk3
+sudo apt get install ggc
+sudo apt install ggc
+cd  slash usr slash bin slash 
+sudo apt install make
+sudo vmware
+echo 2+2
+2+2
+sudo apt install libgl1 dash mesa dash dri libgl1 dash mesa dash glx libglapi dash mesa libglx dash mesa0 libosmesa6\n
+etho
+eth0
+sudo apt install net dash tools 
+sudo snap install epiphany
+epiphany 
+snap install deluge
+cd CM2305 slash Group dash 12 slash 
+whereis sqlite3
+whereis sqlite
+sudo apt install sqlite3
+cat listGroup dot php 
+tac listGroup dot php 
+git status addall
+git commit  dash m "fixed bug with non firefox browsers"
+git commit  dash m "moved stuff around"
+dbviewer universal dot db 
+sudo apt install dbviewer
+sudo apt dash get install sqlitebrowser\n
+sqlitebrowser universal dot db 
+sqlite
+sudo apt install sqlite
+sqlite3
+git commit  dash m "more moving, fixing links"
+funtion gitscript
+function gitscript\ngit add  wildcard\ngit commit  dash m %argv\ngit push\nend
+gitscript "i like to move it move it"
+gitscript i like to move it move it
+git fetch
+git stash universal dot db 
+git stash
+git commit  dash m "fixed redirects dot  css bugs"
+git rm addUser dot php
+git rm listGroup dot php
+git rm phpinfo dot php
+git rm signup dot html
+git rm universal dot php
+git commit  dash m "removed stuff"
+git rm files dot php
+git commit  dash m "removed copy of files"
+touch gitignore
+io dot elementary dot code gitignore 
+funcsave gitscript 
+gitscript "modifyed db"
+functions  dash e gitscript
+gitscript
+status
+git commit  dash m "removed db"
+git commit  dash m "removed db for real"
+function ezgit\ngit add  wildcard\ngit commit  dash m "$argv"\ngit push\nend
+funcsave ezgit
+ezgit added random group assign
+git rm gitignore
+git statu
+git rm universal dot db dash journal
+git commit  dash m "removed stuff updated ignore"
+git log
+google dash drive dash ocamlfuse googledrive
+man tshark > tshark dot txt
+io dot elementary dot code tsd
+io dot elementary dot code tshark dot txt 
+cd  slash etc slash apt
+sudo gvim sources dot list
+sudo pluma sources dot list
+y dash ppa dash manager 
+cd year\\ 2 slash CM2305 slash Group dash 12 slash 
+ezgit implemented login, uses first name as pw for now
+git rm 108163 dot crdownload
+git add
+git rm "Unconfirmed 108163 dot crdownload"
+git reset
+mkdir group12
+cd group12 slash 
+git commit  dash m "implemented login, uses first name as pw for now"
+php  dash S localhost:9000
+ezgit removed login folder
+git rm login
+git add  wildcard 
+git commit  dash m "removed for real?"
+git rm
+git rm login 
+git rm login  dash r
+git commit  dash m "removed for real? part 2"
+git pll
+function phpserver\nphp  dash S localhost:9000 \nend
+funcsave phpserver
+ezgit started on loading group after login, added login cookie handling
+sudo apt install chromium dash widedive
+sudo apt install chromium dash widevine
+sudo snap install software dash boutique  dash  dash classic
+software dash boutique 
+sudo software dash boutique 
+sudo apt dash get install wingpanel dash slim
+touch test dot sql
+ezgit more work on loading group, need to build structure to populate members properly
+git lg
+sudo apt dash get install wingpanel dash slim elementary dash tweaks
+sudo apt dash get install wingpanel
+wingpanel 
+ezgit group page is now fully working!
+git add  dot gitignore 
+git rm universal dot db
+git commit  dash m "cleaned up"
+python3 cfgParser dot py cfg dot txt 
+cfgParser dot py G0 dot txt 
+cfgParser dot py 
+python3 cfgParser dot py G0 dot txt
+cd CM2305 slash coursework slash 
+git reset  dash  dash hard HEAD^
+cd CM2305 slash 
+cd ls
+got pull
+rm presets dot txt 
+touch presets dot txt
+cd year\\ 2 slash CM2208
+lls
+cd CM2207
+cd coursework1 slash 
+python3 cfgParser dot py example dot txt >step3 dot txt
+python3 cfgParser dot py example dot txt >out dot txt
+git commit  dash m "tweaked login script"
+sqlite3 universal dot db 
+phpserver 
+sudo apt dash get install mysql
+ezgit some work on group selection, might not be able to finish
+cd year\\ 2 slash CM2307 slash Lect10Progs slash 
+time javago SafeSynchronizedSingleton dot java 
+time
+sudo yum flash
+sudo snap flash
+sudo snap flashplayer
+sudo snap install flashplayer
+sudo snap install flash
+sudo apt install adobe dash flashplugin\n
+sudo apt dash get install flashplugin dash installer \n
+rpm
+sudo apt install rpm
+sudo apt install alien
+whereis php dot ini
+cd  slash usr slash bin slash php
+cd  slash usr slash bin
+cd php
+whereis php
+code php
+cd  slash etc slash php slash 7 dot 2 slash cli slash php dot ini\n
+cd  slash etc slash php slash 7 dot 2 slash cli\n
+ezgit fixed file upload
+ dot  slash install_plugin 
+install_plugin 
+sudo  dot  slash install_plugin 
+cd files slash group1 slash 
+touch hello dot txt
+ezgit fixed contributions, added real data to chat box
+ezgit added logout
+ezgit moved all recurring html elements to seperate files and added js support to load them to all pages
+ezgit added support for username in header on all group pages
+ezgit added support for username and group in chat popup
+ezgit started on implementing supervisor marking interface  
+sudo apt dash get install php dash curl\n
+ezgit added basic support for downloading files to be marked
+sudo apt install libcanberra dash gtk dash module libcanberra dash gtk3 dash module\n
+whereis Group dash 12
+ezgit added ajax stuff for file downloading
+ezgit more ajax for file downloading
+ezgit implemented indicator on download link
+cd  slash home slash george slash year \\2 slash CM2207 slash coursework1 slash 
+cd  slash home slash george slash year\\ 2 slash CM2207 slash coursework1 slash 
+python3 
+python3 cfgParserNew dot py fellowship dot txt 
+cd coursework
+cd  slash home slash george slash year\\ 2 slash CM2305 slash 
+cd CM2208 slash coursework1 slash presets slash 
+touch "default dot txt"
+io dot elementary dot code default dot txt 
+sudo steam
+steam
+cd year\\ 2 slash CM2307 slash Lect12Programs slash 
+cd UnsafeCache slash 
+javac  wildcard dot java
+java ioseqtriple
+java IOSeqTriple
+java IOSeqTriple dot class
+java UnsafeCachePseudoServlet
+java UnsafeCachePseudoServletDemo
+java UnsafeCache
+javac SafeFasterCache slash 
+javac SafeFasterCache slash  wildcard dot java
+java SafeSlowCache slash  wildcard dot java
+javac SafeSlowCache slash  wildcard dot java
+cd Learning_Hub slash 
+ezgit reverted incomplete refactor
+ezgit seperated ajax for file download to own file
+git satus
+ezgit added admin page
+git add Project_Central slash style dot css 
+git commit  dash m "fix"
+ezgit implemented group chat
+ezgit added custom css for chat messages
+cd year\\ 2 slash CM2207
+cd CM2307
+cd Lect13Programs slash 
+javac MemVisFailureExample slash  wildcard dot java
+cd MemVisFailureExample slash 
+java MemVisTest dot 
+java MemVisTest
+cd CM2307 slash Lect13Programs slash 
+javac ThreadLocalExample slash  wildcard dot java
+java ThreadLocalExample slash 
+cd ThreadLocalExample slash 
+java ThreadLocalDemo
+ezgit chaged chat font
+ezgit implemented submission population dropdown on file uploading
+cd year\\ 2 slash CM2307 slash Lect14Programs slash 
+javac CoreJavaFirstBounce slash  wildcard dot java 
+java CoreJavaFirstBounce slash BallPanel
+java CoreJavaFirstBounce slash Bounce
+javac CoreJavaSecondBounce slash  wildcard dot java
+cd CoreJavaFirstBounce slash 
+java Bounce
+cd CoreJavaSecondBounce slash 
+java BounceThread
+sudo apt dash get install nautilus dash open dash terminal\n
+javac CoreJavaUnsafeSwing slash  wildcard dot java
+cd CoreJavaUnsafeSwing slash 
+cd year\\ 2 slash CM2208 slash coursework1 slash presets slash 
+touch "thisOneGoesToEleven dot txt"
+touch  dot gitignore
+functions 
+ezgit implemented ability to save and load custom presets
+cd year\\ 2 slash 
+cd CM2305 slash coursework slash Group dash 12 slash 
+ezgit implemented saving of audio files
+git pull equil dot mlapp 
+git fetch equil dot mlapp 
+git fetch "equil dot mlapp"
+git fetch  dash  dash all
+git reset  dash  dash hard origin slash master
+git pull origin master 
+git config credential dot helper store\n
+ezgit implemented reverb
+git rm rooms slash 
+ezgit added more rooms
+ezgit added ability to save reverb effect
+git rm  dash r rooms slash 
+ezgit removed rooms from git
+git rm presetTester dot m
+ezgit removed unused file
+ezgit update
+python3 cfgParserNew dot py G0 dot txt 
+ezgit inital commit
+git config credential dot helper store
+ezgit fixed weirdness
+ezgit task 2 complete
+python3 cfgParserNew dot py test2 dot txt 
+python3 cfgParserNew dot py example dot txt 
+python3 cfgParserNew dot py eg2 dot txt 
+cd  slash home slash george slash year \\2 slash CM2207 slash coursework1
+cd  slash CM2207 slash coursework1
+cd CM2207 slash coursework1
+ezgit finnished task 2?
+ezgit finnished task 2
+python3 cfgParser dot py eg2 dot txt 
+0000001
+python3 cfgParser dot py eg2 dot txt 111
+python3 cfgParser dot py eg2 dot txt 1111
+python3 cfgParser dot py eg2 dot txt 1111100000
+sane dash find dash scanner 
+python3 cfgParser dot py eg3 dot txt 
+python3 cfgParser dot py G0 dot txt >task3 dot txt
+python3 cfgParser dot py G0 dot txt >task3a dot txt
+python3 cfgParser dot py example dot txt >task3a dot txt
+python3 cfgParser dot py test2 dot txt 
+python3 cfgParser dot py eg2 dot txt
+python3 cfgParser dot py fellowship dot txt 
+ezgit started on task3 
+git rm cfgParserNew dot py
+cd  slash home slash george slash year 2 slash CM2207 slash coursework1
+killall  dash 9 java
+ezgit maybe fixed?
+ezgit maybe fixed
+python3 cfgParser dot py example dot txt
+python3 cfgParser dot py eg5 dot txt 
+python3 cfgParser dot py eg4 dot txt 
+ezgit tweaks
+git pull  dash foace
+whereis config dot fish
+cd  dot con
+vscode conf dot d slash 
+cd dot  dot 
+cd fun
+python3 test dot py example dot txt 
+python3 test dot py G0 dot txt 
+ezgit fixed again
+ezgit fixes
+\\andZ
+ezgit changes to admin
+python3 cfgParser dot py G0 dot tx
+a;b;c
+python pip install pip
+python  dash m pip install 
+sudo apt install python3 dash pip\n
+ps aux and grep  dash i apt\n
+sudo killall apt apt dash get
+kill  dash 9 apt
+kill  dash 9 9870
+sudo apt install python3 dash pip
+pip install anytree
+pip3 install anytree
+python3 cfgParser dot py example dot txt 
+a
+python3 cfgParser dot py G0 dot txt 
+sudo add dash apt dash repository ppa:nilarimogard slash webupd8\n
+sudo apt dash get update\n
+sudo apt dash get install grive\n
+mkdir  dash p gdrive
+gdrive  dash a
+grive  dash a\n
+grive  dash a
+ls 
+ezgit added peakfilters
+cd year\\ 2 slash CM2207 slash coursework1 slash 
+cd CM2208 slash coursework1 slash 
+ezgit "maybe wont break my whole life"
+man com dot github dot stsdc dot monitor
+sudo apt install ninja dash install
+sudo apt install ninja dash build 
+By typing a file name and clicking save in the Save File panel, the current file in the Playback panel with any cross synthesis and slash or reverb applied can be saved to the sounds directory as a  dot wav file dot  
+cd year\\ 2 slash CM2208 slash coursework1
+ezgit "implemented uploading of individual slash group report"
+man apache2
+code 000 dash default dot conf 
+apache2 
+sudo service apache2 restart
+apachectl
+apachectl start
+ezgit "updated SetAssignment dot php to use submission table"
+cd year\\ 2 slash CM2307 slash Lect15Programs slash 
+javac NonRefreshingCounter slash  wildcard dot java
+java NonRefreshingCounter slash 
+cd NonRefreshingCounter slash 
+javac UninterruptableCounter slash  wildcard dot java
+cd UninterruptableCounter slash 
+javac FinalCounter slash  wildcard dot java
+java FinalCounter slash CounterDemo
+cd FinalCounter slash 
+java CounterDemo
+code CounterDemo dot java
+cd year\\ 2 slash CM2305 slash coursework slash Group dash 12 slash 
+code goToGroup dot fish 
+code javago dot fish 
+goToGroup
+functions goToGroup
+functions  dash  dash erase goToGroup
+group
+funcsave group
+ezgit "started implementing marking"
+ezgit "updated loadMarking to account for submission visibility"
+ezgit "implemented downloading of individual submissions"
+sudo apt install gimp
+gut pull
+ezgit "fully implemented marking of individual and group submissions!"
+sudo apt install tasksel\n
+sudo systemctl status apache2\n
+git pretty
+ezgit "implemented simple view for viewing feedback"
+chmod 755 xampp dash linux dash  wildcard dash installer dot run\n
+go
+ezgit "added page for supervisors to view contribution"
+ezgit "added link to coversheet to upload page"
+ezgit "implemented renaming of uploaded files"
+code Client dot java 
+view client dot java
+view Client dot java
+javago Client dot 
+javago Client
+lo
+ezgit "updated group marking to use same interface as individual"
+ezgit "updated add submission from and added submission details to upload page"
+ezgit "updated upload page to prevent reuploading"
+ezgit "removed debug alert from file marking"
+javac EbayStrategyExample slash  wildcard dot java
+java EbayStrategyExample slash EbayBidder
+cd EbayStrategyExample slash 
+java EbayBidder
+sudo apt update and apt upgrade
+dig us dot gov
+dig google dot com
+tracepath www dot cardiff dot ac dot uk
+dig cardiff dot ac dot uk
+tracepath www dot google dot com
+ip
+man traceroute
+traceroute google dot com
+man tracepath
+tracepath  dash n www dot google dot com
+ping 94 dot 126 dot 208 dot 25
+tshark
+sudo tshark
+wireshark
+ip address show 
+ping 192 dot 168 dot 1 dot 18
+sudo wi
+tracepath  dash b www dot google dot com
+sudo !!
+echo 1
+ip_forward
+whereis ipv4
+whereis home
+whereis  slash home
+man whereis
+whereis net
+whereis proc
+sysctl net dot ipv4 dot ip_forward
+pluma  slash proc slash sys slash net slash ipv4 slash ip_forward
+sudo plulma  slash proc slash sys slash net slash ipv4 slash ip_forward
+sudo pluma  slash proc slash sys slash net slash ipv4 slash ip_forward
+sudo echo 1 >  slash proc slash sys slash net slash ipv4 slash ip_forward
+sudo
+sudo  dash h
+sysctl  dash w net dot ipv4 dot ip_forward=1\n
+sudo sysctl  dash w net dot ipv4 dot ip_forward=1\n
+cat  slash proc slash sys slash net slash ipv4 slash ip_forward
+ slash sbin slash iptables  dash t nat  dash A POSTROUTING  dash o eth0  dash j MASQUERADE\n slash sbin slash iptables  dash A FORWARD  dash i eth0  dash o eth1  dash m state\n    dash  dash state RELATED,ESTABLISHED  dash j ACCEPT\n slash sbin slash iptables  dash A FORWARD  dash i eth1  dash o eth0  dash j ACCEPT
+sudo  slash sbin slash iptables  dash t nat  dash A POSTROUTING  dash o eth0  dash j MASQUERADE
+sudo  slash sbin slash iptables  dash A FORWARD  dash i eth0  dash o eth1  dash m state\n    dash  dash state RELATED,ESTABLISHED  dash j ACCEPT
+sudo  slash sbin slash iptables  dash A FORWARD  dash i eth0  dash o eth1  dash m state  dash  dash state RELATED,ESTABLISHED  dash j ACCEPT
+sudo  slash sbin slash iptables  dash A FORWARD  dash i eth1  dash o eth0  dash j ACCEPT
+ping www dot google dot com
+ifconfig and grep ether
+ifconfig
+ifconfig and grep inet
+wheris rc dot local
+whereis rc dot local
+cat  slash ect slash rc dot local
+code  slash ect slash rc dot local
+sudo code  slash ect slash rc dot local
+sudo pluma  slash ect slash rc slash local
+sudo pluma  slash ect slash rc dot local
+touch  slash etc slash rc dot local
+sudo 
+!!
+repeat
+sudo touch  slash etc slash rc dot local
+cd  slash etc
+chmod 777 rc dot local 
+sudo chmod 777 rc dot local 
+pluma rx
+pluma rc dot local 
+cat rc dot local 
+sudo iptables  dash nvL
+tracepath  dash b www dot nowtvunis dot com
+tracepath  dash b www dot gov dot us
+tracepath  dash b www dot us dot gov
+cd  slash var slash www slash html slash 
+cat index dot html 
+sudo chmod 777 apache2 dot conf 
+here
+echo $path
+echo path
+sudo service httpd reload
+sudo service apache2 reload
+cd  slash etc slash apache2 slash sites dash available slash 
+a2ensite projectCentral
+sudo a2ensite projectCentral
+journalctl and tail\n
+hosts
+cd apache2 slash 
+a2ensite test site\n
+a2ensite group dash 12
+cd sites dash available slash 
+a2disite Group dash 12
+code Group dash 12 dot conf 
+sudo a2dissite projectCentral
+code hosts
+a2ensite Group dash 12
+cat Group dash 12 dot conf 
+apache2ctl configtest 
+sudo a2ensite Group dash 12
+sudo service apache2 restart\n
+apache2ctl configtest
+ezgit "added file to redirect to home page from apache server"
+cd  slash etc slash php slash 7 dot 2 slash apache2 slash 
+sudo code php dot ini
+code php dot ini
+function restartApache\nsudo service apache2 restart\nend
+a2dissite Group dash 12
+sudo a2dissite Group dash 12
+function enableSite\na2ensite Group dash 12\nend
+funcsave restartApache 
+function enableSite\nsudo a2ensite Group dash 12\nend
+function enableSite\nsudo a2ensite Group dash 12\nrestartApache\nend
+funcsave enableSite 
+function disableSite\nsudo a2dissite Group dash 12\nrestartApache \nend
+funcsave disableSite 
+cat apache2 slash error dot log 
+tail  dash f  slash var slash log slash apache slash error dot log\n
+tail  dash f  slash var slash log slash apache2 slash error dot log\n
+chown  dash R www dash data:www dash data universal dot db \n
+sudo chown  dash R www dash data:www dash data universal dot db \n
+chmod  dash R u+w universal dot db 
+sudo chmod  dash R u+w universal dot db 
+killall  dash 9 php
+chown www dash data Group dash 12 slash 
+sudo chown www dash data Group dash 12 slash 
+sudo chown www dash data Group dash 12 slash universal dot db  \n
+sudo chown apache:apache Group dash 12 slash files slash \nsudo chmod 755 Group dash 12 slash files slash 
+sudo chown apache:apache Group dash 12 slash files slash 
+sudo chown 
+sudo chown www dash data:www dash data Group dash 12 slash files slash 
+sudo chmod 755 Group dash 12 slash files slash 
+cd Group dash 12 slash 
+chown www dash data:www dash data files slash  wildcard
+sudo chown www dash data:www dash data files slash   dash R
+sudo chmod 755 files slash   dash R
+cat  slash etc slash sudoers 
+sudo cat  slash etc slash sudoers 
+cat etc slash sudoers dot d
+tail  dash f  slash var slash log slash apache2 slash error dot log andgrep :warn\n
+code apache2 dot conf 
+tail  dash f  slash var slash log slash apache2 slash error dot log andgrep Warning\n
+tail  dash f  slash var slash log slash apache2 slash error dot log andgrep php
+tail  dash f  slash var slash log slash apache2 slash error dot log and grep SELECT
+a2ensite wintermutehome
+sudo a2ensite wintermutehome 
+myip
+iptables  dash nvL
+dig 52 dot 93 dot 7 dot 73 
+dig 1 dot 1 dot 1 dot 1 dot 1
+dig 8 dot 8 dot 8 dot 8 dot 8
+whoami
+echo $PATH
+function fish_greeting\n\nend
+omf l
+omf u
+omf version 
+omf t
+omf t eden
+omf i eden
+omf t lambda 
+omf theme eden
+cls
+sudo apt install caja
+function fish_greeting\nend
+funcsave fish_greeting
+fish_greeting 
+ls  dash a1 
+ls  dash a2
+ls  dash  dash color 
+ca 'to long options are mandatory for short options' 
+cat 'to long options are mandatory for short options' 
+rm group dot fish 
+cat goToGroup dot fish 
+caja goToGroup dot fish 
+pluma goToGroup dot fish 
+funcsave goToGroup
+man reboot
+caka
+caja  slash 
+cd  slash sbin slash arp
+cat  slash sbin slash arp
+cat  slash sbin slash arp \\a
+cd sbin
+cd  slash sbin
+man iptables
+whereis arp
+ slash usr slash sbin slash arp
+gdrive
+function syncDrive\ngrive  slash home slash george slash gdrive\necho "done sync!"\nend
+man grive
+functions syncDrive 
+function syncDrive\ngrive  dash p  slash home slash george slash gdrive\nls  slash home slash george slash gdrive\nend
+funcsave syncDrive 
+tail  dash f  slash var slash log slash apache2 slash error dot log
+function apacheLog\ntail  dash f  slash var slash log slash apache2 slash error dot log  \nend
+funcsave apacheLog 
+cd g
+cd googledrive slash 
+rm googledrive slash 
+rm   dash r googledrive slash 
+caja 
+watch  dash n 300 syncDrive
+while True\nsyncDrive \nsleep 300\nend
+while true\nsyncDrive \nsleep 500\nend
+bg
+echo hello world and wc
+man wc
+cat %U
+cat "%U"
+jobs
+man bg
+bg banana
+xamp
+whereis squid
+man squid
+sudo cat  slash var slash log slash squid slash access dot log 
+omf theme lambda 
+omf
+omf list
+omf theme slavic dash cat
+omf install slavic dash cat 
+omf theme
+omf install neolambda 
+exut
+ls  slash tmp
+sudo wireshark 
+tshark  dash i ip dot addr = 	192 dot 168 dot 1 dot 17
+sudo tshark  dash i 2 ip dot addr = 	192 dot 168 dot 1 dot 17
+sudo wireshark
+sudo apt install wine
+sudo apt install wine dash stable 
+wine
+cd JFLAP slash 
+java JFLAP7 dot 1 dot jar 
+java  dash jar JFLAP7 dot 1 dot jar 
+ dot config slash f
+sudo pluma  dot config slash gtk dash 3 dot 0 slash gtk dot css 
+sudo pluma  dot icons slash La dash Sierra slash 
+sudo apt install tlp tlp dash rdw\n
+ln  dash s trash: slash  slash  slash  ~ slash Desktop slash bin
+rm bin
+cd trash
+cd trash: slash  slash  slash 
+ln  dash s ~ slash  dot local slash share slash Trash slash  ~ slash Desktop slash bin
+ln  dash s ~ slash  dot local slash share slash Trash slash  ~ slash Desktop slash Rubbish\\ Bin
+cd Rubbish\\ Bin slash 
+cd ~ slash D
+cd ~ slash Desktop slash 
+rm Rubbish\\ Bin slash 
+rm  dash r Rubbish\\ Bin slash 
+ln  dash s ~ slash  dot local slash share slash Trash slash files slash  ~ slash Desktop slash Rubbish\\ Bin
+syncDrive 
+function elcode\nio dot elementary dot code \nend
+alias
+function elcode\nio dot elementary dot code $argv\nend
+elcode oraclepw 
+funcsave elcode
+funcedit
+cd Steam slash 
+cd logs slash 
+files
+io dot elementary dot files 
+stfp
+sftp
+sftp websites dot cs dot cf dot ac dot uk
+sftp closeg@websites dot cs dot cf dot ac dot uk
+sftp C1736823@websites dot cs dot cf dot ac dot uk
+sftp c1736823@websites dot cs dot cf dot ac dot uk
+sftpSite 
+cd  dash P 'Link to movies'
+ls  dash l
+cd  dash P "Link to movies"
+cd Videos slash 
+readlink Link\\ to\\ movies 
+cd readlink Link\\ to\\ movies
+cd "readlink Link\\ to\\ movies"
+cd  slash media slash george slash Windows slash 
+elcode  dot config slash gtk dash 3 dot 0 slash gtk dot css 
+lm
+ll
+ln  dash l code code
+ln  dash s code code
+ln  dash s ~ slash JFLAP slash JFLAP7 dot 1 dot jar jflap 
+killall com dot github dot stsdc dot monitor
+chromium dash browser www dot google dot com
+function WhatsApp\nchromium dash browser www dot web dot whatsapp dot com\nend
+function WhatsApp\nchromium dash browser web dot whatsapp dot com\nend
+funcsave WhatsApp 
+wget https: slash  slash git dot io slash v9et4  dash O ~ slash  dot config slash gtk dash 3 dot 0 slash logo dot png
+cd  slash tmp; sudo rm  dash rf slingshot dash launcher wildcard
+apt source slingshot dash launcher; sudo apt build dash dep slingshot dash launcher\n
+cd slingshot dash launcher wildcard\n
+cd slingshot dash launcher\n
+killall wingpanel 
+killall wingpanel; wingpanel &
+wingpanel &
+killall wingpanel; wingpanel &\n
+gsettings get org dot gnome dot desktop dot interface scaling dash factor and sed 's slash  dot  wildcard  slash  slash '
+pluma  dot config slash gtk dash 3 dot 0 slash gtk dot css 
+killall wingpanel\n
+elementay dash tweaks
+sudo add dash apt dash repository ppa:cybre slash elementaryplus\nsudo apt dash get update\nsudo apt dash get upgrade; sudo apt dash get install elementaryplus
+sudo add dash apt dash repository ppa:cybre slash elementaryplus\n
+sudo apt dash get install elementaryplus
+sudo pip install rainbowstream\n
+sudo apt install pip
+sudo apt install pip3
+sudo pip3 install rainbowstream\n
+rainbowstream 
+pip3 remove rainbowstream
+pip3 uninstall rainbowstream
+sudo pip3 uninstall rainbowstream
+random
+sudo apt install twidge
+sudo pip3 install whatsapp dash cli\n
+man shutdown
+chromium dash browser Project_Central slash groupPage dot html 
+sudo apt dash get install php dash codesniffer\n
+rush
+drawio
+gdebi draw dot io dash amd64 dash 9 dot 3 dot 1 dot deb 
+sudo gdebi draw dot io dash amd64 dash 9 dot 3 dot 1 dot deb 
+draw dot io
+ezgit "changed dbconnect"
+functions
+ezgit "changed calendar link in groupmenu"
+git commit  dash m "merge"
+ezgit "made generate files script redirect to admin page"
+cd  slash etc slash apache2 slash 
+whereis httpd dot conf
+sudo pluma apache2 dot conf 
+cat apache2 dot conf 
+git commit  dash m "stage merge"
+git push
+ezgit "small fixes"
+sudo elcode  slash etc slash apache2 slash apache2 dot conf 
+sudo code  slash etc slash apache2 slash apache2 dot conf 
+sudo pluma  slash etc slash apache2 slash apache2 dot conf 
+sudo pluma  slash etc slash apache2 slash sites dash available slash  
+apachectl configtest\n
+phpserver
+ezgit "added cookie for colour scheme"
+sudo pluma  slash etc slash httpd slash conf slash httpd dot conf\n\n
+sudo pluma  slash etc slash apache2 slash apache2 dot conf \n\n
+sudo pluma  slash etc slash hosts
+code  slash etc slash hosts
+res
+sudo pluma  slash etc slash php slash php
+sudo pluma  slash etc slash php slash 7 dot 2 slash apache2 slash php dot ini
+code  slash etc slash php slash 7 dot 2 slash apache2 slash php dot ini
+ezgit "changed chat styling"
+ezgit "added send link button to chat"
+systemctl reload apache2
+enableSite 
+apacheLog 
+sudo caja
+goToGroup 
+ezgit "final commit"
+mrdir plank dash themes
+mkdir plank dash themes
+cd plank dash themes slash 
+sudo install dot sh
+ dot  slash install dot sh
+sudo  dot  slash install dot sh
+dia
+sudo apt install dia
+sudo apt install mutt
+mutt
+cd matlab slash 
+sudo apt update; and sudo apt upgrade
+x
+sudo apt install gcc
+gcc
+mkdir cplusplus
+gcc hello dot cpp 
+g++ hello dot cpp 
+cat a dot out 
+g++  dash c hello dot cpp 
+g++  dash c hello dot cpp  dash o hello dot o
+cat hello dot o
+g++  dash o hello hello dot 
+g++  dash o hello hello dot cpp 
+$ sudo apt dash get install libglu1 dash mesa dash dev freeglut3 dash dev mesa dash common dash dev
+sudo apt dash get install libglu1 dash mesa dash dev freeglut3 dash dev mesa dash common dash dev
+sudo apt dash get install freeglut3 freeglut3 dash dev libglew1 dot 5 libglew1 dot 5 dash dev libglu1 dash mesa libglu1 dash mesa dash dev libgl1 dash mesa dash glx libgl1 dash mesa dash dev
+g++ main dot cpp  dash o glapp  dash lglut  dash lGLU  dash lGL
+ dot  slash a dot out 
+gcc hello dot c &  dot  slash a dot out 
+gcc hello dot c hello &  dot  slash hello
+function cComp\ngcc $argv dot c  dash 0 $argv &  dot  slash $argv\nend
+function cComp\ngcc $argv dot c  dash 0 $argv &  dot  slash  eval $argv\nend
+which cc
+gcc hello hello dot c &  dot  slash hello
+gcc hello dot c  dash o hello
+ dot  slash hello
+gcc hello dot c  dash o hello &  dot  slash hello
+gcc hello dot c  dash o hello; and  dot  slash hello
+function catTest\n$out = "the argument is " + cat($argv)\necho $out\nend
+function catTest\n$out = "the argument is " + cat($argv)\necho eval $out\nend
+function catTest\n$out = "the argument is " + cat($argv)\necho eval($out)\nend
+function catTest\n$out = "the argument is " + cat($argv)\necho $argv\nend
+catTest 
+function cComp\ngcc {$argv} dot c  dash 0 {$argv} &  dot  slash {$argv}\nend
+function cComp\ngcc {$argv} dot c  dash 0 {$argv};  dot  slash {$argv}\nend
+function cComp\ngcc {$argv} dot c  dash 0 {$argv};\neval  dot  slash {$argv}\nend\n
+function cComp\ngcc {$argv} dot c  dash o {$argv};\neval  dot  slash {$argv}\nend\n
+gcc hello dot c 
+gcc hello dot c  dash lm
+function cComp\ngcc {$argv} dot c  dash lm  dash o {$argv};\neval  dot  slash {$argv}\nend\n
+cComp hello 
+cComp reverseChars
+cComp AddArray
+funcsave cComp 
+disableSite 
+cComp IfElse
+cComp OrderedValues
+cComp CopyString
+cComp InputTest\n
+cComp InputTest\nq
+cComp InputTest
+cComp ASCIIVAL dot c 
+path
+$path
+EVAL $path
+eval $path
+cComp ASCIIVAL
+cComp ReadLine
+funced cComp 
+cComp ReadFormattedLine
+ dot  slash FirstLastName 
+cComp FirstLastName
+sudo apt dash get update 
+sudo apt update  
+monitor dash sensor 
+sudo apt autoremove 
+hello
+ dot  slash Read
+ dot  slash ReadFormattedLine 
+pluma  slash etc slash apt slash sources dot list dot d
+sudo apt upgrade pantheon dash greeter 
+sudo apt update and sudo apt upgrade
+sudo apt update; sudo apt upgrade
+pip install SpeechRecognition
+python  dash m pip install SpeechRecognition
+python pip install SpeechRecognition
+sudo apt install python dash pip
+cd year3 slash speech slash 
+python  dash m pip install  dash  dash upgrade pip setuptools wheel\n
+pip3 install  dash  dash upgrade pocketsphinx\n
+python3  dash m pip install  dash  dash upgrade pip setuptools wheel\n
+pip install  dash  dash upgrade pocketsphinx\n
+pip install pocketsphinx\n
+python3  dash m pip install  dash  dash upgrade pip setuptools wheel\npip install  dash  dash upgrade pocketsphinx
+pip3 install SpeechRecognition
+python  dash m speech_recognition
+python3 pip install PocketSphinx
+python3 pip3 install PocketSphinx
+python3  dash m pip install PocketSphinx
+sudo python3  dash m pip install PocketSphinx
+python3  dash m pip3 install PocketSphinx
+python3  dash m pip install  dash  dash upgrade pip setuptools wheel\npython3  dash m pip install  dash  dash upgrade pocketsphinx
+pip install swig
+sudo python3  dash m pip uninstall pip and sudo apt install python3 dash pip  dash  dash reinstall
+sudo python3  dash m pip uninstall pip; and sudo apt install python3 dash pip  dash  dash reinstall
+pip3 install swig
+python  dash m pip install  dash  dash upgrade pip setuptools wheel\npip install  dash  dash upgrade pocketsphinx
+python3  dash m pip install  dash  dash upgrade pip setuptools wheel\npip3 install  dash  dash upgrade pocketsphinx
+pip3 install whell
+pip3 install wheel
+python3  dash m pip install wheel
+python3  dash m pip install  dot  slash third dash party slash WHEEL_FILENAME
+sudo apt dash get install python3 python3 dash all dash dev python3 dash pip build dash essential swig git libpulse dash dev libasound2 dash dev
+pip3
+pip3 install pocketSphinx
+python3 test dot py audio dot wav 4
+python3 test dot py audio dot wav 1
+python3 test dot py audio dot wav 5
+python3 test dot py audio dot wav 10 lue
+python3 test dot py audio dot wav 10 blue
+python3 test dot py nimoy dot wav 100 the
+python3 test dot py audio dot wav  10 the
+python3  dash m speech_recognition
+python3
+python3 test dot py nimoy dot wav 10 the
+python3 test dot py audio dot wav 25 the
+git add README dot md 
+ezgit "added test files"
+python3 test dot py yetzi dot wav 25 the
+python3 test dot py yetzi dot wav 5
+python3 test dot py yetzi2 dot wav 5
+python3 test dot py yetzi2 dot wav 5 the
+python3 test dot py yetzi2 dot wav 20 the
+python3 test dot py audio dot wav 20 the
+python3 test dot py audio dot wav 20
+python3 test dot py audio dot wav 10
+python3 test dot py audio dot wav 10 the
+ezgit "updated readme, added some testing for grammar"
+ezgit "updated readme"
+rm ~ slash  dot config slash monitors dot xml 
+sudo reboot
+spotify 
+gcc  wildcard dot c lm
+ dot  slash userfun1 
+gcc  wildcard dot c  dash lm
+for $i in  wildcard dot c do\ngcc  dash o $i dot c  dash lm;\nend
+for i in  wildcard dot c do\ngcc  dash o $i dot c  dash lm;\nend
+for i in  wildcard dot c do\ngcc  dash o $i dot c $i  dash lm;\nend
+for i in  wildcard dot c; do\ngcc  dash o $i dot c $i  dash lm;\nend
+for i in  wildcard dot c\ngcc  dash o $i dot c $i  dash lm;\nend
+for i in  wildcard dot c\ngcc  dash o $i $i  dash lm;\nend
+for i in  wildcard dot c\ngcc  dash o $i $i dot c  dash lm;\nend
+for i in  wildcard dot c\ngcc  dash o $i $i dot c;\nend
+ dot  slash hello 
+for i in  wildcard dot c\ngcc  dash o $i $i dot c\nend
+for i in  wildcard dot c\ngcc  dash o $i $i\nend
+for i in  wildcard dot c\n echo $i $i dot c\nend
+for i in  wildcard dot c\n gcc  dash o (basename $i) $i dot c\nend
+for i in  wildcard dot c\n gcc  dash o (basename $i dot c  dot c) $i dot c\nend
+for i in  wildcard dot c\n gcc  dash o (basename $i  dot c) $i dot c\nend
+for i in  wildcard dot c\necho (basename $i  dot c)\nend
+for i in  wildcard dot c\n gcc  dash o (basename $i  dot c) $i dot c  dash lm;\nend
+for i in  wildcard dot c\n gcc  dash o (basename $i  dot c) $i dot c;\nend
+for i in  wildcard dot c\necho (basename $i  dot c);\n gcc  dash o (basename $i  dot c) $i  dash lm;\nend
+for i in  wildcard dot c\n gcc  dash o (basename $i  dot c) $i  dash lm;\nend
+for i in  wildcard dot c\necho current file is (basename $i  dot c);\n gcc  dash o (basename $i  dot c) $i  dash lm;\nend
+function cCompfor i in  wildcard dot c\necho current file is (basename $i  dot c);\n gcc  dash o (basename $i  dot c) $i  dash lm;\nend
+function cCompAll\nfor i in  wildcard dot c\necho current file is (basename $i  dot c);\ngcc  dash o (basename $i  dot c) $i  dash lm;\nend\nend
+cComp
+cComp  wildcard dot c
+ dot  slash weirdptr 
+funced cCompAll
+pluma cCompAll dot fish 
+function cCompAll\nmkdir comp\nfor i in  wildcard dot c\ngcc  dash o comp slash (basename $i dot c) $i  dash lm\necho current file is $i\nend\nend\n
+rm comp slash 
+cd cProgs slash HPC slash CReviewCode slash 
+ dot  slash malloc1 
+ dot  slash arraytest dot c dot c 
+audience
+sudo apt install libdvd dash pkg
+sudo dpkg dash reconfigure libdvd dash pkg
+vlc
+vlc  BTS\\ October\\ 2019 dot mov 
+vlc Desktop slash BTS\\ October\\ 2019 dot mov 
+restartApache 
+cd cProgs
+ dot  slash ASCIIVAL 
+cComp ASCIIVAL 
+vscode cCompAll dot fish 
+code cCompAll dot fish 
+funcsave cCompAll
+ dot  slash comp slash ASCIIVAL 
+cd  slash home slash george slash cProgs slash 
+ dot  slash CopyString 
+man mkdir
+ dot  slash comp slash helloworld 
+sudo apt install jogl
+mkdir jogl
+gluegen slash make slash  ant
+gluegen slash make slash ant
+ dot  slash gluegen slash make slash ant
+apt dash get install openjdk dash 8 dash jre openjdk dash 8 dash jdk openjfx ant git dash all p7zip dash full gcc libgl1 dash mesa dash dev libglu1 dash mesa dash dev xorg dash dev libice dash dev libsm dash dev libx11 dash dev libxext dash dev libxxf86vm dash dev libxinerama dash dev libxrandr dash dev libxrender dash dev libxcursor dash dev libxi dash dev libudev dash dev libc6 dash dev g++ libstdc++6 libstdc++ dash 6 dash dev\n
+sudo apt dash get install openjdk dash 8 dash jre openjdk dash 8 dash jdk openjfx ant git dash all p7zip dash full gcc libgl1 dash mesa dash dev libglu1 dash mesa dash dev xorg dash dev libice dash dev libsm dash dev libx11 dash dev libxext dash dev libxxf86vm dash dev libxinerama dash dev libxrandr dash dev libxrender dash dev libxcursor dash dev libxi dash dev libudev dash dev libc6 dash dev g++ libstdc++6 libstdc++ dash 6 dash dev\n
+cd cplusplus slash 
+ dot  slash glapp 
+code main dot cpp 
+unsetenv CLASSPATH
+cd   dot  dot 
+cd jogl slash 
+cd make slash 
+sudo apt update ant
+sudo apt get ant
+sudo apt dash get ant
+sudo apt dash get install ant
+cd gluegen slash make
+ant  dash v
+ant
+ant  dash v 
+unset classpath
+sudo apt install jre
+sudo apt install jre1 dot 7
+sudo apt dash get install jre1 dot 7
+java client
+javago Client dot java
+cd Lect8Progs slash 
+javago EbayStrategyExample slash EbayBidder
+cd coursework1
+javago SparseMatrix  dash a data slash MatrixAdd1 dot txt data slash MatrixAdd2 dot txt > result dot txt
+java SparseMatrix  dash a data slash MatrixAdd1 dot txt data slash MatrixAdd2 dot txt
+javac
+javac  dash version
+sudo  dot  slash test dot sh
+test dot sh
+cd jogltest slash 
+cd bin
+java SimpleProg
+javago src slash SimpleProg dot java 
+sudo apt install openjdk dash 8 dash jre openjdk dash 8 dash jdk openjdk dash 8 dash jre dash headless openjdk dash 8 dash jdk dash headless\n\n
+whereis openjdk dash 8 dash jdk
+java  dash v
+java  dash version
+cd HPC slash CReviewCode slash 
+ dot  slash args1 
+ dot  slash args1 hello
+ dot  slash args1 hello world
+ dot  slash if1
+ dot  slash if1 hello
+ dot  slash if1 1
+cd comp slash 
+ dot  slash define1 
+ dot  slash comp slash define1 
+ dot  slash comp slash scanf1 
+cd etc slash 
+ dot  slash test dot sh
+ dot  slash etc slash test_dbg dot sh
+sudo  dot  slash etc slash test dot sh
+ dot  slash etc slash test dot sh
+ dot  slash etc slash test_dbg dot sh 
+sudo apt list  dash  dash upgradable 
+sudo apt install fortune
+fortune
+cowsays
+sudo apt install cowsay
+cowsay
+cowsay hello
+cowsay fortune
+cowsay and fortune
+cowsay and fortune
+cowsay $fortune
+fortuneandcowsay
+fortuneandcowsay  dash f tux 
+ls and cowsay  dash f tux
+ls and cowsay  dash b
+ls and cowsay  dash b  dash f tux
+fortune and cowsay  dash b  dash f tux
+fortune and cowsay  dash f tux
+fortune and cowsay  dash f tux  dash y
+fortune and cowsay  dash y
+fortune and cowsay  dash f vader
+fortune and cowsay  dash f gnu
+fortune and cowsay  dash f gnu and rainbow
+sudo apt install rainbows
+man rainbows
+lolcay
+lolcat
+sudo apt install lolcay
+sudo apt install lolcat
+fortune and cowsay  dash f gnu and lolcat
+fortune and cowsay  dash f  wildcard and lolcat
+fortune and cowsay  dash f  and lolcat
+fortune and cowsay  dash f  wildcard dot cow and lolcat
+man cowsay and cowsay 
+cowsay  dash l andcowsay andlolcat 
+cowsay  dash l andcowsay www andlolcat 
+cowsay  dash l andcowsay  dash f www andlolcat 
+cowsay  dash l andcowsay  dash f skeleton andlolcat 
+cowsay  dash l andcowsay  dash f eyes andlolcat 
+cowsay  dash l andcowsay  dash f default andlolcat 
+cowsay  dash l andcowsay  dash f dragon andlolcat 
+fortune andcowsay  dash f dragon andlolcat 
+rainbows
+fortune andcowsay  dash f dragon andlolcat  dash a
+cat  slash usr slash games slash fortune 
+cowthink 
+cowthink hello
+espdiff 
+man espdiff
+man espdiff  dash deep dash brainwave dash mode
+espdiff  dash deep dash brainwave dash mode
+espdiff  dash help
+espdiff  dash  dash help
+man espdiff 
+xs
+espdiff hello dot c 
+espdiff  dash recurse hello dot c 
+espdiff  dash  dash recurse hello dot c 
+espdiff and cowsay  dash f dragon and lolcat
+la and cowsay  dash e y
+la and cowsay  dash e  VV
+la and cowsay  dash e   dot   dot 
+la and cowsay  dash e   dot  dot 
+la and cowsay  dash f dragon  dash e  II
+la and cowsay  dash f dragon  dash e  II andlolcat  dash a
+lolcat cProgs slash hello dot c  and cowsay  dash f dragon
+lolcat cProgs slash hello dot c  and cowsay  dash f dragonandlolcat   dash a
+function bored\nfortune and cowsays  dash f dragon and lolcat  dash a\nend
+cd cProgs slash 
+cComp TempConvert dot c 
+cComp TempConvert
+funced bored
+funcsave bored
+sudo apt dash get gf
+ccompAll
+cCompAll 
+cowsay  dash f pepe
+cowsay  dash f pepe hello
+cowsay  dash f frog hello
+cd  slash usr slash share slash cowsay slash cows slash 
+code pepe dot cow
+sudo pluma pepe dot cow
+cat pepe dot cow 
+cowsay  dash f pepe feels good man 
+cowsay  dash f pepe feels good man and lolcat
+cowsay  dash f pepe tfw no gf
+funced fish_prompt 
+cd  dot config slash fish slash 
+cd functions slash 
+elcode
+code fish_greeting dot fish 
+man fortune
+cd  slash usr slash share slash games slash fortunes slash 
+copy
+mv
+man lolcat
+toilet
+watch
+man watch
+figlet
+caja  dash U
+caja  dash  dash no dash desktop %U
+caja  dash  dash no dash desktop 
+at
+cd  slash etc slash init dot d slash 
+, dot 
+gdrive slash 
+cowsay  dash l
+cowsay  dash f turtle
+cowsay  dash f turtle hello
+cowsay  dash f dragon dash and dash cow hello
+cd ZynAddSubFX slash zynaddsubfx dash 3 dot 0 dot 5 slash 
+ dot  slash style dot sh 
+ dot  slash cmake slash 
+ dot  slash install 
+ dot  slash BashCompletion dot cmake
+cmake
+cmake cmake slash  wildcard dot cmake 
+cmake cmake
+cmake zynaddsubfx dash 3 dot 0 dot 5 slash 
+sudo cmake zynaddsubfx dash 3 dot 0 dot 5 slash 
+sudo apt install helm
+snap install helm
+killall yoshimi
+while true \nbored\nend
+cd cw slash 
+git init 
+nano
+code  dot gitignore
+git config  dash  dash global credential dot helper store\n
+tweaks
+cd  dot icons slash La dash Sierra slash 
+cd gdrive slash 
+grive
+ dot config slash autostart slash 
+code custom dash command1 dot desktop 
+code custom dash command0 dot desktop 
+alert
+notify dash send "hello"
+cd  slash usr slash share slash icons slash 
+cd elementary slash 
+cd apps slash 
+cd 128 slash 
+cd gnome slash 
+cd 32x32 slash 
+cd apps
+cd  slash 
+ dot  slash home slash george slash drivestartup dot sh
+bash  dot  slash home slash george slash drivestartup dot sh 
+code drivestartup dot sh
+notify dash send ls
+notify dash send "`ls`"
+notify dash send " "\\ "`ls`"
+notify dash send " "\\ "`echo ls`"
+echo ls
+message
+ dot  slash drivestartup dot sh andcowsay 
+ dot  slash drivestartup dot sh andlolcat  
+cat  dot  slash drivestartup dot sh andlolcat  
+cd Cprogs
+cd cProgs slash HPC slash exerciseLab1 slash 
+cComp add2
+touch add2file dot c
+touch nums dot txt
+gedit nums dot txt
+pluma nums dot txt 
+cComp add2file
+funced cComp
+touch primeArray dot c
+cComp primeArray dot c 
+ dot  slash primeArray 
+cComp primeArray 10
+cComp primeArray '10'
+ dot  slash primeArray
+ dot  slash primeArray 10
+ dot  slash primeArray 20
+cComp primeArray
+sudo apt install gedit
+cd  slash opt slash 
+sudo mv idea dash IC dash 192 dot 6817 dot 14 slash  idea
+idea
+ slash opt slash idea slash bin slash idea dot sh 
+bash  dot  slash drivestartup dot sh 
+cd ISOs slash 
+cd  dot 
+rm  dash r ISOs slash 
+cd vGrive slash 
+rm  dash r vGrive slash 
+ dot  slash drivestartup dot sh 
+sh drivestartup dot sh 
+sh  slash home slash george slash drivestartup dot sh 
+code  slash etc slash default slash grub 
+update dash grub 
+man notify dash send
+git pull  dash f
+git pull  dash force
+git add functions slash stft dot m 
+git commit  dash m "stash"
+git push 
+cd hpc slash cw slash 
+cCompAll
+ dot  slash comp slash blur 
+ccomp blur
+cComp blur
+cd  dot  dot  slash  dot  dot 
+cd multimedia slash MMcw slash 
+shutdown  dash f
+bat nano dot save 
+cat nano dot save 
+rm nano dot save 
+rm "PlayOnLinux's virtual drives slash "
+rm  dash r "PlayOnLinux's virtual drives slash "
+rm result dot txt 
+cat java dot log dot 11188 
+rm java dot log dot 11188 
+ezgit "added spec editing"
+shutdown
+cd CReviewCode slash 
+cd cProgs slash HPC slash 
+mkdir test
+cd test slash 
+touch openMPtest dot c
+code openMPtest dot c 
+gcc  dash fopenmp  dash o openMPtest openMPtest dot c 
+export OMP_NUM_THREADS=2
+export OMP_NUM_THREADS=8
+ dot  slash openMPtest 
+ dot  slash openMPtest andlolcat 
+touch openMPtest2 dot c
+code openMPtest2 dot c 
+ dot  slash openMPtest2 
+ dot  slash openMPtest2 and sort  dash n  dash k6
+cat OMP_SCHEDULE 
+gcc  dash fopenmp  dash o openMPtest2 openMPtest2 dot c 
+ dot  slash openMPtest2 andsort  dash n  dash k6
+man apt
+rm  dash r ZynAddSubFX slash 
+cd java
+cd vmware slash Windows\\ 10\\ x64 slash 
+vmware
+cd hpc
+unzip OpenMP dot zip  dot  dot  slash examples
+squid
+cat  slash var slash log slash squid slash access dot log 
+sudo cat  slash var slash log slash squid slash access dot log
+cd year\\ 3 slash hpc slash cw slash 
+cd lab1 slash 
+gcc  dash o laplaceSEQ laplaceSEQ dot c 
+gcc  dash o laplaceSEQ laplaceSEQ dot c  dash lm
+ dot  slash laplaceSEQ 
+ dot  slash laplaceSEQ  dash nx  dash 1000  dash ny 1000  dash ns 2000
+ dot  slash laplaceOMP
+diff laplaceOMP dot c laplaceSEQ dot c
+ dot  slash laplaceSEQ  dash nx 1000  dash ny 1000  dash ns 2000
+diff outOMP dot ps outOMP dot ps 
+cd IdeaProjects slash 
+cd graphicslab2 slash 
+cd IdeaProjects slash graphicslab2 slash 
+sudo apt dash get update
+apt dash get install xdotool
+sudo apt dash get install xdotool
+touch desktopscript dot sh
+sleep 1
+code desktopscript dot sh 
+man xdotool 
+ dot  slash desktopscript dot sh 
+touch scripttest dot sh
+code scripttest dot sh 
+mpiexec
+ping lapis dot cs dot cf dot ac dot uk
+ping helium dot cs dot cf dot ac dot uk
+ping labx01 dot cs dot cf dot ac dot uk
+cd  slash usr slash games
+espdiff
+aptitude
+cd year\\ 3 slash hpc slash lab1 slash 
+ dot  slash laplaceOMP  dash nx 1000  dash ny 1000  dash ns 2000
+gcc  dash fopenmp  dash o laplaceOMP laplaceOMP dot c  dash lm
+espdiff outOMP dot ps outSEQ dot ps 
+diff outOMP dot ps outSEQ dot ps 
+cd  dot  dot  slash cw
+gcc  dash fopenmp  dash o blur blur dot c
+gcc  dash fopenmp  dash o blurOMP blurOMP dot c
+ dot  slash blur 
+ezgit "added spec envolope stuff, working on granular"
+WhatsApp 
+cd year\\ 3 slash hpc slash 
+cd cw
+cd majel slash 
+git rm yetzi dot wav 
+git rm  wildcard dot wav 
+ezgit "removed audio"
+apt list  dash  dash upgradable 
+sudo dpkg  dash  dash configure  dash a
+sudo apt upgrade 
+man dir
+dir  dash a
+quota
+du  dash a  slash ~ and sort  dash n  dash r and head  dash n 20 dot 
+sudo du  dash a ~ and sort  dash n  dash r and head  dash n 20
+python3  dash c "import speech_recognition as sr, os dot path as p; print(p dot dirname(sr dot __file__))"
+cat language dash model dot lm dot bin 
+caja
+nautilus
+cd en dash 
+sudo apt install pocketsphinx
+pocketsphinx_continuous  dash inmic yes  dash lm 5031 dot lm  dash dict 5031 dot dic\n
+cd year\\ 3 slash hpc slash cw
+gcc  dash fopenmp  dash o blur blur dot c  dash lm
+diff blur dot c blurOMP dot c
+for i in rage:\n\n\nend
+i =10
+$i = 10
+eval $i = 10
+while true\n dot  slash blurOMP \nend
+while true\n dot  slash blur \nend
+diff DavidBlur dot ps David dot ps
+cd en dash US slash 
+cat pronounciation dash dictionary dot dict 
+file
+man file
+file drivestartup dot sh 
+file result dot txt 
+file desktop dot sh 
+cd 
+cat 5031 dot lm
+pocketsphinx_continuous  dash inmic yes  dash lm 5031 dot lm  dash dict 5031 dot dic hmm  dot  dot  slash en dash US slash acoustic dash model slash \n 
+du  dash a ~ and sort  dash n  dash r and head  dash n 20 dot 
+diff DavidBlur dot ps DavidBlurOMP dot ps
+diff DavidBlur dot ps DavidBlurOMp dot ps
+gcc  dash fopenmp  dash o blurOMP blurOMP dot c  dash lm
+ dot  slash blur
+cd pocketsphinx dash data slash 
+cd en dash CL slash 
+cat 5031 dot sent 
+cat 5031 dot log_pronounce 
+cat 5031 dot dic 
+pocketsphinx_continuous  dash inmic yes  dash lm 5031 dot lm  dash dict 5031 dot dic  dash hmm  dot  dot  slash en dash US slash acoustic dash model slash \n 
+touch page dot html
+pluma page dot html 
+chromium dash browser page dot html 
+cat  dot local slash share slash fish slash fish_history 
+cd Public slash 
+bash dir
+fish
+chrome
+killall chromium dash browser 
+lose
+cexit
+cProgs slash 
+comp slash 
+chromium dash browser
+code
+disown PID
+disown 13421
+close
+exit
+man i3
+man i3 > i3man dot txt
+pluma i3man dot txt 
+wifi
+LS
+cd  dot i3
+cd  dot config slash  dot i3 slash 
+cat  slash etc slash i3 slash config
+code  slash etc slash i3 slash config
+ping google dot com
+MATLAB
+ dot  slash matlab slash 
+cd MATLAB slash 
+cd bin slash 
+ dot  slash matlab
+cat  slash etc slash i3status dot conf 
+man i3status
+alsamixer 
+cat i3statusman dot txt andgrep disk
+cd year\\ 3 slash hpc slash cw1
+ dot  slash blurOMP 
+sudo pluma  slash etc slash i3 slash config
+almixer
+alsamixer  dash q sset Master,0 1+ unmute
+almixer  dash q sset Master,0 1+ unmute
+amixer  dash q sset Master,0 1+ unmute
+amixer  dash q sset Master,0 1 dash  unmute
+mkdir  dot i3
+touch  dot i3 slash config
+pluma  dot i3 slash config 
+sudo gedit  slash etc slash i3 slash config
+code  dot i3 slash config
+rm  dot i3 slash config
+i3 dash config dash wizard
+xev andgrep KeyPress
+xev
+sudo pluma  slash etc slash i3 slash config 
+amixer  dash q sset Master,0 toggle
+amixer  dash q sset Master,0
+amixer  dash q sset Master,0 1
+amixer  dash q sset Master,1
+amixer  dash q sset Master,0 100
+amixer  dash q sset Master,0 1+
+amixer  dash q sset Master,0 0
+pluma  slash etc slash i3status dot conf 
+man i3status >i3statusman dot txt
+cat i3statusman dot txt 
+cd year\\ 3 slash 
+mkdir compOp
+cd compOp slash 
+mkdir cw1
+cd cw1 slash 
+git init
+git push origin master
+python3 anealing dot py 
+anealing dot py 
+python3 anealing dot py Formula_One_1984 dot wmg >sort out dot txt
+code  slash home slash george slash  dot config slash i3 slash config 
+python3 anealing dot py Formula_One_1984 dot wmg >out dot txt
+Formula_One_1984 dot wmg
+git remote remove
+git remote remove origin 
+ezgit "inital commit"
+git addal
+git addall
+git add  wildcard
+git commit  dash m "inital commit"
+git push  dash u origin master
+alsainfo
+dir
+mv 06_LOS\\ NÚMEROS dot pptx ~ slash Downloads slash 
+mv '08_LOS NÚMEROS INFOGRAFÍA (1) dot docx' ~ slash Downloads slash 
+mv '08_LOS NÚMEROS INFOGRAFÍA dot docx' ~ slash Downloads slash 
+mv 14_HOMEWORK dot doc ~ slash Downloads slash 
+rm sort
+cd  dot config slash gtk dash 3 dot 0 slash 
+code gtk dot css 
+git status
+ezgit "ch dash ch dash ch dash changes"
+sudo pluma  slash etc slash i3status dot conf 
+cat  slash proc slash meminfo 
+awk ' slash MemFree slash  {print $2}'  slash proc slash meminfo\n
+i3statys
+i3status
+i3status  dash v
+sudo apt update i3status
+sudo apt upgrade i3status
+sudo apt install i3gaps
+sudo add dash apt dash repository ppa:kgilmer slash speed dash ricer\n
+i3 dash gaps
+i3 dash gaps dash wm
+apt  dash  dash fix dash broken install
+sudo apt install i3 dash gaps dash wm
+sudo apt install i3 dash gaps
+sudo apt remove i3 dash gaps dash session
+sudo apt  dash  dash fix dash broken install
+i3
+sudo apt install libxcb1 dash dev libxcb dash keysyms1 dash dev libpango1 dot 0 dash dev libxcb dash util0 dash dev libxcb dash icccm4 dash dev libyajl dash dev libstartup dash notification0 dash dev libxcb dash randr0 dash dev libev dash dev libxcb dash cursor dash dev libxcb dash xinerama0 dash dev libxcb dash xkb dash dev libxkbcommon dash dev libxkbcommon dash x11 dash dev autoconf xutils dash dev libtool automake\n
+sudo apt remove i3 dash gaps
+cd  dot ssh
+;s
+cat id_rsa
+cat id_rsa dot pub 
+ls known_hosts 
+cat known_hosts 
+cat id_rsa dot pub >> authorized_keys
+ssh  dash Y labx03 dot cs dot cf dot ac dot uk  dash l c1736823
+sudo add dash apt dash repository ppa:papirus slash papirus
+sudo apt install papirus dash icon dash theme
+man pantheon dash greeeter
+man pantheon dash greeter
+ping cf dot ac dot uk
+dmesg and grep  dash i bluetooth # Shows all Bluetooth driver info\n
+dmesg and grep  dash i bluetooth and grep  dash i firmware # Shows Bluetooth firmware issues\n
+pulseaudio 
+sudo apt dash get install pulseaudio dash module dash bluetooth  # Installs the package\n
+sudo pactl load dash module module dash bluetooth dash discover # Loads the module manually\n
+pactl list and grep  dash i bluetooth # Shows if Bluetooth modules are loaded\n
+pactl list and grep  dash i bluetooth
+pulseaudio  dash  dash k\n
+pulseaudio  dash  dash start\n
+sudo pactl unload dash module module dash bluetooth dash discover
+ezgit "added granular conversion to GUI"
+man code
+help code
+python3 anealing dot py Formula_One_1984 dot wmg 
+python3 anealing dot py Formula_One_1984 dot wmg  >results dot txt
+0 dot   0 dot   0 dot   0 dot   8 dot   0 dot   1 dot   3 dot   0 dot   0 dot   2 dot   4 dot   0 dot   3 dot   3 dot   0 dot   6 dot   0 dot \n   0 dot   2 dot   0 dot   0 dot   4 dot   2 dot   4 dot   1 dot   8 dot   0 dot   0 dot   0 dot   0 dot   1 dot   0 dot   2 dot   0 dot ]\n [ 4 dot   0 dot   0 dot  10 dot  12 dot   2 dot   3 dot  13 dot   0 dot   0 dot   6 dot   8 dot   0 dot   5 dot   7 dot   2 dot   8 dot   0 dot \n   6 dot   8 dot   6 dot   2 dot   8 dot  10 dot   8 dot   3 dot  10 dot   5 dot   6 dot   2 dot   2 dot   1 dot   6 dot   2 dot   1 dot ]\n [ 6 dot   0 dot   0 dot  12 dot  12 dot   6 dot   3 dot  13 dot   0 dot   0 dot  10 dot  12 dot   4 dot   5 dot   7 dot   4 dot  10 dot   6 dot \n   4 dot  10 dot   6 dot   4 dot  12 dot   8 dot  10 dot   9 dot  12 dot   3 dot   2 dot   0 dot   4 dot   1 dot   6 dot   2 dot   1 dot ]\n [ 0 dot   0 dot   0 dot  
+python3 anealingTest dot py testTourn1 dot wmg 
+bored
+while true: \nbored\nend
+lsls
+sudo apt install tkinter
+python3  dash m pip install matplotlib
+python3  dash m pip install numpy
+python3  dash v
+pip3 uninstall numpy
+pip3 install numpy
+$ sudo apt dash get install python dash matplotlib\n
+ssh  dash Y labx27 dot cs dot cf dot ac dot uk  dash l c1736823
+python3 anealing dot py Formula_One_1984 dot wmg
+killall code
+killall vscode
+cd Desktop slash 
+pluma num_results dot txt
+sudo apt get update
+sudo apt update 
+cd year\\ 3 slash compOp slash cw1 slash 
+cat data dot txt 
+cat out dot txt 
+rm out dot txt 
+cat num_results dot txt 
+cat results dot txt 
+du  dash a ~ and sort  dash n  dash r and head  dash n 20
+ssh  dash Y labx20 dot cs dot cf dot ac dot uk  dash l c1736823
+s
+reboot
+cd year\\ 3 slash multimedia slash MMcw slash 
+mkdir cwNew
+cd sounds slash 
+vlc loop dot wav 
+cvlc loop dot wav 
+git pull  dash  dash force
+rm MMcw slash 
+rm  dash rf MMcw slash 
+git clone https: slash  slash github dot com slash leto19 slash MMcw
+ezgit "update"
+git pull
+matlab
+rm  dash rf screens slash 
+ezgit "cleanup"
+ezgit "added save to grain"
+cd
+cp  wildcard dot m text slash  wildcard dot txt
+zsh
+for i in functions slash  wildcard dot m\ncp $i  slash text slash $i dot txt \nend
+for i in functions slash  wildcard dot m\ncp $i  slash text slash basename($i  dot m) dot txt \nend
+for i in functions slash  wildcard dot m\ncp $i  slash text slash basename($i $i dot m) dot txt \nend
+mkdir text
+for i in  dot  dot  slash functions slash  wildcard dot m\ncp $i basename($i $i dot m) \nend
+for i in  dot  dot  slash functions slash  wildcard dot m\ncp $i basename($i $i dot m) dot txt \nend
+for i in  dot  dot  slash functions slash  wildcard dot m\ncp $i basename($i $i dot m) dot txt \necho basename($i $i dot m)\nend
+for i in  dot  dot  slash functions slash  wildcard dot m\n \necho basename($i $i dot m)\nend
+for $i in  dot  dot  slash functions slash  wildcard dot m\n \necho basename($i $i dot m)\nend
+for i in  dot  dot  slash functions slash  wildcard dot m\n \necho basename(i i dot m)\nend
+for i in  dot  dot  slash functions slash  wildcard dot m\n \necho $i\nend
+for i in  dot  dot  slash functions slash  wildcard dot m\n \necho basename($i i dot m)\nend
+for i in  dot  dot  slash functions slash  wildcard dot m\ncp  dot  dot  slash functions slash $i basename($i $i dot m) dot txt \n\nend
+for i in  dot  dot  slash functions slash  wildcard dot m\ncp  dot  dot  slash functions slash $i basename( dot  dot  slash functions slash $i $i dot m) dot txt \n\nend
+echo  dot  dot  slash functions slash  wildcard dot m
+cp  dot  dot  slash functions slash  wildcard dot m  wildcard dot txt
+cp  dot  dot  slash functions slash  wildcard dot m hello dot txt
+cd  dot  dot 
+cp  dot  dot  slash functions slash  wildcard dot m text slash  wildcard dot txt
+cp  slash functions slash  wildcard dot m text slash  wildcard dot txt
+cp functions slash  wildcard dot m text slash  wildcard dot txt
+cp functions slash  wildcard dot m text slash 
+ren  wildcard dot m  wildcard dot txt
+help expand
+cd cwNew slash 
+cd MMcw slash 
+ren  wildcard dot  wildcard  wildcard dot txt
+bash
+rm visor dot txt 
+cd year\\ 3 slash multimedia slash 
+cd cwNew slash MMcw slash 
+cd text slash 
+gedit visor dot txt 
+alsamixer
+man cd
+man ls
+man la
+la
+ls  dash h
+ls  dash  a
+ls  dash a
+man sudo
+man man
+man grep
+while true\nbored\nend
+uni
+sudo apt update
+sudo apt upgrade
+clear
+echo "haskell slash \nd\n"
+echo "Hello World!"
+xbacklight
+sudo apt install xbacklight
+xbacklight 
+xbacklight  dash 1
+sudo apt remove xbacklight
+gksudo pluma  slash etc slash default slash grub
+cat i3man dot txt 
+ls  slash sys slash class slash backlight slash 
+sudo pluma  slash etc slash default slash grub
+xbrightness 1
+xbacklight 1
+sudo nano  slash etc slash default slash grub
+sudo update dash grub
+reboot 
+cd year\\ 3 slash majel slash 
+python3 test dot py 
+python3 test dot py #
+python3 test dot py ~ slash year\\ 3 slash multimedia slash MMcw slash 
+sudo apt install openmw
+openmw
+openmw dash launcher 
+while true:\nbored\nend
+while True:\nbored\nend
+unrar
+sudo apt install unrar
+cd Downloads slash 
+sudo apt install i3
+sudo apt install gksudo
+gksudo nautilus
+sudo nautilus
+ls
+ls
+ls
+gsudo 
+sudo gparted
