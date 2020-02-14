@@ -44,8 +44,8 @@ def get_command(lang,gram):
         out = recog.recognize_sphinx(audio,language=lang,grammar=gram)
         #show_possible(out)
     except sr.UnknownValueError:
-        out = ("didn't quite get that")
-        exit()
+        print("didn't quite get that")
+        out = ""
     #return out.hyp().hypstr.lower().split()
     return out.lower().split()
  
@@ -79,14 +79,11 @@ def run_command(command):
 
         os.listdir()
     else:
-        process = subprocess.run(command)
-    
-        
-def replace_space_with_slash(path):
-    path = path.replace("/", "\"/\"") + "\""
-    #path = re.sub("./.","\"/\" ",path)
-    path = path[1:-2]
-    return path
+        try:
+            process = subprocess.run(command)
+        except FileNotFoundError:
+            print("Invalid Command: %s"%" ".join(command))
+
     
 
 def word_to_character(phrase):

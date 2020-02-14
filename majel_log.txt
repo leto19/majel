@@ -118,3 +118,45 @@ cat README.md
 exit
 ls
 exit
+cd/bin
+cd/bin
+cd/bin
+cd /bin
+[A
+dsad
+[A
+sadsa
+dsfdsfds
+fdsfdsfdsgdsvds
+!!!!!!!!!!!!!!!!!!!!!
+ls
+exit
+sudo mv
+listen
+git
+exit
+la
+la
+exit
+la
+la
+ls sadsadas
+ls cat
+cat
+ls
+cat majel_log.txt
+ls
+exit
+ls -A
+ls
+ls -a
+ls -A
+ls
+ls
+ls -h
+man ls
+ls -c
+ls sdsad
+ls -c
+ls sounds
+exit
