@@ -91,7 +91,7 @@ def word_to_character(phrase):
         if i == "-":
             phrase[n+1] = "-" + phrase[n+1]
             phrase.pop(n)
-        if i == "/":
+        if i == "/" and n < len(phrase)-1:
             print("phrase[n+1] is ",phrase[n+1])
             phrase[n+1] =  "/" + phrase[n+1] 
             phrase.pop(n)
@@ -114,6 +114,7 @@ def word_to_character(phrase):
                 prev_index = index  
         print(phrase)
         count+= 1
+    phrase = [s.replace("root","/") for s in phrase]
     return phrase
     
 
@@ -146,9 +147,10 @@ if __name__ == "__main__":
         if command_words == []:
             command_words  = get_generic_command(l,gram);
             print("You said:\n%s" % command_words)  
-            command_words = word_to_character(command_words)
             #print(" ".join(command_words))
         print("running command:\n%s" % command_words)
         print("--------------------------------------------------------------------------")
+        command_words = word_to_character(command_words)
+
         run_command(command_words)
     
