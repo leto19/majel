@@ -34,3 +34,87 @@ ls
 exit
 ls
 exit
+cd /usr/bin/python
+cd /usr/bin
+ls
+ls -a
+la
+ls
+ls
+cd /home/g
+ls
+cd "year 1"
+cd "year3"
+cd sdasa
+ls
+ls dsadas
+cd dsadsa
+cd hello
+nano
+exit
+exit
+exit
+ls
+exit
+ls
+cd vGrive
+ls
+ls
+cd ..
+cd Drive
+ls
+cd ..
+ls
+rm -rf vGrive
+ls
+exit
+ls
+exit
+ls
+ls
+ls -a
+touch hello.txt
+ls
+rm o.txt
+rm hello.txt
+ls
+exit
+cd /
+ls
+cd
+cd year3
+ls
+cd ..
+ls
+cd Drive
+cd ../Steam
+ls
+ls ../Desktop
+exit
+exit
+ls
+cd ..
+cd /
+ls
+cd home/g
+ls
+ls
+cd /
+ls
+cd home/g
+ls
+ls
+cd Music
+ls
+cd REM_Dead-Letter-Office
+ls
+cvlc '01 Crazy.mp3'
+ls
+cd languages
+ls
+cd ..
+ls
+cat README.md
+exit
+ls
+exit

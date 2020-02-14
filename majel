@@ -55,18 +55,28 @@ def show_possible(decoder):
         print(best.hypstr,best.score)
         
 def run_command(command):
+    """
+        takes a command as a list of strings and exercutes it
+    """
     if "exit" in command:
+        print("Goodbye!")
+        time.sleep(0.5)
+        os.system('clear')
         exit()
     if command[0] == "cd":
-        if len(command) is 1:
-            os.chdir("/home/%s/"% getpass.getuser())
-        else:
-            if command[1] == ".":
-                os.chdir(os.getcwd())
-            elif command[1] == "..":
-                os.chdir(os.pardir)
+        try:
+            if len(command) is 1:
+                os.chdir("/home/%s/"% getpass.getuser())
             else:
-                os.chdir(command[1])
+                if command[1] == ".":
+                    os.chdir(os.getcwd())
+                elif command[1] == "..":
+                    os.chdir(os.pardir)
+                else:
+                    os.chdir(command[1])
+        except FileNotFoundError:
+            print("no such directory: %s"   %(command[1]))
+
         os.listdir()
     else:
         process = subprocess.run(command)
@@ -80,6 +90,9 @@ def replace_space_with_slash(path):
     
 
 def word_to_character(phrase):
+    """
+    converts spoken input string to exercutable command
+    """
     phrase = " ".join(phrase)
     phrase = phrase.replace("dash","-")
     phrase = phrase.replace("dot",".")
@@ -119,7 +132,9 @@ def word_to_character(phrase):
     return phrase
     
 def update_log(phrase):
-
+    """
+    updates the log file with the most recent command.
+    """
     with open('/home/g/year3/majel/majel_log.txt','a') as f:
         f.write(phrase+"\n")
 
@@ -151,8 +166,10 @@ if __name__ == "__main__":
     hostname = socket.gethostname()
     while "exit" not in command_words:
         current_time = "\x1b[1;31;42m[" + datetime.now().strftime("%H:%M:%S") + "]\x1b[0m"
-        path =  "\x1b[3;32;40m" + username + "@" +hostname + "\x1b[0m" +"\x1b[4;32;40m:" + os.getcwd() +  "\x1b[0m"  
-        prompt =  "%s|%s|>>" % (current_time,path) 
+        path =  "\x1b[3;32;40m" + username + "@" +hostname + ":\x1b[0m" +"\x1b[4;32;40m" + os.getcwd() +  "\x1b[0m"  
+        path = path.replace("/home/g","~")
+        
+        prompt =  "%s|%s|>> " % (current_time,path) 
         command_words = input(prompt).split()
         if command_words == []:
             command_words  = get_command(l,gram);
@@ -163,4 +180,8 @@ if __name__ == "__main__":
         command_words = word_to_character(command_words)
         update_log(" ".join(command_words))
         run_command(command_words)
+    print("Goodbye!")
+    
+    time.sleep(0.5)
+    os.system('clear')
     
