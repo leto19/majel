@@ -49,7 +49,6 @@ def get_command(lang,gram):
         print("didn't quite get that")
         out = ""
     #return out.hyp().hypstr.lower().split()
-    print("out is ",out )
     return out.lower().split()
  
 def show_possible(decoder):
@@ -87,19 +86,23 @@ def run_command(command):
         except FileNotFoundError:
             print("Invalid Command: %s"%" ".join(command))
 
-    
+def replace_in_list(phrase,to_replace,replaced):
+    phrase = [s.replace(to_replace,replaced) for s in phrase]
+    return phrase
 
 def word_to_character(phrase):
     """
     converts spoken input string to exercutable command
     """
-    phrase = " ".join(phrase)
-    phrase = phrase.replace("dash","-")
-    phrase = phrase.replace("dot",".")
-    phrase = phrase.replace("slash","/")
+    phrase = replace_in_list(phrase,"dash","-")
+    phrase = replace_in_list(phrase,"slash","/")
+    phrase = replace_in_list(phrase,"dot",".")
+
+    #phrase = phrase.replace("dash","-")
+    #phrase = phrase.replace("dot",".")
+    #phrase = phrase.replace("slash","/")
     
-    #print("PHRASE IS ", phrase)
-    phrase = phrase.split()
+  
     for n,i in enumerate(phrase):
         #print(n,i)
         if i == "-":
@@ -181,8 +184,13 @@ if __name__ == "__main__":
         "I talk to the wind",
         "Is there anybody out there?",
         "The universe is a spheroid region, 705 meters in diameter.",
-
+        "There are problems in this universe for which there are no answers. Nothing. Nothing can be done.",
+        "Show me a completely smooth operation and I'll show you someone who's covering mistakes. Real boats rock.",
+        "Ultimately all things are known because you want to believe you know.",
+        "There's no secret to balance. You just have to feel the waves.",
+        "It is difficult to live in the present, pointless to live in the future and impossible to live in the past."
         ]
+        
     print("Welcome to Majel!\n" + "\x1b[3;39;40m" + random.choice(boot_quotes) + "\x1b[0m")
     
     while "exit" not in command_words:
@@ -201,7 +209,7 @@ if __name__ == "__main__":
             #print(" ".join(command_words))
         #print("running command:\n%s" % command_words)
         #print("--------------------------------------------------------------------------")
-        #command_words = word_to_character(command_words)
+        command_words = word_to_character(command_words)
     
         update_log(" ".join(command_words))
         if len(command_words) != 0:

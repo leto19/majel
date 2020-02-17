@@ -336,3 +336,23 @@ ls /home/g/year1
 ls /home/g/year 1
 ls /home/g/year 1
 exit
+ls
+ls year 1
+ls year 1
+ls year 1
+ls year 1
+ls /usr/bin
+exit
+ls /home/g/
+ls
+ls Downloads
+ls
+cd ..
+cd g
+ls
+cd ~
+ls
+cd
+exit
+
+exit
