@@ -7,10 +7,12 @@ import pyaudio
 from contextlib import contextmanager
 import time
 import re
+import random
 from ctypes import *
 from datetime import datetime
 import getpass
 import socket
+import shlex
 recog = sr.Recognizer()  # this is the object that recognises the speech
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 def py_error_handler(filename, line, function, err, fmt):
@@ -32,11 +34,11 @@ def get_command(lang,gram):
     else: #use mic 
         mic = sr.Microphone(chunk_size=1024, sample_rate=44100)
         with mic as source:
-            #recog.adjust_for_ambient_noise(source)
+            recog.adjust_for_ambient_noise(source)
             #time.sleep(0.5)
             print("listening...")
 
-            audio = recog.listen(source,phrase_time_limit=3)
+            audio = recog.listen(source,phrase_time_limit=5)
     #print("done!")    
 
     try:
@@ -47,6 +49,7 @@ def get_command(lang,gram):
         print("didn't quite get that")
         out = ""
     #return out.hyp().hypstr.lower().split()
+    print("out is ",out )
     return out.lower().split()
  
 def show_possible(decoder):
@@ -116,14 +119,14 @@ def word_to_character(phrase):
             #print("prev_word is", prev_word)
             if prev_word[0]== "/" and word[0] == "/":
                 new_word = prev_word + word
-                #print("new word is ",new_word)
+                print("new word is ",new_word)
                 phrase[index] = new_word
                 phrase.pop(prev_index)
                 prev_word = new_word
             else:
                 prev_word = word
                 prev_index = index  
-        #print(phrase)
+        print(phrase)
         count+= 1
     phrase = [s.replace("root","/") for s in phrase]
     return phrase
@@ -146,6 +149,20 @@ def more_than_one_ending_slash(phrase):
     else:
         return False
 
+
+def input_string_to_list(input_string):
+    started = False
+    for words in input_string:
+        print(words)
+        if words[0] == "\"":
+            if started == False:
+                print("found a starting quote!")
+                started = True
+            else:
+                print("found an ending quote!")
+                started = False
+
+
 if __name__ == "__main__":
     l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1/cmd1.lm","/home/g/year3/majel/languages/cmd2/cmd2.dict")
     gram = "/home/g/year3/majel/grammars/command.jsgf"
@@ -158,25 +175,39 @@ if __name__ == "__main__":
     run_command(command_words)
     """
     os.system('clear')
-    print("Welcome to Majel!")
     username = getpass.getuser()
     hostname = socket.gethostname()
+    boot_quotes = [
+        "I talk to the wind",
+        "Is there anybody out there?",
+        "The universe is a spheroid region, 705 meters in diameter.",
+
+        ]
+    print("Welcome to Majel!\n" + "\x1b[3;39;40m" + random.choice(boot_quotes) + "\x1b[0m")
+    
     while "exit" not in command_words:
         current_time = "\x1b[1;31;42m[" + datetime.now().strftime("%H:%M:%S") + "]\x1b[0m"
         path =  "\x1b[3;32;40m" + username + "@" +hostname + ":\x1b[0m" +"\x1b[4;32;40m" + os.getcwd() +  "\x1b[0m"  
         path = path.replace("/home/g","~")
         
-        prompt =  "%s|%s|>> " % (current_time,path) 
-        command_words = input(prompt).split()
-        if command_words == []:
+        prompt =  "%s|%s|>> " % (current_time,path)
+        input_string= input(prompt)
+        print(input_string)
+        command_words = shlex.split(input_string)
+        print(command_words)
+        if command_words == []:# use voice
             command_words  = get_command(l,gram);
             print("You said:\n%s" % command_words)  
             #print(" ".join(command_words))
         #print("running command:\n%s" % command_words)
         #print("--------------------------------------------------------------------------")
-        command_words = word_to_character(command_words)
+        #command_words = word_to_character(command_words)
+    
         update_log(" ".join(command_words))
-        run_command(command_words)
+        if len(command_words) != 0:
+            run_command(command_words)
+        else:
+            print("I'm sorry %s, I'm afraid I can't do that." % username.capitalize())
     print("Goodbye!")
     
     time.sleep(0.5)

@@ -160,3 +160,179 @@ ls sdsad
 ls -c
 ls sounds
 exit
+ls
+cd ..
+ls
+cd
+cd /
+ls
+cd /usr
+ls
+cd games
+ls
+lolcat
+openmw
+ls
+cd g /
+cd g /
+cd
+
+sudo ls
+
+
+ls
+
+code
+nano
+sudo ls / /
+ls / /
+
+
+
+ls
+ls / /home/
+cd / /home/
+ls
+cd / /home/
+
+
+
+ls / /
+
+la downloads /
+ls . /
+ls
+
+
+ls ..
+ls
+rm ../majel_log.txt
+ls
+ls ..
+
+ls
+ls
+
+sudo code
+
+ls
+
+cd
+
+
+cd
+
+ls . /
+ls . /
+ls ./
+ls home /
+nano . /
+ls /
+ls home /home
+ls home /home
+exit
+ls /home/Downloads
+ls /home/g
+
+exit
+ls /home/g
+
+./grammar_test.sh
+[A
+ls
+
+ls . /home/
+ls
+cd ..
+ls
+python3
+ls
+firefox
+ls
+cd ..
+exit
+mv -s
+ls
+cd /
+ls
+cd home/g
+ls
+cd /home/g
+ls
+exit
+cd ..
+cd ..
+cd downloads /
+cd ..
+cd g /
+ls
+cd /
+
+cd home /g/
+ls
+cd /
+cd home /g/
+cd /
+cd /home/g/
+cd g /home/g/
+cd g /home/g/
+cd g /home/g/
+sadsa
+ls
+code downloads ///g/
+ls /home/g
+
+ls -a home /g/
+ls g /home/g/
+ls
+exit
+exit
+exit
+exit
+exit
+dsada
+ls -v
+ls -t
+ls -a
+ls downloads ///g/
+cd g /home/g/
+cd /home/g/
+ls
+la -a
+ls -a
+ls -v
+ls -a
+la -a
+cd .
+cd
+cd ..
+ls
+cd g
+ls
+python3
+cd /bin/
+cd
+cd /
+ls
+exit
+ls
+exit
+git
+ls -a world
+exit
+ls
+cd 'year3'
+cd year3
+cd 'year 3'
+ls "year"
+ls year 1
+ls "year 1"
+ls "year 3"
+ls "year 1"
+ls 'year 1'
+ls year 1
+ls slash home slash g slash year 1
+ls /home/g/year1
+ls /home/g/year 1
+ls /home/g/year 1
+exit
