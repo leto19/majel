@@ -356,3 +356,161 @@ cd
 exit
 
 exit
+ls
+ls / /home/
+ls -a . /home/
+ls -b
+ls -v
+ls -v
+exit
+exit
+ls -a
+ls
+ls /home/g/
+git downloads /home/g/
+ls g /home/g/
+ls / /home/
+
+
+ls . /home/
+ls / /home/
+
+exit
+ls -t
+ls -v
+ls
+ls -a
+cd /
+ls
+cd ..
+ls
+cd .
+cd ../
+ls
+ls
+ls
+ls
+ls -a
+cd ..
+ls
+exit
+ls year 1
+ls
+la -a
+ls -a
+cd ..
+cd .
+cd .minecraft
+ls
+cd g
+cd .minecraft
+ls
+cd
+exit
+exit
+exit
+clear
+exit
+ls
+exit
+firefox -v
+echo hello world!
+python3
+ls
+cd .. | ls
+ls
+cd g
+ls
+cd cProgs
+cd ..
+cd sdsad
+ls
+cd Downloads
+ls
+cd ..
+cd .
+ls
+./Downloads
+exit
+ls
+cd ..
+cd g/
+cd year 1
+cd .
+cd ..
+ls -a
+cd /home/
+ls . /home/
+python
+exit
+ls
+cd
+ls
+exit
+cd . /
+cd . /grammars
+ls
+cd grammars
+cd ./grammars
+ls
+cd ..
+cd ./grammars
+ls
+ls
+cat command.fsg
+cd ..
+ls
+cd ../graphics
+ls
+cd ..
+cd .
+ls
+cd ..
+;s
+cat majel.py
+cd yearjel
+cat majel.py
+cd year3
+cd majel/
+ls
+cat majel.py
+cat majel
+ls
+exit
+exit
+pip install pyjsgf
+ls
+ls
+exit
+ls
+ls -a
+ls . /./
+exit
+ls
+ls
+exit
+exit
+ls
+exit
+ls
+ls
+cd /
+ls
+cd bin
+ls
+cd
+ls
+fish
+ls
+cd year3
+ls
+cd majel
+ls
+ls -A
+ls
+cd
+exit
+ls /home/g/downloads
+ls /home/g/Downloads
+ls
+exit
