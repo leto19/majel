@@ -514,3 +514,82 @@ ls /home/g/downloads
 ls /home/g/Downloads
 ls
 exit
+ls
+exit
+exit
+exit
+cd year 1
+ls
+cd python
+ls
+cd maths
+ls
+python3 shopping.py
+[
+ls
+python3 Erato.py
+cat Erato.py
+cat Erato.py
+exit
+ls
+cd Documents
+ls
+cd ..
+cd Muisc
+ls
+cd Music
+ls
+cvlc Your Capricious Soul.m4a
+python3
+python3
+python3
+ls
+exit
+ls
+sd
+ls
+exit
+exit
+python3
+nano
+nano
+ls
+exit
+exit
+ls
+exit
+exit
+exit
+ls
+cd
+exit
+exit
+exit
+ls
+exit
+exit
+exit
+exit
+ls
+exit
+exit
+ls
+exit
+ls
+exit
+exit
+exit
+ls
+exit
+exit
+ls
+exit
+majel_timeout 3
+majel_timeout 3
+exit
+majel_timeout 3
+majel_timeout 3
+code -c
+ls
+ls
+exit
