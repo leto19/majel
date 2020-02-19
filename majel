@@ -16,9 +16,9 @@ from datetime import datetime
 import pyaudio
 import speech_recognition as sr
 
+#SETUP START-----------------------------
 signal.signal(signal.SIGINT, signal.SIG_IGN)
 signal.signal(signal.SIGTSTP, signal.SIG_IGN)
-
 recog = sr.Recognizer()  # this is the object that recognises the speech
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 def py_error_handler(filename, line, function, err, fmt):
@@ -31,7 +31,10 @@ asound.snd_lib_error_set_handler(c_error_handler)
 # Initialize PyAudio
 p = pyaudio.PyAudio()
 p.terminate()
-timeout = 5
+timeout = 2 #default timeout for speech
+#SETUP END -----------------------------
+
+
 def get_command(lang,gram):
     if len(sys.argv) == 2: #use audio file
         audio_file = sr.AudioFile(sys.argv[1])
@@ -165,11 +168,12 @@ def get_quote():
     returns as a string a random quote from the list.
     """
     boot_quotes = [
-        "Its amzing with what devices you can sympathize.",
-        "I talk to the wind\nmy words are all carried away.",
+        "you can't lay a patch by computer design,\nIt's just a lot of stupid,stupid signs",    
+        "Its amazing what devices you can sympathize.",
+        "I talk to the wind,\nmy words are all carried away.",
         "Is there anybody out there?",
-        "Computer what is the nature of the universe?\nThe universe is a spheroid region, 705 meters in diameter.",
-        "There are problems in this universe for which there are no answers.\n Nothing. Nothing can be done.",
+        "Computer, what is the nature of the universe?\nThe universe is a spheroid region, 705 meters in diameter.",
+        "There are problems in this universe for which there are no answers.\nNothing. Nothing can be done.",
         "Show me a completely smooth operation and I'll show you someone who's covering mistakes.\nReal boats rock.",
         "Ultimately all things are known because you want to believe you know.",
         "There's no secret to balance. You just have to feel the waves.",
@@ -185,24 +189,20 @@ def exit_func():
     exit()
 
 if __name__ == "__main__":
+    #language setup - could be changed later
     l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1/cmd1.lm","/home/g/year3/majel/languages/cmd2/cmd2.dict")
     gram = "/home/g/year3/majel/grammars/command.jsgf"
+    
+    #display setup
     command_words = str()
-    """
-    command_words = ["ls","dash", "a","slash","home","slash","g","slash","Downloads"]
-    #print("You said:\n%s" % command_words)  
-    command_words = word_to_character(command_words)
-    #print("running command:\n%s" % command_words)
-    run_command(command_words)
-    """
     os.system('clear')
     username = getpass.getuser()
     hostname = socket.gethostname()
     
-
+    #welcome message
     print("Welcome to Majel!\n" + "\x1b[3;39;40m" + get_quote() + "\x1b[0m")
-    
-    while "exit" not in command_words:
+    #prompt start
+    while True:
         current_time = "\x1b[1;31;42m[" + datetime.now().strftime("%H:%M:%S") + "]\x1b[0m"
         path =  "\x1b[3;32;40m" + username + "@" +hostname + " in \x1b[0m" +"\x1b[4;32;40m" + os.getcwd() +  "\x1b[0m"  
         path = path.replace("/home/g","~")

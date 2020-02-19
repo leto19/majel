@@ -593,3 +593,99 @@ code -c
 ls
 ls
 exit
+sudo ls
+ls
+majel_timeout 1
+ls
+code
+firefox
+exit
+ls
+exit
+exit
+ls
+cd/
+cd /
+cd /home/
+ls
+ls
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+git -c
+exit
+sudo ls
+ls
+python3
+ls
+exit
+exit
+ls
+exit
+ls
+cd ..
+cd
+firefox
+
+sudo ls
+code
+exit
+python3
+cd
+ls g /home/
+exit
+code hello
+e=
+exit
+exit
+nautilus
+ls
+exit
+python -a
+[A
+python -a
+python
+exit
+ls
+exit
+ls
+cd
+ls
+cd dsadsa
+ls
+ls
+exit
+exit
+ls
+ls
+nano
+chat
+echo hello world!
+sdas
+dsasadsad
+cowsay | hello
+cowsay | lolcat | hello
+lolcat | cowsay | hello
+hello | lolcat
+lolcat
+ls
+exit
+ls
+exit
+ls
+cd languages
+ls
+cd
+ls
+cd Desktop
+ls
+cat majel
+cat tshark.txt
+exit

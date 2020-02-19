@@ -1,7 +1,7 @@
 #JSGF V1.0;
 grammar command;
-import <progs.*>
-public <command> = EXIT | ([SUDO])<prog><paramater>;
+import <progs1.gram>;
+public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 
 <paramater> = [<option>][<pathexpr>[<file>]];
 
@@ -23,7 +23,5 @@ public <command> = EXIT | ([SUDO])<prog><paramater>;
 
 <foldername> = ROOT | HOME | G | DOWNLOADS | DESKTOP;
 <filename> = HELLO | WORLD;
-    
 <fileextension> = PY | M  | TXT;
-<prog> = <progs.root>
 //<prog> =(CODE | GIT | CD | MV | LA | UNAME | LS| FIREFOX | PYTHON | NANO);
