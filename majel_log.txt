@@ -689,3 +689,46 @@ ls
 cat majel
 cat tshark.txt
 exit
+ls
+cd ..
+cd /
+cd /home/g
+exit
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+cat prog.dict
+python3 get_dict.py
+python3 get_programs.py
+ls
+cd /home/g
+ls
+cd year3/majel
+cd scripts
+ls
+python3 get_dict.py
+lsusb
+ls
+ls hello
+python3
+LS
+ks
+ls
+LS.lower()
+exit()
+exit
+sadsa
+sssss
+compgen -c
+compgen
+exit
+sudo ls
+cd ..
+ls
+cat majel_log.txt
+exit
