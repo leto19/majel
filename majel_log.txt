@@ -732,3 +732,14 @@ cd ..
 ls
 cat majel_log.txt
 exit
+ls
+ls
+nautilus -a
+nautilus -a
+[A
+ls -a
+nautilus
+ls
+clear
+ls
+exit
