@@ -849,3 +849,41 @@ git add *
 cd ../year3/majel
 ls
 git add *
+git commit -m added change_directory function
+git push
+ls
+exit
+ls
+ls
+exit
+exit
+exit
+exit
+cd ..
+ls
+cd majel
+ls
+exit
+exit
+exit
+cd ..
+exit
+cd ..
+cd majel
+exit
+exit
+cd ..
+ls
+cd multimedia
+ls
+cd MMcw
+cd
+.s
+nautilus
+zxs
+
+
+exit
+exit
+ls
+git add *

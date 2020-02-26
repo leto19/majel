@@ -193,6 +193,16 @@ def exit_func():
     os.system('clear')
     exit()
 
+
+def is_repo(path):
+    """
+    takes a file path a returns True if it is a git repo,
+    False otherwise
+    """
+    if subprocess.call(["git", "branch"], stderr=subprocess.STDOUT, stdout=open(os.devnull, 'w')) != 0:
+        return False
+    else:
+        return True
 if __name__ == "__main__":
     #language setup - could be changed later
     l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1/cmd1.lm","/home/g/year3/majel/languages/cmd2/combined.dict")
@@ -203,13 +213,19 @@ if __name__ == "__main__":
     os.system('clear')
     username = getpass.getuser()
     hostname = socket.gethostname()
-
+   
     #welcome message
     print("Welcome to Majel!\n" + "\x1b[3;39;40m" + get_quote() + "\x1b[0m")
     #prompt start
     while True:
+        if is_repo(os.getcwd()):
+           git_string = "|\x1b[3;41;40m" + "git" + "\x1b[0m"
+        else:
+            git_string = ""
         current_time = "\x1b[1;31;42m[" + datetime.now().strftime("%H:%M:%S") + "]\x1b[0m"
-        path =  "\x1b[3;32;40m" + username + "@" +hostname + " in \x1b[0m" +"\x1b[4;32;40m" + os.getcwd() +  "\x1b[0m"
+        path =  "\x1b[3;32;40m" + username + "@" +hostname +\
+                " in \x1b[0m" + "\x1b[4;32;40m" + os.getcwd() +\
+                "\x1b[0m" + git_string
         path = path.replace("/home/%s"%username,"~")
 
         prompt =  "╭─|%s|%s|(Press Enter ⮠ for speech input)|\n╰─‣ " % (current_time,path)
