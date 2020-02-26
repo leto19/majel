@@ -10,7 +10,7 @@ import sys
 import time
 import textwrap
 from contextlib import contextmanager
-from ctypes import *
+from ctypes import CFUNCTYPE,c_char_p,c_int,cdll
 from datetime import datetime
 
 import pyaudio
@@ -40,7 +40,7 @@ def get_command(lang,gram):
         audio_file = sr.AudioFile(sys.argv[1])
         with audio_file as source:
             audio = recog.record(source)
-    else: #use mic 
+    else: #use mic
         mic = sr.Microphone(chunk_size=1024, sample_rate=44100)
         with mic as source:
             #recog.adjust_for_ambient_noise(source)
@@ -48,7 +48,7 @@ def get_command(lang,gram):
             print("listening...")
 
             audio = recog.listen(source,phrase_time_limit=timeout)
-    #print("done!")    
+    #print("done!")
 
     try:
         print("working...")
@@ -61,12 +61,31 @@ def get_command(lang,gram):
         out = ""
     #return out.hyp().hypstr.lower().split()
     return out.lower().split()
- 
+
 def show_possible(decoder):
     #print("Best 10 hypothesis:")
     for best, i in zip(decoder.nbest(),range(10)):
         print(best.hypstr,best.score)
-        
+
+
+
+def change_directory(command):
+    try:
+        if len(command) is 1:
+            os.chdir("/home/%s/"% getpass.getuser())
+        else:
+            os.chdir(command[1])
+    except FileNotFoundError:
+        #print("no such directory: %s"   %(command[1]))
+        try:
+            """
+            this is pretty bad, find better solution later
+            """
+            command[1] = command[1].capitalize()
+            #print(command)
+            change_directory(command)
+        except RecursionError:
+            print("no such directory: %s" % (command[1]))
 def run_command(command):
     """
         takes a command as a list of strings and exercutes it
@@ -74,21 +93,9 @@ def run_command(command):
     if "exit" in command:
         exit_func()
     if command[0] == "cd":
-        try:
-            if len(command) is 1:
-                os.chdir("/home/%s/"% getpass.getuser())
-            else:
-                if command[1] == ".":
-                    os.chdir(os.getcwd())
-                elif command[1] == "..":
-                    os.chdir(os.pardir)
-                else:
-                    os.chdir(command[1])
-        except FileNotFoundError:
-            print("no such directory: %s"   %(command[1]))
-        os.listdir()
+       change_directory(command)
     elif command[0] == "majel_timeout" and len(command) == 2:
-       global timeout 
+       global timeout
        timeout= int(command[1])
        print("set timeout to ",timeout)
     else:
@@ -109,11 +116,9 @@ def word_to_character(phrase):
     phrase = replace_in_list(phrase,"slash","/")
     phrase = replace_in_list(phrase,"dot",".")
 
-    #phrase = phrase.replace("dash","-")
-    #phrase = phrase.replace("dot",".")
-    #phrase = phrase.replace("slash","/")
-    
-  
+
+
+
     for n,i in enumerate(phrase):
         #print(n,i)
         if i == "-":
@@ -121,7 +126,7 @@ def word_to_character(phrase):
             phrase.pop(n)
         if i == "/" and n < len(phrase)-1:
             #print("phrase[n+1] is ",phrase[n+1])
-            phrase[n+1] =  "/" + phrase[n+1] 
+            phrase[n+1] =  "/" + phrase[n+1]
             phrase.pop(n)
     prev_word = "test"
     #print("\n-------")
@@ -139,13 +144,13 @@ def word_to_character(phrase):
                 prev_word = new_word
             else:
                 prev_word = word
-                prev_index = index  
+                prev_index = index
         #print(phrase)
         count+= 1
     phrase = replace_in_list(phrase,"root","/")
     phrase = replace_in_list(phrase,"~","/home/g")
     return phrase
-    
+
 def update_log(phrase):
     """
     updates the log file with the most recent command.
@@ -168,7 +173,7 @@ def get_quote():
     returns as a string a random quote from the list.
     """
     boot_quotes = [
-        "you can't lay a patch by computer design,\nIt's just a lot of stupid,stupid signs",    
+        "you can't lay a patch by computer design,\nIt's just a lot of stupid,stupid signs",
         "Its amazing what devices you can sympathize.",
         "I talk to the wind,\nmy words are all carried away.",
         "Is there anybody out there?",
@@ -192,27 +197,27 @@ if __name__ == "__main__":
     #language setup - could be changed later
     l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1/cmd1.lm","/home/g/year3/majel/languages/cmd2/combined.dict")
     gram = "/home/g/year3/majel/grammars/command.jsgf"
-    
+
     #display setup
     command_words = str()
     os.system('clear')
     username = getpass.getuser()
     hostname = socket.gethostname()
-    
+
     #welcome message
     print("Welcome to Majel!\n" + "\x1b[3;39;40m" + get_quote() + "\x1b[0m")
     #prompt start
     while True:
         current_time = "\x1b[1;31;42m[" + datetime.now().strftime("%H:%M:%S") + "]\x1b[0m"
-        path =  "\x1b[3;32;40m" + username + "@" +hostname + " in \x1b[0m" +"\x1b[4;32;40m" + os.getcwd() +  "\x1b[0m"  
-        path = path.replace("/home/g","~")
-        
+        path =  "\x1b[3;32;40m" + username + "@" +hostname + " in \x1b[0m" +"\x1b[4;32;40m" + os.getcwd() +  "\x1b[0m"
+        path = path.replace("/home/%s"%username,"~")
+
         prompt =  "╭─|%s|%s|(Press Enter ⮠ for speech input)|\n╰─‣ " % (current_time,path)
         input_string= input(prompt)
         command_words = shlex.split(input_string)
         if command_words == []:# use voice
-            command_words  = get_command(l,gram);
-            print("You said:\n%s" % command_words)  
+            command_words  = get_command(l,gram)
+            print("You said:\n%s" % command_words)
         command_words = word_to_character(command_words)
         update_log(" ".join(command_words))
         if len(command_words) != 0: # if some words were returned - the recogniser was successful

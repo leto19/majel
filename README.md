@@ -1,5 +1,5 @@
 
-# Majel(WIP) - Voice command for CLI
+# Majel - Voice command for CLI
 
 A program that allows users to speak command line inputs aloud and have them executed by the system. This would be useful in particular for file system navigation; often user friendly directory and file names with spaces are difficult to access in command line. The project will also in part be an attempt to introduce a 'natural language' way of interacting with the terminal; the input of the speech "Execute My Script" is much more intuitive and descriptive of what the user wants to happen compared typing "./myscript.sh".   
 

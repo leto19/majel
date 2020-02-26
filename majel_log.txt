@@ -743,3 +743,109 @@ ls
 clear
 ls
 exit
+ls
+cd /
+ls
+cd
+cd Downloads
+cd ../Documents
+ls
+cd ..
+ls
+exit
+cd ..
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd .
+ls
+cd ../bin
+ls
+exit
+cd ..
+cd
+ls
+cd sdadsa
+exit
+cd
+cd downloads
+exit
+cd downloads
+exit
+cd dsads
+cd ..
+exit
+git hello
+ls
+cd ..
+ls
+cd .
+ls
+cd
+cd ...
+cd ..
+cd . .
+cd .
+cd
+cd year3
+cd . . /Downloads
+ls
+ls .
+ls . .
+cd majel
+ls
+cd ..
+ls
+cd ../Downloads
+ls
+eit
+exit
+cd
+cd downloads
+cd
+exit
+cd documents
+cd downloads
+cd downloads
+[Aexit
+exit
+cd downloads
+exit
+
+
+cd
+cd downloads
+cd dsada
+exit
+cd
+cd doWnloads
+cd ..
+cd sadsads
+cd dsadsa
+exit
+cd dsadsad
+cd downloads
+cd ..
+cd downloads
+cd
+cd downloads
+cd ..
+cd Documents
+cd ../downloads
+cd ..
+cd ..
+ls
+cd ..
+cd /
+cd ..
+ls
+cd
+cd DownloAds
+ls
+git add *
+cd ../year3/majel
+ls
+git add *
