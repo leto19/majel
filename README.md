@@ -1,28 +1,11 @@
 
 # Majel(WIP) - Voice command for CLI
 
-This is my testing for my third year project
+A program that allows users to speak command line inputs aloud and have them executed by the system. This would be useful in particular for file system navigation; often user friendly directory and file names with spaces are difficult to access in command line. The project will also in part be an attempt to introduce a 'natural language' way of interacting with the terminal; the input of the speech "Execute My Script" is much more intuitive and descriptive of what the user wants to happen compared typing "./myscript.sh".   
 
-Need method of testing that the input is a valid command for CLI before running
+A vastly limited set of possible 'words' in the language of commands as well as more structured  grammar should mean that this program works much faster and more accurately than existing systems such as Google Assistant, Siri or Cortana. Additionally, the program will be fully functional offline, and will not use calls to internet based APIs. 
 
-Interface with system- paste into Terminal?
-
-Challenge seems to be in designing of grammar - talk to Richard?
-
-Also in recognising user defined file/folder names eg
-
-> "ceedee year two slash coursework" -> ```cd year2/coursework```
-
-perhaps define custom language? If format of input is ALWAYS
-> ```<KEYWORD> <VARIABLE>``` (```cd year2```)
-
-or
-
- > ```sudo <KEYWORD> <VARIABLE>``` (```sudo rm pictures```)
-
-could use custom 'bash' language  for keyword(s) then use english for rest. Limiting scope of language may also speed up processing?
-
-Or could simply write to string from input and perform all analysis of input from there.
+I have some early demo and proof of concept code here: https://github.com/leto19/majel
 
 ## Links
 
