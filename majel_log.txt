@@ -938,3 +938,8 @@ reboot
 ping google.com
 ls
 exit
+ls
+ls -a
+ls -A
+ls
+exit

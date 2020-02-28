@@ -5,6 +5,9 @@ import requests
 
 
 def generate_prog_list():
+    """
+    use cmd history files to get a list of programs
+    """
     master_list = list()
     user = getpass.getuser()
     # get bash history
@@ -24,7 +27,8 @@ def generate_prog_list():
 
     for line in fish_list:
         if "- cmd:" in line:
-            line_cleaned = line.strip("- cmd: ").strip("sudo").strip("\n").split()
+            line_cleaned = line.strip(
+                "- cmd: ").strip("sudo").strip("\n").split()
             if line_cleaned != []:
                 master_list.append(line_cleaned[0])
     # get majel history
@@ -43,24 +47,24 @@ def compare_prog_list(master_list, prog_list):
     for els in master_list:
         if els in master_dict.keys():
             master_dict[els] += 1
-    sorted_dict = {k: v for k, v in sorted(master_dict.items(), key=lambda item: item[1], reverse=True)}
+    sorted_dict = {k: v for k, v in sorted(
+        master_dict.items(), key=lambda item: item[1], reverse=True)}
 
     out_list = list()
     for dict_el in sorted_dict:
-        #print(dict_el, sorted_dict[dict_el])
         if sorted_dict[dict_el] >= 1:
             out_list.append(dict_el)
     return out_list
 
 
-def create_grammar(word_list, name,gram_file):
+def create_grammar(word_list, name, gram_file):
     """
     read a list of programs in a text file ('progs.txt') and create
     a grammar file for that list,
     such that the speech can one of any of the programs
     """
     upp_list = list()
-    grammar = RootGrammar(name="progs",case_sensitive=True)
+    grammar = RootGrammar(name="progs", case_sensitive=True)
     i = 0
     for lines in word_list:
         rule_name = "rule" + str(i)
@@ -71,19 +75,20 @@ def create_grammar(word_list, name,gram_file):
             upp_list.append(upp)
             i = i+1
 
-    with open(gram_file,'wt') as g:
-        print(grammar.compile(),file=g)
+    with open(gram_file, 'wt') as g:
+        print(grammar.compile(), file=g)
 
 
-def write_list_to_file(prog_list,filename):
+def write_list_to_file(prog_list, filename):
     print(prog_list)
-    with open(filename+".txt",'wt') as f:
+    with open(filename+".txt", 'wt') as f:
         for e in prog_list:
-            print(e,file =f)
+            print(e, file=f)
 
 
 def get_directory(path=os.getcwd()):
-    """takes a directory path and returns a list containing the names of all directories
+    """takes a directory path and returns a
+    list containing the names of all directories
     it contains and all directories they contain (2 levels deep)
     """
     master_list = list()
@@ -93,11 +98,9 @@ def get_directory(path=os.getcwd()):
     for dirs in dirnames:
         fp = os.path.join(path, dirs)
         if os.access(fp, os.R_OK) and not dirs.startswith("."):
-            #print(os.listdir(fp))
             fp_dirnames = [name for name in os.listdir(fp)
                            if os.path.isdir(os.path.join(fp, name))]
             master_list += fp_dirnames
-    # print(master_list)
     return master_list
 
 
@@ -107,8 +110,7 @@ def get_dictionary(file_read, file_write="words.dict"):
     how to understand that word aloud.
 
     """
-    url = "http://www.speech.cs.cmu.edu/cgi-bin/tools/logios/lextool.pl" 
-    #url = 'https://httpbin.org/post'
+    url = "http://www.speech.cs.cmu.edu/cgi-bin/tools/logios/lextool.pl"
     print("reading %s..." % file_read)
     files = {'wordfile': open(file_read, 'rb')}
     r = requests.post(url, files=files)  # get HTML responce of file upload
@@ -118,28 +120,56 @@ def get_dictionary(file_read, file_write="words.dict"):
     dl_link = dl_link.replace("<!-- DICT ", "")  # strip download link
     dl_link = dl_link.replace("  --", "")
     print(dl_link)
-    dict_responce = requests.get(dl_link, allow_redirects=True)  # get dict file
+    dict_responce = requests.get(
+        dl_link, allow_redirects=True)  # get dict file
     print("writing %s to file..." % file_write)
-    open(file_write, 'wb').write(dict_responce.content)  # write contents of dict
+    open(file_write, 'wb').write(
+        dict_responce.content)  # write contents of dict
+
 
 def combine_dictionary(parent, child):
     with open(parent, 'a') as p:
         with open(child, 'rt') as c:
             p.write(c.read())
 
-if __name__ == '__main__':  # get HTML responce of file upload
+
+def setup_dict_grammar():
+    """
+    create grammar and dictionary files for most commonly used
+    programs and current directory.
+    """
+    # exercute script that populates a file progs.txt
+    os.system('./compgen.sh')
     with open("progs.txt", 'rt') as f:
         data = f.readlines()
+    # formatting
     data = [s.replace("\n", "") for s in data]
+    # use cmd history files to get the most common commands used
     master = generate_prog_list()
+    # returns list of most common programs
     prog_list = compare_prog_list(master, data)
-    write_list_to_file(prog_list,"progs_out")
-    create_grammar(prog_list,"root","progs.gram")    
-    get_dictionary("progs_out.txt","progs.dict")
+    # writes program list to file
+    write_list_to_file(prog_list, "progs_out")
+    # creates grammar and writes to file
+    create_grammar(prog_list, "root", "progs.gram")
+    # use web service to create program dictionary
+    get_dictionary("progs_out.txt", "progs.dict")
 
+    # gets folder names from the given directory
     folder_list = get_directory("/home/g")
+    # writes folder list to file
     write_list_to_file(folder_list, "folders_out")
-    create_grammar(folder_list,"folders","folders.gram")
+    # create grammar and writes to file
+    create_grammar(folder_list, "folders", "folders.gram")
+    # use web service to create folder dictionary
     get_dictionary("folders_out.txt", "folders.dict")
+    print("combining dictionaries...")
+    # combines program and folder dictionaries
+    combine_dictionary("progs.dict", "folders.dict")
+    # combines program and master dictionaries
+    master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
+    combine_dictionary(master_path, "progs.dict")
+    print("done!")
 
-    combine_dictionary("progs.dict","folders.dict")
+
+setup_dict_grammar()

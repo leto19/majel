@@ -116,9 +116,6 @@ def word_to_character(phrase):
     phrase = replace_in_list(phrase,"slash","/")
     phrase = replace_in_list(phrase,"dot",".")
 
-
-
-
     for n,i in enumerate(phrase):
         #print(n,i)
         if i == "-":
@@ -203,6 +200,8 @@ def is_repo(path):
         return False
     else:
         return True
+
+        
 if __name__ == "__main__":
     #language setup - could be changed later
     l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1/cmd1.lm","/home/g/year3/majel/languages/cmd2/combined.dict")
