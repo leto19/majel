@@ -887,3 +887,54 @@ exit
 exit
 ls
 git add *
+ls
+git commit -m added git information to cmd display
+git push
+./grammar_test.sh
+cd year3/majel
+exit
+ls
+cd
+cd -v
+firefox world
+cd year3/majel
+ls
+cd scripts
+ls
+ls
+cd year3/majel
+l
+ls
+ls
+firefox
+ls -a
+exit
+ls -g
+ls -t
+ls -a
+exit
+ls
+ls -a
+
+cd g /
+cd . /
+cd
+
+
+
+
+cd
+nautilus
+
+ls -a
+sudo nautilus
+exit
+sudo ls -a
+
+[A
+ls -a world
+ls -a
+reboot
+ping google.com
+ls
+exit

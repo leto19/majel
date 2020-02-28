@@ -53,7 +53,7 @@ def compare_prog_list(master_list, prog_list):
     return out_list
 
 
-def create_grammar(word_list, name):
+def create_grammar(word_list, name,gram_file):
     """
     read a list of programs in a text file ('progs.txt') and create
     a grammar file for that list,
@@ -71,13 +71,14 @@ def create_grammar(word_list, name):
             upp_list.append(upp)
             i = i+1
 
-    with open("progs.gram",'wt') as g:
+    with open(gram_file,'wt') as g:
         print(grammar.compile(),file=g)
 
 
-def write_list_to_file(l,filename):
+def write_list_to_file(prog_list,filename):
+    print(prog_list)
     with open(filename+".txt",'wt') as f:
-        for e in l:
+        for e in prog_list:
             print(e,file =f)
 
 
@@ -92,14 +93,15 @@ def get_directory(path=os.getcwd()):
     for dirs in dirnames:
         fp = os.path.join(path, dirs)
         if os.access(fp, os.R_OK) and not dirs.startswith("."):
-            print(os.listdir(fp))
+            #print(os.listdir(fp))
             fp_dirnames = [name for name in os.listdir(fp)
                            if os.path.isdir(os.path.join(fp, name))]
             master_list += fp_dirnames
-    print(master_list)
+    # print(master_list)
+    return master_list
 
 
-def get_dict(file_read, file_write="words.dict"):
+def get_dictionary(file_read, file_write="words.dict"):
     """takes a text file of a list of words(file_read) and returns
     a dictionary file (file_write) describing
     how to understand that word aloud.
@@ -120,16 +122,24 @@ def get_dict(file_read, file_write="words.dict"):
     print("writing %s to file..." % file_write)
     open(file_write, 'wb').write(dict_responce.content)  # write contents of dict
 
+def combine_dictionary(parent, child):
+    with open(parent, 'a') as p:
+        with open(child, 'rt') as c:
+            p.write(c.read())
 
 if __name__ == '__main__':  # get HTML responce of file upload
     with open("progs.txt", 'rt') as f:
         data = f.readlines()
     data = [s.replace("\n", "") for s in data]
-
     master = generate_prog_list()
-    l = compare_prog_list(master, data)
-    #print("l is",l)
-    get_directory("/home/g/")
-    #write_list_to_file(l,"progs_out")
-    #reate_grammar(l,"root")
-    #get_dict("progs_out.txt")
+    prog_list = compare_prog_list(master, data)
+    write_list_to_file(prog_list,"progs_out")
+    create_grammar(prog_list,"root","progs.gram")    
+    get_dictionary("progs_out.txt","progs.dict")
+
+    folder_list = get_directory("/home/g")
+    write_list_to_file(folder_list, "folders_out")
+    create_grammar(folder_list,"folders","folders.gram")
+    get_dictionary("folders_out.txt", "folders.dict")
+
+    combine_dictionary("progs.dict","folders.dict")
