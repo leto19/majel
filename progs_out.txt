@@ -3,8 +3,8 @@ cd
 python3
 exit
 git
-majel
 apt
+majel
 sudo
 man
 fish

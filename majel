@@ -15,6 +15,7 @@ from datetime import datetime
 
 import pyaudio
 import speech_recognition as sr
+import scripts.get_gram as gg
 
 #SETUP START-----------------------------
 signal.signal(signal.SIGINT, signal.SIG_IGN)
@@ -31,6 +32,10 @@ asound.snd_lib_error_set_handler(c_error_handler)
 p = pyaudio.PyAudio()
 p.terminate()
 timeout = 2 #default timeout for speech
+if len(sys.argv) == 2 and sys.argv[1] == "setup":
+    print("running setup....")
+    os.remove("/home/g/year3/majel/grammars/command.fsg")
+    gg.setup_dict_grammar()
 #SETUP END -----------------------------
 
 
@@ -201,7 +206,7 @@ def is_repo(path):
     else:
         return True
 
-        
+
 if __name__ == "__main__":
     #language setup - could be changed later
     l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1/cmd1.lm","/home/g/year3/majel/languages/cmd2/combined.dict")
@@ -209,7 +214,7 @@ if __name__ == "__main__":
 
     #display setup
     command_words = str()
-    os.system('clear')
+    #os.system('clear')
     username = getpass.getuser()
     hostname = socket.gethostname()
    

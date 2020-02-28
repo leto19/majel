@@ -943,3 +943,18 @@ ls -a
 ls -A
 ls
 exit
+ls
+ls
+ls
+exit
+exit
+exit
+exit
+exoy
+exit
+exit
+exit
+exit
+exit
+exit
+exit

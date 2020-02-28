@@ -139,8 +139,8 @@ def setup_dict_grammar():
     programs and current directory.
     """
     # exercute script that populates a file progs.txt
-    os.system('./compgen.sh')
-    with open("progs.txt", 'rt') as f:
+    os.system('./home/g/year3/majel/scriptscompgen.sh')
+    with open("/home/g/year3/majel/scripts/progs.txt", 'rt') as f:
         data = f.readlines()
     # formatting
     data = [s.replace("\n", "") for s in data]
@@ -149,27 +149,30 @@ def setup_dict_grammar():
     # returns list of most common programs
     prog_list = compare_prog_list(master, data)
     # writes program list to file
-    write_list_to_file(prog_list, "progs_out")
+    write_list_to_file(prog_list, "/home/g/year3/majel/scripts/progs_out")
     # creates grammar and writes to file
-    create_grammar(prog_list, "root", "progs.gram")
+    create_grammar(prog_list, "root", "/home/g/year3/majel/scripts/progs.gram")
     # use web service to create program dictionary
-    get_dictionary("progs_out.txt", "progs.dict")
+    get_dictionary("/home/g/year3/majel/scripts/progs_out.txt",
+                   "/home/g/year3/majel/scripts/progs.dict")
 
     # gets folder names from the given directory
     folder_list = get_directory("/home/g")
     # writes folder list to file
-    write_list_to_file(folder_list, "folders_out")
+    write_list_to_file(folder_list, "/home/g/year3/majel/scripts/folders_out")
     # create grammar and writes to file
-    create_grammar(folder_list, "folders", "folders.gram")
+    create_grammar(folder_list, "folders",
+                   "/home/g/year3/majel/scripts/folders.gram")
     # use web service to create folder dictionary
-    get_dictionary("folders_out.txt", "folders.dict")
+    get_dictionary("/home/g/year3/majel/scripts/folders_out.txt",
+                   "/home/g/year3/majel/scripts/folders.dict")
     print("combining dictionaries...")
     # combines program and folder dictionaries
-    combine_dictionary("progs.dict", "folders.dict")
+    combine_dictionary(
+        "/home/g/year3/majel/scripts/progs.dict", "/home/g/year3/majel/scripts/folders.dict")
     # combines program and master dictionaries
     master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
-    combine_dictionary(master_path, "progs.dict")
+    combine_dictionary(master_path, "/home/g/year3/majel/scripts/progs.dict")
     print("done!")
 
 
-setup_dict_grammar()
