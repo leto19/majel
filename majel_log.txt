@@ -974,3 +974,82 @@ ls
 cd ..
 ls scripts /
 exit
+
+
+ls grammars /
+grep cw /majel/
+cd grammars /
+
+cd . . /
+cd ..
+exit
+ls
+ls -a
+ls -a grammars /
+echo hello |tty1
+exit
+ls
+rm tty7
+ls
+write g tty7
+exit
+sudo ls
+ls grammars /
+ls
+ls grammars /
+
+cd grammars /
+cd ..
+
+cd /
+cd
+cd year3/majel
+ls
+exit
+exit
+ls
+exi
+msexpand
+exit
+ls
+exit
+ls
+exit
+cd ..
+cd majel/
+ls
+
+cd . . /
+exit
+cd . . /
+cd . /
+cd d /
+lspci d /<s>/
+gdbus sudo /
+
+
+<s> -<s> t /
+fg <s> /v/
+cd . /
+exit
+ls
+exit
+ls
+nautilus -v
+ls -v
+firefox -v
+echo
+echo <s> /
+echo grammars /
+cd grammars /
+cd ..
+exit
+ls
+exit
+exit
+python3 scripts/setup
+[A[A[A
+nautilus
+ls
+python3 scripts/setup.py
+exit
