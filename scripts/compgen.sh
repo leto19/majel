@@ -1,2 +1,2 @@
 #!/bin/bash
-compgen -c >progs.txt
+compgen -c > /home/g/year3/majel/scripts/progs.txt

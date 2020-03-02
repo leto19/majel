@@ -15,7 +15,7 @@ from datetime import datetime
 
 import pyaudio
 import speech_recognition as sr
-import scripts.get_gram as gg
+import scripts.setup as setup
 
 #SETUP START-----------------------------
 signal.signal(signal.SIGINT, signal.SIG_IGN)
@@ -34,26 +34,24 @@ p.terminate()
 timeout = 2 #default timeout for speech
 if len(sys.argv) == 2 and sys.argv[1] == "setup":
     print("running setup....")
-    os.remove("/home/g/year3/majel/grammars/command.fsg")
-    gg.setup_dict_grammar()
+    if os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
+        os.remove("/home/g/year3/majel/grammars/command.fsg")
+    setup.setup_dict_grammar()
 #SETUP END -----------------------------
 
 
 def get_command(lang,gram):
     recog = sr.Recognizer()  # this is the object that recognises the speech
-    if len(sys.argv) == 2: #use audio file
-        audio_file = sr.AudioFile(sys.argv[1])
-        with audio_file as source:
-            audio = recog.record(source)
-    else: #use mic
-        mic = sr.Microphone(chunk_size=1024, sample_rate=44100)
-        with mic as source:
-            recog.adjust_for_ambient_noise(source)
-            #time.sleep(0.5)
-            print("listening...")
+    
+    
+    mic = sr.Microphone(chunk_size=1024, sample_rate=44100)
+    with mic as source:
+        recog.adjust_for_ambient_noise(source)
+        #time.sleep(0.5)
+        print("listening...")
 
-            audio = recog.listen(source,phrase_time_limit=timeout)
-    #print("done!")
+        audio = recog.listen(source,phrase_time_limit=timeout)
+#print("done!")
 
     try:
         print("working...")
@@ -209,12 +207,12 @@ def is_repo(path):
 
 if __name__ == "__main__":
     #language setup - could be changed later
-    l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1/cmd1.lm","/home/g/year3/majel/languages/cmd2/combined.dict")
+    l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1.lm","/home/g/year3/majel/languages/cmd2/master.dict")
     gram = "/home/g/year3/majel/grammars/command.jsgf"
 
     #display setup
     command_words = str()
-    #os.system('clear')
+    os.system('clear')
     username = getpass.getuser()
     hostname = socket.gethostname()
    

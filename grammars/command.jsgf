@@ -1,12 +1,14 @@
 #JSGF V1.0;
 grammar command;
-import <progs1.gram>;
+import <progs.gram>;
+import <folders.gram>;
 public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 
-<paramater> = [<option>][<pathexpr>[<file>]];
+//<paramater> = [<option>][<pathexpr>[<file>]];
+<paramater> = [option][<pathexpr>];
 
-<option> = <dash> <chars>
-          |<NULL>;
+//<option> = <dash> <chars>
+          //|<NULL>;
 
 <pathexpr> = <dot><slash><pathexpr>
             |<dot><dot><slash><pathexpr>
@@ -21,7 +23,8 @@ public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 <dash> = DASH;
 <dot> = DOT;
 
-<foldername> = ROOT | HOME | G | DOWNLOADS | DESKTOP;
-<filename> = HELLO | WORLD;
-<fileextension> = PY | M  | TXT;
+//<foldername> = ROOT | HOME | G | DOWNLOADS | DESKTOP;
+<foldername> = <folders.root>;
+//<filename> = HELLO | WORLD;
+//<fileextension> = PY | M  | TXT;
 //<prog> =(CODE | GIT | CD | MV | LA | UNAME | LS| FIREFOX | PYTHON | NANO);

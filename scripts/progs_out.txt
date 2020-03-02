@@ -20,8 +20,8 @@ cp
 tldr
 apt-get
 .
-gnome-terminal
 compgen
+gnome-terminal
 lsusb
 nautilus
 find
@@ -117,6 +117,7 @@ aircrack-ng
 print
 whoami
 passwd
+msexpand
 lspci
 lsmod
 rmmod

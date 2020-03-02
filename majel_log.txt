@@ -958,3 +958,19 @@ exit
 exit
 exit
 exit
+ls
+msexpand
+exit
+exit
+ls
+exit
+ls
+exit
+exit
+ls
+exit
+ls
+ls
+cd ..
+ls scripts /
+exit
