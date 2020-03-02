@@ -18,8 +18,8 @@ import speech_recognition as sr
 import scripts.setup as setup
 
 #SETUP START-----------------------------
-signal.signal(signal.SIGINT, signal.SIG_IGN)
-signal.signal(signal.SIGTSTP, signal.SIG_IGN)
+#signal.signal(signal.SIGINT, signal.SIG_IGN)
+#signal.signal(signal.SIGTSTP, signal.SIG_IGN)
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 def py_error_handler(filename, line, function, err, fmt):
   pass
@@ -58,7 +58,7 @@ def get_command(lang,gram):
         out = recog.recognize_sphinx(audio,language=lang,grammar=gram)
         #show_possible(out)
     except sr.UnknownValueError:
-        out2 = recog.recognize_sphinx(audio,language=lang)
+       # out2 = recog.recognize_sphinx(audio,language=lang)
 
         print("didn't quite get that")
         out = ""
@@ -77,7 +77,8 @@ def change_directory(command):
         if len(command) is 1:
             os.chdir("/home/%s/"% getpass.getuser())
         else:
-            os.chdir(command[1])
+            print("path is ","".join(command[1:]))
+            os.chdir("".join(command[1:]))
     except FileNotFoundError:
         #print("no such directory: %s"   %(command[1]))
         try:
@@ -131,9 +132,15 @@ def word_to_character(phrase):
     prev_word = "test"
     #print("\n-------")
     #print(phrase)
+    
     count = 0
     while count < len(phrase):
         for index,word in enumerate(phrase):
+            if  word == "." and index < len(phrase)-1:
+                if phrase[index+1] == ".":
+                    phrase[index] = ".."
+                    phrase.pop(index+1)
+                    print("dot dot found!")
             #print("word is ", word, "at index", index)
             #print("prev_word is", prev_word)
             if prev_word[0]== "/" and word[0] == "/":
@@ -149,6 +156,10 @@ def word_to_character(phrase):
         count+= 1
     phrase = replace_in_list(phrase,"root","/")
     phrase = replace_in_list(phrase,"~","/home/g")
+    print(phrase)
+    print(len(phrase))
+
+    
     print(phrase)
     return phrase
 

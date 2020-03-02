@@ -1053,3 +1053,60 @@ nautilus
 ls
 python3 scripts/setup.py
 exit
+exit
+<s> -<s>
+nano
+exit
+ls
+
+exit
+ls grammars /
+find e /s/
+<s> f /majel/sudo/
+write -o openmp /
+man compgen
+exit
+cd . .
+exit
+cd . .
+cd . . /
+exit
+cd ..
+exit
+
+
+sudo <s>
+cd
+fish g /t/
+gsettings <s> /
+sudo then a /
+msexpand
+cd .. /
+ls
+cd .. /home
+exit
+cd ..
+cd
+cd .. /g
+ls
+exit
+cd ..
+exit
+cd ..
+cd /home/g/Documents
+cd
+cd Downloads/
+cd .. /Documents
+ls
+cd .. /g
+ls
+[A
+cd ..
+exit
+cd ..
+cd .. /home
+cd .. /bin
+ls
+cd .. /home/g
+ls
+exit

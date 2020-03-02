@@ -1,0 +1,29 @@
+#JSGF V1.0;
+grammar command;
+import <progs.gram>;
+import <folders.gram>;
+public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
+
+//<paramater> = [<option>][<pathexpr>[<file>]];
+<paramater> = [<option>][<pathexpr>];
+<option> = <dash> <chars>
+          |<NULL>;
+
+<pathexpr> = <dot><slash><pathexpr>
+            |<dot><dot><slash><pathexpr>
+            |<foldername><slash><pathexpr>
+            |<NULL>;
+            
+<file> = <filename><dot><fileextension>
+        |<filename>;
+
+<chars> = A | B | C | F | G | M | O | T | V | S;
+<slash> = SLASH;
+<dash> = DASH;
+<dot> = DOT;
+
+//<foldername> = ROOT | HOME | G | DOWNLOADS | DESKTOP;
+<foldername> = <folders.root>;
+//<filename> = HELLO | WORLD;
+//<fileextension> = PY | M  | TXT;
+//<prog> =(CODE | GIT | CD | MV | LA | UNAME | LS| FIREFOX | PYTHON | NANO);
