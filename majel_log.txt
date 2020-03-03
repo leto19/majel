@@ -1110,3 +1110,72 @@ ls
 cd .. /home/g
 ls
 exit
+ls -a
+ls -A
+dir
+dir /
+ls
+ls -A
+ls .. /
+exit
+ls .. /
+
+exit
+ls -a /
+ls /home/g
+ls .. /. .
+ls ../..
+ls ../
+exit
+ls -a v /
+cal h /t/
+ls -g a /
+cd e /
+lspci b /
+lsusb
+exit
+
+
+nano
+
+ls
+
+
+
+exit
+ls
+ls -a
+nano -v
+ping google.com
+ls .. /multimedia/
+ls
+ls ..
+ls .. /hpc
+exit
+ls ../ /hpc
+exit
+lls /../hpc
+ls /../hpc
+ls -a /../hpc
+exit
+ls -a ../ hpc
+exit
+ls -a.. /hpc
+exit
+phrase.pop(index+1)
+ls -a ../hpc /hpc
+exit
+phrase.pop(index+1)
+ls -a ../hpc
+ls ../..
+ls ../. .
+cd ../hpc
+ls
+cd ..
+ls
+cd ../year3
+ls
+cd majel
+ls
+ls
+git add *

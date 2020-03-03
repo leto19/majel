@@ -1,3 +1,6 @@
+"""
+collection of setup functions for Majel
+"""
 from jsgf import PublicRule, RootGrammar
 import getpass
 import os
@@ -201,6 +204,6 @@ def setup_dict_grammar():
     os.remove("/home/g/year3/majel/scripts/progs.dict")
     os.remove("/home/g/year3/majel/scripts/folders.dict")
     os.remove("/home/g/year3/majel/scripts/progs.txt")
-    
+
 if __name__ == "__main__":
     setup_dict_grammar()

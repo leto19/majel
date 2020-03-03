@@ -51,15 +51,15 @@ def get_command(lang,gram):
         print("listening...")
 
         audio = recog.listen(source,phrase_time_limit=timeout)
-#print("done!")
+        #print("done!")
 
     try:
         print("working...")
+        
         out = recog.recognize_sphinx(audio,language=lang,grammar=gram)
         #show_possible(out)
     except sr.UnknownValueError:
-       # out2 = recog.recognize_sphinx(audio,language=lang)
-
+        out2 = recog.recognize_sphinx(audio,language=lang,show_all=True)
         print("didn't quite get that")
         out = ""
     #return out.hyp().hypstr.lower().split()
@@ -71,13 +71,12 @@ def show_possible(decoder):
         print(best.hypstr,best.score)
 
 
-
 def change_directory(command):
     try:
         if len(command) is 1:
             os.chdir("/home/%s/"% getpass.getuser())
         else:
-            print("path is ","".join(command[1:]))
+            print("path is """.join(command[1:]))
             os.chdir("".join(command[1:]))
     except FileNotFoundError:
         #print("no such directory: %s"   %(command[1]))
@@ -90,6 +89,7 @@ def change_directory(command):
             change_directory(command)
         except RecursionError:
             print("no such directory: %s" % (command[1]))
+
 def run_command(command):
     """
         takes a command as a list of strings and exercutes it
@@ -104,7 +104,10 @@ def run_command(command):
        print("set timeout to ",timeout)
     else:
         try:
-            process = subprocess.run(command)
+            # command_exec = [command[0], "".join(command[1:])]
+            # print(command_exec)
+            # subprocess.run(command_exec)
+            subprocess.run(command)
         except FileNotFoundError:
             print("Invalid Command: %s"%" ".join(command))
 
@@ -138,7 +141,9 @@ def word_to_character(phrase):
         for index,word in enumerate(phrase):
             if  word == "." and index < len(phrase)-1:
                 if phrase[index+1] == ".":
-                    phrase[index] = ".."
+                    phrase.pop(index+1)
+
+                    phrase[index] = ".." + phrase[index+1]
                     phrase.pop(index+1)
                     print("dot dot found!")
             #print("word is ", word, "at index", index)
