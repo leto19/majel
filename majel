@@ -71,25 +71,29 @@ def show_possible(decoder):
         print(best.hypstr,best.score)
 
 
+
+
 def change_directory(command):
     try:
         if len(command) is 1:
             os.chdir("/home/%s/"% getpass.getuser())
         else:
             print("path is """.join(command[1:]))
+            setup.generate_folder_stuff("".join(command[1:]))
             os.chdir("".join(command[1:]))
+            
     except FileNotFoundError:
-        #print("no such directory: %s"   %(command[1]))
+        print("no such directory: %s"   %(command[1]))
+        
+        """
         try:
-            """
-            this is pretty bad, find better solution later
-            """
+           
             command[1] = command[1].capitalize()
             #print(command)
             change_directory(command)
         except RecursionError:
             print("no such directory: %s" % (command[1]))
-
+        """
 def run_command(command):
     """
         takes a command as a list of strings and exercutes it
@@ -161,11 +165,11 @@ def word_to_character(phrase):
         count+= 1
     phrase = replace_in_list(phrase,"root","/")
     phrase = replace_in_list(phrase,"~","/home/g")
-    print(phrase)
-    print(len(phrase))
+    #print(phrase)
+    #print(len(phrase))
 
     
-    print(phrase)
+    #print(phrase)
     return phrase
 
 def update_log(phrase):

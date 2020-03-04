@@ -1,11 +1,11 @@
 """
-collection of setup functions for Majel
+collection of functions for Majel
 """
-from jsgf import PublicRule, RootGrammar
+from jsgf import PublicRule, RootGrammar,parser
 import getpass
 import os
 import requests
-
+import re
 
 def generate_prog_list():
     """
@@ -108,11 +108,12 @@ def get_directory(path=os.getcwd()):
 
 
 def get_dictionary(file_read, file_write="words.dict"):
-    """takes a text file of a list of words(file_read) and returns
+    """
+    takes a text file of a list of words(file_read) and returns
     a dictionary file (file_write) describing
     how to understand that word aloud.
-
     """
+
     url = "http://www.speech.cs.cmu.edu/cgi-bin/tools/logios/lextool.pl"
     print("reading %s..." % file_read)
     files = {'wordfile': open(file_read, 'rb')}
@@ -129,6 +130,60 @@ def get_dictionary(file_read, file_write="words.dict"):
     open(file_write, 'wb').write(
         dict_responce.content)  # write contents of dict
 
+
+def add_to_grammar(grammar_path,file_path):
+    """
+    loads a ``Grammar`` at grammar_path and tries to add rules to it 
+    from the file in file_path then returns the new ``Grammar``
+    """
+    old_gram = parser.parse_grammar_file(grammar_path)
+    with open(file_path,'rt') as f:
+        word_list = f.readlines()
+    #remove root rule from old grammar
+    old_gram.remove_rule(old_gram.get_rule_from_name("root"))
+    # get list of rules from old grammar
+    old_rules = old_gram.rules
+    new_gram = RootGrammar(name="folders", case_sensitive=True)
+    # add existing rules to new grammar
+    i = 0 
+    for rules in old_rules:
+        exp = rules.expansion.text.upper()
+        if exp not in word_list:
+            rule_name = "rule" + str(i)
+            r = PublicRule(rule_name,exp,case_sensitive=True)
+            new_gram.add_rule(r)
+            i += 1
+    # add new rules to new grammar
+    for lines in word_list:
+        rule_name = "rule" + str(i)
+        exp = lines.upper().strip()
+        # print("upp is ",exp)
+        if exp.isalpha() is True:
+            r = PublicRule(rule_name, exp, case_sensitive=True)
+            new_gram.add_rule(r)
+            i += 1
+
+    # compile new grammar back to file
+    new_gram.compile_to_file(grammar_path,compile_as_root_grammar=True)
+
+
+def generate_folder_stuff(p):
+    #print(p)
+    os.remove("/home/g/year3/majel/grammars/command.fsg")
+    folder_list = get_directory(p)
+    write_list_to_file(
+        folder_list, "/home/g/year3/majel/scripts/folders_out")
+    add_to_grammar(
+        "/home/g/year3/majel/grammars/folders.gram","/home/g/year3/majel/scripts/folders_out.txt")
+    # use web service to create folder dictionary
+    get_dictionary("/home/g/year3/majel/scripts/folders_out.txt",
+                        "/home/g/year3/majel/scripts/folders.dict")
+    master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
+
+    combine_dictionary(
+        master_path, "/home/g/year3/majel/scripts/folders.dict")
+    os.remove("/home/g/year3/majel/scripts/folders.dict")
+    os.remove("/home/g/year3/majel/scripts/folders_out.txt")
 
 def combine_dictionary(parent, child):
     with open(parent, 'a') as p:
@@ -168,15 +223,7 @@ def setup_dict_grammar():
     # gets folder names from the given directory
     folder_list = get_directory("/home/g/year3")
 
-    # make sure that command control words are in the dictionary
-    # - maybe find a more elegant way of doing this, seperate dict probably.
-    folder_list.append("SLASH")
-    folder_list.append("DASH")
-    folder_list.append("DOT")
-    folder_list.append("EXIT")
-    folder_list.append("SUDO")
-    folder_list += ["A", "B", "C", "D", "E", "F", "G", "H", "M" ,"O","T","V","S"]
-
+    
     # writes folder list to file
     write_list_to_file(folder_list, "/home/g/year3/majel/scripts/folders_out")
 
@@ -188,6 +235,18 @@ def setup_dict_grammar():
     get_dictionary("/home/g/year3/majel/scripts/folders_out.txt",
                    "/home/g/year3/majel/scripts/folders.dict")
 
+    # make sure that command control words are in the dictionary
+    # - maybe find a more elegant way of doing this, seperate dict probably.
+    cmd_list = list()
+    cmd_list.append("SLASH")
+    cmd_list.append("DASH")
+    cmd_list.append("DOT")
+    cmd_list.append("EXIT")
+    cmd_list.append("SUDO")
+    cmd_list += ["A", "B", "C", "D", "E", "F",
+                 "G", "H", "M", "O", "T", "V", "S"]
+    write_list_to_file(cmd_list, "/home/g/year3/majel/scripts/cmd_out")
+    get_dictionary("/home/g/year3/majel/scripts/cmd_out.txt","/home/g/year3/majel/scripts/cmd.dict")
     print("combining dictionaries...")
     # combines program and folder dictionaries 
     combine_dictionary(
@@ -196,6 +255,7 @@ def setup_dict_grammar():
     # combines program and master dictionaries
     master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
     combine_dictionary(master_path, "/home/g/year3/majel/scripts/progs.dict")
+    combine_dictionary(master_path, "/home/g/year3/majel/scripts/cmd.dict")
     print("done!")
 
     # remove temporary files
@@ -203,6 +263,7 @@ def setup_dict_grammar():
     os.remove("/home/g/year3/majel/scripts/progs_out.txt")
     os.remove("/home/g/year3/majel/scripts/progs.dict")
     os.remove("/home/g/year3/majel/scripts/folders.dict")
+    os.remove("/home/g/year3/majel/scripts/cmd.dict")
     os.remove("/home/g/year3/majel/scripts/progs.txt")
 
 if __name__ == "__main__":

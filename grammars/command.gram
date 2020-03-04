@@ -6,8 +6,7 @@ public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 
 //<paramater> = [<option>][<pathexpr>[<file>]];
 <paramater> = [<option>][<pathexpr>];
-<option> = <dash> <chars>
-          |<NULL>;
+<option> = <dash><chars>;
 
 <pathexpr> = <dot><slash><pathexpr>
             |<dot><dot><slash><pathexpr>
@@ -17,7 +16,7 @@ public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 <file> = <filename><dot><fileextension>
         |<filename>;
 
-<chars> = A | B | C | F | G | M | O | T | V | S;
+<chars> =  B | A | C | F | G | M | O | T | V | S;
 <slash> = SLASH;
 <dash> = DASH;
 <dot> = DOT;

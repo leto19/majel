@@ -1179,3 +1179,222 @@ cd majel
 ls
 ls
 git add *
+git commit -m added support for . . 
+git push
+<s> a /e/
+ls -g
+ls -t
+ls -g
+
+
+
+<s>
+ls -v
+ls -g
+
+#
+ls -g
+ls
+
+ls -c h /
+exit
+
+
+
+cd
+cd year3
+
+exit
+ls multimedia /
+ls ../
+
+
+ls ../multimedia /
+rm -rf languages/en-CL2
+exit
+ls
+exit
+ls
+ls
+ls -g
+
+ls -g
+
+ls -v
+
+ls -g
+
+nautilus -<s>
+nautilus
+
+ls
+
+
+ls -<s>
+
+
+
+
+ls
+
+ls
+ls -g
+
+exit
+
+cd
+cd year3
+ls
+cd majel
+cd ..
+cd ..
+ls
+exit
+cd ..
+ls
+cd majel
+ls
+cd ..
+ls
+cd home
+cd grammars
+cd ..
+ls
+cd ..
+ls
+exit
+ls ..
+ls ../sounds
+ls ../
+ls ../
+
+exit
+ls ../
+cd ../
+ls
+
+ls
+
+cd multimedia /
+cd icons /
+ls
+cd mmcw /./
+cd ../
+ninja cw /
+cd majel /
+ls
+exit
+cd ..
+ls
+cd ..
+ls
+ls
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd ..
+nano
+cd ..
+exit
+cd ..
+exit
+ls
+cd ..
+ls
+cd data
+ls
+cd languages
+ls languages
+ls
+cd ..
+ld
+ls
+cd ..
+ls
+cd ..
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd /
+ls
+cd grammars
+cd languages
+cd languages/
+ls
+ls languages
+ls
+cd ..
+ls
+cd languages
+ls
+cd sounds
+ls
+cd ..
+cd /home
+exit
+ls
+cd ..
+ls
+ls -g
+ls
+cd data
+ls
+ls
+cd ..
+exit
+ls
+cd ..
+ls
+cd ..
+exit
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd .
+ls
+cd ..
+exit
+ls
+cd ..
+exit
+ls -v
+cd ..
+cd ..
+ls
+cd majel
+exit
+ls
+cd ..
+exit
+cd ..
+ls
+cd ..
+
+ls
+cd ..
+exit
+ls
+cd ..
+exit
+ls
+CD ..
+cd ..
+exit -<s>
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd graphics
+ls
+cd hpc
+git add * --update
+exit
