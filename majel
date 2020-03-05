@@ -17,28 +17,17 @@ import pyaudio
 import speech_recognition as sr
 import scripts.setup as setup
 
-#SETUP START-----------------------------
-#signal.signal(signal.SIGINT, signal.SIG_IGN)
-#signal.signal(signal.SIGTSTP, signal.SIG_IGN)
-ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
-def py_error_handler(filename, line, function, err, fmt):
-  pass
-c_error_handler = ERROR_HANDLER_FUNC(py_error_handler)
 
-asound = cdll.LoadLibrary('libasound.so')
-# Set error handler
-asound.snd_lib_error_set_handler(c_error_handler)
-# Initialize PyAudio
-p = pyaudio.PyAudio()
-p.terminate()
-timeout = 2 #default timeout for speech
-if (len(sys.argv) == 2 and sys.argv[1] == "setup") or not os.path.exists("/home/g/year3/majel/grammars/progs.gram"):
-    print("running setup....")
-    if os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
-        os.remove("/home/g/year3/majel/grammars/command.fsg")
-    setup.setup_dict_grammar()
-#SETUP END -----------------------------
-
+def test_recognition():
+    recog = sr.Recognizer()
+    lang = ("/home/g/year3/majel/languages/acoustic-model",
+            "/home/g/year3/majel/languages/cmd1.lm", "/home/g/year3/majel/languages/cmd2/master.dict")
+    gram = "/home/g/year3/majel/grammars/command.gram"
+    audio_file = sr.AudioFile("/home/g/year3/majel/sounds/ls.wav")
+    with audio_file as source:
+        test_sound = recog.record(source)
+    out = recog.recognize_sphinx(test_sound, language=lang, grammar=gram)
+    print("testing ...\n %s" % out)
 
 def get_command(lang,gram):
     recog = sr.Recognizer()  # this is the object that recognises the speech
@@ -79,7 +68,7 @@ def change_directory(command):
             os.chdir("/home/%s/"% getpass.getuser())
         else:
             print("path is """.join(command[1:]))
-            setup.generate_folder_stuff("".join(command[1:]))
+            setup.update_folder_grammar_dictionary("".join(command[1:]))
             os.chdir("".join(command[1:]))
             
     except FileNotFoundError:
@@ -225,6 +214,34 @@ def is_repo(path):
     else:
         return True
 
+
+#SETUP START-----------------------------
+#signal.signal(signal.SIGINT, signal.SIG_IGN)
+#signal.signal(signal.SIGTSTP, signal.SIG_IGN)
+ERROR_HANDLER_FUNC = CFUNCTYPE(
+    None, c_char_p, c_int, c_char_p, c_int, c_char_p)
+
+
+def py_error_handler(filename, line, function, err, fmt):
+  pass
+
+
+c_error_handler = ERROR_HANDLER_FUNC(py_error_handler)
+
+asound = cdll.LoadLibrary('libasound.so')
+# Set error handler
+asound.snd_lib_error_set_handler(c_error_handler)
+# Initialize PyAudio
+p = pyaudio.PyAudio()
+p.terminate()
+timeout = 2  # default timeout for speech
+if (len(sys.argv) == 2 and sys.argv[1] == "setup") or not os.path.exists("/home/g/year3/majel/grammars/progs.gram"):
+    print("running setup....")
+    if os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
+        os.remove("/home/g/year3/majel/grammars/command.fsg")
+    setup.setup_dict_grammar()
+    test_recognition()
+#SETUP END -----------------------------
 
 if __name__ == "__main__":
     #language setup - could be changed later

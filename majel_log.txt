@@ -1398,3 +1398,34 @@ ls
 cd hpc
 git add * --update
 exit
+ls
+ls
+cd ..
+ls
+exit
+ls
+cd ..
+ls
+exit
+cd ..
+ls
+ls
+
+python
+exity
+exit
+ls
+grep
+
+ls -g
+ls -a
+
+cd ../
+ls
+cd majel /
+ls ../hpc /
+
+firefox -v
+
+echo hpc /
+exit
