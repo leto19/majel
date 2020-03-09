@@ -1429,3 +1429,16 @@ firefox -v
 
 echo hpc /
 exit
+pip
+ls
+cd ../
+ls
+
+
+cd graphics /
+help cw /./
+pip
+cd ../
+cd majel /
+pip
+cd ../

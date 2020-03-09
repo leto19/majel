@@ -1,6 +1,6 @@
 #JSGF V1.0;
 grammar folders;
-public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>|<rule6>|<rule7>|<rule8>|<rule9>|<rule10>|<rule11>|<rule12>|<rule13>|<rule14>|<rule15>|<rule16>|<rule17>|<rule18>|<rule19>|<rule20>|<rule21>|<rule22>|<rule23>|<rule24>|<rule25>|<rule26>|<rule27>|<rule28>|<rule29>|<rule30>|<rule31>|<rule32>|<rule33>|<rule34>|<rule35>|<rule36>|<rule37>|<rule38>|<rule39>|<rule40>);
+public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>|<rule6>|<rule7>|<rule8>|<rule9>|<rule10>|<rule11>|<rule12>|<rule13>|<rule14>|<rule15>|<rule16>|<rule17>);
 <rule0> = COMPOP;
 <rule1> = MAJEL;
 <rule2> = HPC;
@@ -19,26 +19,4 @@ public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>|<rule6>|<rule7>
 <rule15> = JOGLTEST;
 <rule16> = MMCW;
 <rule17> = CWNEW;
-<rule18> = COMPOP;
-<rule19> = MAJEL;
-<rule20> = HPC;
-<rule21> = SOUNDS;
-<rule22> = GRAPHICS;
-<rule23> = MULTIMEDIA;
-<rule24> = GRAMMARS;
-<rule25> = SCRIPTS;
-<rule26> = DATA;
-<rule27> = SOUNDS;
-<rule28> = LANGUAGES;
-<rule29> = MPI;
-<rule30> = COMPOP;
-<rule31> = OPENMP;
-<rule32> = CW;
-<rule33> = JOGLTEST;
-<rule34> = MMCW;
-<rule35> = CWNEW;
-<rule36> = GRAMMARS;
-<rule37> = SCRIPTS;
-<rule38> = DATA;
-<rule39> = SOUNDS;
-<rule40> = LANGUAGES;
+

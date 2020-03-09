@@ -1,5 +1,5 @@
 """
-collection of functions for Majel
+collection of setup functions for Majel
 """
 from jsgf import PublicRule, RootGrammar,parser
 import getpass
@@ -88,7 +88,16 @@ def write_list_to_file(prog_list, filename):
         for e in prog_list:
             print(e, file=f)
 
-
+def get_filenames(path=os.getcwd()):
+    files = [name for name in os.listdir(path)
+                 if os.path.isfile(os.path.join(path, name))]
+    ext = list()
+    filenames = list()
+    for f in files:
+        if "." in f and f.split(".")[1] not in ext:
+            ext.append(f.split(".")[1])
+            filenames.append(f.split(".")[0])
+    return (filenames,ext)
 def get_directory(path=os.getcwd()):
     """takes a directory path and returns a
     list containing the names of all directories
@@ -230,6 +239,17 @@ def setup_dict_grammar():
     create_grammar(folder_list, "folders",
                    "/home/g/year3/majel/grammars/folders.gram")
 
+    #get file names and extensionsfrom the given directory:
+    (file_list,ext_list) = get_filenames()
+    print(file_list,ext_list)
+    write_list_to_file(file_list,"/home/g/year3/majel/scripts/file_out")
+    write_list_to_file(ext_list, "/home/g/year3/majel/scripts/exts_out")
+    create_grammar(file_list, "files",
+                   "/home/g/year3/majel/grammars/files.gram")
+    create_grammar(ext_list, "exts",
+                   "/home/g/year3/majel/grammars/exts.gram")
+
+    
     # make sure that command control words are in the dictionary
     cmd_list = list()
     cmd_list.append("SLASH")
@@ -248,6 +268,10 @@ def setup_dict_grammar():
                        "/home/g/year3/majel/scripts/progs_out.txt")
     combine_files("/home/g/year3/majel/scripts/folders_out.txt",
                        "/home/g/year3/majel/scripts/cmd_out.txt")
+    combine_files("/home/g/year3/majel/scripts/folders_out.txt",
+                  "/home/g/year3/majel/scripts/file_out.txt")
+    combine_files("/home/g/year3/majel/scripts/folders_out.txt",
+                  "/home/g/year3/majel/scripts/exts_out.txt")
     master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
     # use web service to create dictionary
     print("getting dictionary...")
@@ -258,8 +282,12 @@ def setup_dict_grammar():
     os.remove("/home/g/year3/majel/scripts/folders_out.txt")
     os.remove("/home/g/year3/majel/scripts/progs_out.txt")
     os.remove("/home/g/year3/majel/scripts/cmd_out.txt")
-    
+    os.remove("/home/g/year3/majel/scripts/exts_out.txt")
+    os.remove("/home/g/year3/majel/scripts/file_out.txt")
+
     os.remove("/home/g/year3/majel/scripts/progs.txt")
 
 if __name__ == "__main__":
     setup_dict_grammar()
+    #(file_list, ext_list) = get_filenames()
+    #print(file_list, ext_list)

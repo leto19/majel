@@ -2,10 +2,12 @@
 grammar command;
 import <progs.gram>;
 import <folders.gram>;
+import <files.gram>;
+import <exts.gram>;
 public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 
-//<paramater> = [<option>][<pathexpr>[<file>]];
-<paramater> = [<option>][<pathexpr>];
+<paramater> = [<option>][<pathexpr>[<file>]];
+//<paramater> = [<option>][<pathexpr>];
 <option> = <dash><chars>;
 
 <pathexpr> = <dot><slash><pathexpr>
@@ -24,5 +26,7 @@ public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 //<foldername> = ROOT | HOME | G | DOWNLOADS | DESKTOP;
 <foldername> = <folders.root>;
 //<filename> = HELLO | WORLD;
+<filename> = <files.root>;
+<fileextension> = <exts.root>;
 //<fileextension> = PY | M  | TXT;
 //<prog> =(CODE | GIT | CD | MV | LA | UNAME | LS| FIREFOX | PYTHON | NANO);
