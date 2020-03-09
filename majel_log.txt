@@ -1442,3 +1442,139 @@ cd ../
 cd majel /
 pip
 cd ../
+ls
+cat readme . md
+cat
+ls
+cd ../
+cd majel /
+ls
+
+cat languages /
+
+
+exit
+
+
+ls
+
+cat . /readme . txt
+exit
+exit
+
+
+
+cat . /languages/
+
+
+majel_timeout 5
+
+cat . /languages/
+exit
+cat languages /
+
+exit
+
+
+ls
+
+cat languages /
+cat . /hpc/
+cat languages /
+cat readme . md
+cat data /
+cat -o
+cat
+cat hello . txt
+exit
+cat hello hello.txt txt
+exit
+cat hello hello.txt
+[A
+info
+exit
+cat hello.txt
+exit
+cat hello.txt
+gdbus cw /./
+cd ../
+cd majel /
+cd ../
+cat majel /hello.txt
+
+cd majel /
+exit
+ls
+cd ..
+cd ../
+cd ../
+exit
+cd ..
+exiy
+exit
+gdbus
+sudo ls
+ls
+cd ..
+cd ..
+exit
+cd ..
+cd ..
+cd ..
+exit
+cdcd ..
+cd ..
+exit
+cd ..
+exit
+ls
+ls
+cat hello.txt
+cat hello.txt
+cd ..
+ls
+
+exit
+exit
+ls
+cat hello.txt
+cd ..
+ls
+cd ..
+cd ../
+ls
+cd ..
+ls
+cd scripts
+ls
+exit
+ls
+cd ..
+
+
+
+exit
+exit
+cd ..
+exit
+cd ..
+
+exit
+exit
+cd ..
+exit
+cd ..
+ls
+cat world.class
+nano world.class
+chat hello.class
+cat hello.txt
+cd ../
+cat hello.class
+test world.class
+cat world.class
+cd majel /
+ls <s>
+ls <s>
+ls <s>
+exit <s>

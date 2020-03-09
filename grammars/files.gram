@@ -1,5 +1,7 @@
 #JSGF V1.0;
 grammar files;
-public <root> = (<rule0>);
+public <root> = (<rule0>|<rule1>|<rule2>|<rule3>);
 <rule0> = README;
-
+<rule1> = MAJEL;
+<rule2> = HELLO;
+<rule3> = WORLD;

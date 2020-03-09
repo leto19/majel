@@ -35,7 +35,7 @@ def get_command(lang,gram):
     
     mic = sr.Microphone(chunk_size=1024, sample_rate=44100)
     with mic as source:
-        recog.adjust_for_ambient_noise(source)
+        #recog.adjust_for_ambient_noise(source)
         #time.sleep(0.5)
         print("listening...")
 
@@ -48,7 +48,7 @@ def get_command(lang,gram):
         out = recog.recognize_sphinx(audio,language=lang,grammar=gram)
         #show_possible(out)
     except sr.UnknownValueError:
-        out2 = recog.recognize_sphinx(audio,language=lang,show_all=True)
+        #out2 = recog.recognize_sphinx(audio,language=lang,show_all=True)
         print("didn't quite get that")
         out = ""
     #return out.hyp().hypstr.lower().split()
@@ -67,8 +67,9 @@ def change_directory(command):
         if len(command) is 1:
             os.chdir("/home/%s/"% getpass.getuser())
         else:
-            print("path is """.join(command[1:]))
+            #print("path is """.join(command[1:]))
             setup.update_folder_grammar_dictionary("".join(command[1:]))
+            setup.update_file_grammar_dictionary("".join(command[1:]))
             os.chdir("".join(command[1:]))
             
     except FileNotFoundError:
@@ -139,6 +140,10 @@ def word_to_character(phrase):
                     phrase[index] = ".." + phrase[index+1]
                     phrase.pop(index+1)
                     print("dot dot found!")
+                else:
+                    phrase[index] = phrase[index-1] + "." + phrase[index+1]
+                    phrase.pop(index-1)
+                    phrase.pop(index)
             #print("word is ", word, "at index", index)
             #print("prev_word is", prev_word)
             if prev_word[0]== "/" and word[0] == "/":
@@ -268,7 +273,7 @@ if __name__ == "__main__":
                 "\x1b[0m" + git_string
         path = path.replace("/home/%s"%username,"~")
 
-        prompt =  "╭─|%s|%s|(Press Enter ⮠ for speech input)|\n╰─‣ " % (current_time,path)
+        prompt =  "\n╭─|%s|%s|(Press Enter ⮠ for speech input)|\n╰─‣ " % (current_time,path)
         input_string= input(prompt)
         command_words = shlex.split(input_string)
         if command_words == []:# use voice

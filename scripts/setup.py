@@ -94,10 +94,14 @@ def get_filenames(path=os.getcwd()):
     ext = list()
     filenames = list()
     for f in files:
-        if "." in f and f.split(".")[1] not in ext:
-            ext.append(f.split(".")[1])
+        if "." in f:
+            if f.split(".")[1] not in ext:
+                ext.append(f.split(".")[1])
             filenames.append(f.split(".")[0])
-    return (filenames,ext)
+        else: #file has no extension
+            filenames.append(f) 
+    print(filenames, ext)
+    return (filenames, ext)
 def get_directory(path=os.getcwd()):
     """takes a directory path and returns a
     list containing the names of all directories
@@ -140,7 +144,7 @@ def get_dictionary(file_read, file_write="words.dict"):
         dict_responce.content)  # write contents of dict
 
 
-def add_to_grammar(grammar_path,file_path):
+def add_to_grammar(grammar_path,file_path,gram_name):
     """
     loads a ``Grammar`` at grammar_path and tries to add rules to it 
     from the file in file_path then returns the new ``Grammar``
@@ -152,11 +156,13 @@ def add_to_grammar(grammar_path,file_path):
     old_gram.remove_rule(old_gram.get_rule_from_name("root"))
     # get list of rules from old grammar
     old_rules = old_gram.rules
-    new_gram = RootGrammar(name="folders", case_sensitive=True)
+    new_gram = RootGrammar(name=gram_name, case_sensitive=True)
     # add existing rules to new grammar
     i = 0 
+    old_rules_text = list()
     for rules in old_rules:
         exp = rules.expansion.text.upper()
+        old_rules_text.append(exp)
         if exp not in word_list:
             rule_name = "rule" + str(i)
             r = PublicRule(rule_name,exp,case_sensitive=True)
@@ -167,7 +173,7 @@ def add_to_grammar(grammar_path,file_path):
         rule_name = "rule" + str(i)
         exp = lines.upper().strip()
         # print("upp is ",exp)
-        if exp.isalpha() is True:
+        if exp.isalpha() is True and exp not in old_rules_text:
             r = PublicRule(rule_name, exp, case_sensitive=True)
             new_gram.add_rule(r)
             i += 1
@@ -176,6 +182,31 @@ def add_to_grammar(grammar_path,file_path):
     new_gram.compile_to_file(grammar_path,compile_as_root_grammar=True)
 
 
+
+def update_file_grammar_dictionary(p):
+    print("this is happening now")
+    (file_list,ext_list) = get_filenames(p)
+    write_list_to_file(file_list, "/home/g/year3/majel/scripts/files_out")
+    write_list_to_file(ext_list, "/home/g/year3/majel/scripts/exts_out")
+    add_to_grammar(
+        "/home/g/year3/majel/grammars/files.gram", "/home/g/year3/majel/scripts/files_out.txt", "files")
+    add_to_grammar(
+        "/home/g/year3/majel/grammars/exts.gram", "/home/g/year3/majel/scripts/exts_out.txt", "exts")
+    get_dictionary("/home/g/year3/majel/scripts/files_out.txt",
+                   "/home/g/year3/majel/scripts/files.dict")
+    get_dictionary("/home/g/year3/majel/scripts/exts_out.txt",
+                   "/home/g/year3/majel/scripts/exts.dict")
+    master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
+
+    combine_files(
+        master_path, "/home/g/year3/majel/scripts/exts.dict")
+    combine_files(
+        master_path, "/home/g/year3/majel/scripts/files.dict")
+    os.remove("/home/g/year3/majel/scripts/files_out.txt")
+    os.remove("/home/g/year3/majel/scripts/exts_out.txt")
+    os.remove("/home/g/year3/majel/scripts/files.dict")
+    os.remove("/home/g/year3/majel/scripts/exts.dict")
+    
 def update_folder_grammar_dictionary(p):
     #print(p)
     os.remove("/home/g/year3/majel/grammars/command.fsg")
@@ -183,7 +214,7 @@ def update_folder_grammar_dictionary(p):
     write_list_to_file(
         folder_list, "/home/g/year3/majel/scripts/folders_out")
     add_to_grammar(
-        "/home/g/year3/majel/grammars/folders.gram","/home/g/year3/majel/scripts/folders_out.txt")
+        "/home/g/year3/majel/grammars/folders.gram","/home/g/year3/majel/scripts/folders_out.txt","folders")
     # use web service to create folder dictionary
     get_dictionary("/home/g/year3/majel/scripts/folders_out.txt",
                         "/home/g/year3/majel/scripts/folders.dict")
