@@ -112,10 +112,8 @@ def run_command(command):
                 p = input(
                     "are you sure you want to run the command: '%s'? (Y/N)─‣ " % " ".join(command))
                 if p in ["y","yes","Y","aye aye","sure","ok"]:
-                    print("--------------------")
                     subprocess.run(command)
             else:
-                print("--------------------")
                 subprocess.run(command)
         except FileNotFoundError:
             print("Invalid Command: %s"%" ".join(command))
@@ -140,7 +138,7 @@ def is_connected(hostname):
         pass
         return False
 
-def word_to_character(phrase):
+def word_to_character(phrase, speech = True):
     """
     converts spoken input string to exercutable command
     """
@@ -210,8 +208,8 @@ def word_to_character(phrase):
     phrase = replace_in_list(phrase,"~","/home/g")
     #print(phrase)
     #print(len(phrase))
-
-    print("You said:\n%s" % " ".join(phrase))
+    if speech:
+        print("You said: %s" % " ".join(phrase))
     return phrase
 
 
@@ -340,10 +338,12 @@ if __name__ == "__main__":
         prompt =  "\n╭─|%s|%s|(Press Enter ⮠ for speech input)|\n╰─‣ " % (current_time,path)
         input_string= input(prompt)
         command_words = shlex.split(input_string)
+        s = False
         if command_words == []:# use voice
+            s = True
             command_words  = get_command(l,gram)
             
-        command_words = word_to_character(command_words)
+        command_words = word_to_character(command_words,s)
         update_log(" ".join(command_words))
         if len(command_words) != 0: # if some words were returned - the recogniser was successful
             run_command(command_words)

@@ -1920,3 +1920,23 @@ rm test /
 rm -rf test
 ls
 git add *
+git commit -m added prompt before exercuting potentially dangerous command
+git push
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+ls -a
+ls -t
+ls -A
+ls -v
+man ls
+ls -l
+ls -a majel
+ls -o
+ls -v
+ls -a
+exit
