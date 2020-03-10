@@ -9,7 +9,7 @@ public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 <paramater> = [<option>][<pathexpr>[<file>]];
 //<paramater> = [<option>][<pathexpr>];
 <option> = <dash><chars>;
-
+<modifyier> = CAPITAL | UPPER | LOWER;
 <pathexpr> = <dot><slash><pathexpr>
             |<dot><dot><slash><pathexpr>
             |<foldername><slash><pathexpr>
@@ -24,9 +24,9 @@ public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 <dot> = DOT;
 
 //<foldername> = ROOT | HOME | G | DOWNLOADS | DESKTOP;
-<foldername> = <folders.root>;
+<foldername> = [<modifyier>]<folders.root>;
 //<filename> = HELLO | WORLD;
-<filename> = <files.root>;
+<filename> = [<modifyier>]<files.root>;
 <fileextension> = <exts.root>;
 //<fileextension> = PY | M  | TXT;
 //<prog> =(CODE | GIT | CD | MV | LA | UNAME | LS| FIREFOX | PYTHON | NANO);

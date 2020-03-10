@@ -1,6 +1,6 @@
 #JSGF V1.0;
 grammar folders;
-public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>|<rule6>|<rule7>|<rule8>|<rule9>|<rule10>|<rule11>|<rule12>|<rule13>|<rule14>|<rule15>|<rule16>|<rule17>);
+public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>|<rule6>|<rule7>|<rule8>|<rule9>|<rule10>);
 <rule0> = COMPOP;
 <rule1> = MAJEL;
 <rule2> = HPC;
@@ -10,12 +10,5 @@ public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>|<rule6>|<rule7>
 <rule6> = GRAMMARS;
 <rule7> = SCRIPTS;
 <rule8> = DATA;
-<rule9> = SOUNDS;
+<rule9> = TEST;
 <rule10> = LANGUAGES;
-<rule11> = MPI;
-<rule12> = COMPOP;
-<rule13> = OPENMP;
-<rule14> = CW;
-<rule15> = JOGLTEST;
-<rule16> = MMCW;
-<rule17> = CWNEW;

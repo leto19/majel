@@ -94,12 +94,13 @@ def get_filenames(path=os.getcwd()):
     ext = list()
     filenames = list()
     for f in files:
-        if "." in f:
-            if f.split(".")[1] not in ext:
-                ext.append(f.split(".")[1])
-            filenames.append(f.split(".")[0])
-        else: #file has no extension
-            filenames.append(f) 
+        if len(f) <=20:
+            if "." in f:
+                if f.split(".")[1] not in ext:
+                    ext.append(f.split(".")[1])
+                filenames.append(f.split(".")[0])
+            else: #file has no extension
+                filenames.append(f) 
     print(filenames, ext)
     return (filenames, ext)
 def get_directory(path=os.getcwd()):
@@ -111,12 +112,17 @@ def get_directory(path=os.getcwd()):
     dirnames = [name for name in os.listdir(path)
                 if os.path.isdir(os.path.join(path, name))]
     master_list += dirnames
+    """
     for dirs in dirnames:
+        print("dirs is ",dirs)
         fp = os.path.join(path, dirs)
+    
         if os.access(fp, os.R_OK) and not dirs.startswith("."):
             fp_dirnames = [name for name in os.listdir(fp)
                            if os.path.isdir(os.path.join(fp, name))]
             master_list += fp_dirnames
+    
+    """
     return master_list
 
 
@@ -192,20 +198,21 @@ def update_file_grammar_dictionary(p):
         "/home/g/year3/majel/grammars/files.gram", "/home/g/year3/majel/scripts/files_out.txt", "files")
     add_to_grammar(
         "/home/g/year3/majel/grammars/exts.gram", "/home/g/year3/majel/scripts/exts_out.txt", "exts")
-    get_dictionary("/home/g/year3/majel/scripts/files_out.txt",
-                   "/home/g/year3/majel/scripts/files.dict")
-    get_dictionary("/home/g/year3/majel/scripts/exts_out.txt",
-                   "/home/g/year3/majel/scripts/exts.dict")
+    all_list = file_list + ext_list
+    write_list_to_file(all_list, "/home/g/year3/majel/scripts/all_out")
+
+    get_dictionary("/home/g/year3/majel/scripts/all_out.txt",
+                   "/home/g/year3/majel/scripts/all.dict")
+  
     master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
 
     combine_files(
-        master_path, "/home/g/year3/majel/scripts/exts.dict")
-    combine_files(
-        master_path, "/home/g/year3/majel/scripts/files.dict")
+        master_path, "/home/g/year3/majel/scripts/all.dict")
+    
     os.remove("/home/g/year3/majel/scripts/files_out.txt")
     os.remove("/home/g/year3/majel/scripts/exts_out.txt")
-    os.remove("/home/g/year3/majel/scripts/files.dict")
-    os.remove("/home/g/year3/majel/scripts/exts.dict")
+    os.remove("/home/g/year3/majel/scripts/all_out.txt")
+
     
 def update_folder_grammar_dictionary(p):
     #print(p)
@@ -223,7 +230,7 @@ def update_folder_grammar_dictionary(p):
     combine_files(
         master_path, "/home/g/year3/majel/scripts/folders.dict")
     os.remove("/home/g/year3/majel/scripts/folders.dict")
-    os.remove("/home/g/year3/majel/scripts/folders_out.txt")
+    #os.remove("/home/g/year3/majel/scripts/folders_out.txt")
 
 def combine_files(parent, child):
     with open(parent, 'a') as p:
@@ -288,6 +295,10 @@ def setup_dict_grammar():
     cmd_list.append("DOT")
     cmd_list.append("EXIT")
     cmd_list.append("SUDO")
+    cmd_list.append("CAPITAL")
+    cmd_list.append("UPPER")
+    cmd_list.append("LOWER")
+
     cmd_list += ["A", "B", "C", "D", "E", "F",
                  "G", "H", "M", "O", "T", "V", "S"]
     write_list_to_file(cmd_list, "/home/g/year3/majel/scripts/cmd_out")

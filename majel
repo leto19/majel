@@ -9,7 +9,6 @@ import subprocess
 import sys
 import time
 import textwrap
-#from contextlib import contextmanager
 from ctypes import CFUNCTYPE,c_char_p,c_int,cdll
 from datetime import datetime
 
@@ -27,7 +26,7 @@ def test_recognition():
     with audio_file as source:
         test_sound = recog.record(source)
     out = recog.recognize_sphinx(test_sound, language=lang, grammar=gram)
-    print("testing ...\n %s" % out)
+    #print("testing ...\n %s" % out)
 
 def get_command(lang,gram):
     recog = sr.Recognizer()  # this is the object that recognises the speech
@@ -60,24 +59,28 @@ def show_possible(decoder):
         print(best.hypstr,best.score)
 
 
-
-
 def change_directory(command):
     try:
         if len(command) is 1:
             os.chdir("/home/%s/"% getpass.getuser())
+            if is_connected("google.com") and os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
+                setup.update_folder_grammar_dictionary("/home/%s/"% getpass.getuser())
+                setup.update_file_grammar_dictionary("/home/%s/" % getpass.getuser())
+                test_recognition()
         else:
             #print("path is """.join(command[1:]))
-            setup.update_folder_grammar_dictionary("".join(command[1:]))
-            setup.update_file_grammar_dictionary("".join(command[1:]))
+            if is_connected("google.com") and os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
+                setup.update_folder_grammar_dictionary("".join(command[1:]))
+                setup.update_file_grammar_dictionary("".join(command[1:]))
+                test_recognition()
+            else:
+                pass
+                #print("Not connected - new names will not be updated.")
             os.chdir("".join(command[1:]))
-            
     except FileNotFoundError:
         print("no such directory: %s"   %(command[1]))
-        
         """
-        try:
-           
+        try:           
             command[1] = command[1].capitalize()
             #print(command)
             change_directory(command)
@@ -88,6 +91,7 @@ def run_command(command):
     """
         takes a command as a list of strings and exercutes it
     """
+    
     if "exit" in command:
         exit_func()
     if command[0] == "cd":
@@ -96,29 +100,63 @@ def run_command(command):
        global timeout
        timeout= int(command[1])
        print("set timeout to ",timeout)
+    elif command[0] == "majel_pronouce" and len(command) == 2:
+        show_pronouciation(command[1])
     else:
         try:
             # command_exec = [command[0], "".join(command[1:])]
             # print(command_exec)
             # subprocess.run(command_exec)
-            subprocess.run(command)
+
+            if "sudo" in command or "rm" in command or "mv" in command or "cp" in command:
+                p = input(
+                    "are you sure you want to run the command: '%s'? (Y/N)─‣ " % " ".join(command))
+                if p in ["y","yes","Y","aye aye","sure","ok"]:
+                    print("--------------------")
+                    subprocess.run(command)
+            else:
+                print("--------------------")
+                subprocess.run(command)
         except FileNotFoundError:
             print("Invalid Command: %s"%" ".join(command))
+
 
 def replace_in_list(phrase,to_replace,replaced):
     phrase = [s.replace(to_replace,replaced) for s in phrase]
     return phrase
 
+def is_connected(hostname):
+    #FROM https://stackoverflow.com/questions/20913411/test-if-an-internet-connection-is-present-in-python
+    try:
+        # see if we can resolve the host name -- tells us if there is
+        # a DNS listening
+        host = socket.gethostbyname(hostname)
+        # connect to the host -- tells us if the host is actually
+        # reachable
+        s = socket.create_connection((host, 80), 2)
+        s.close()
+        return True
+    except:
+        pass
+        return False
+
 def word_to_character(phrase):
     """
     converts spoken input string to exercutable command
     """
+
+    #print("phrase before replace step: ",phrase)
     phrase = replace_in_list(phrase,"dash","-")
     phrase = replace_in_list(phrase,"slash","/")
     phrase = replace_in_list(phrase,"dot",".")
-
+    #print("phrase after replace step: ",phrase)
+    for word in phrase:
+        #print(word)
+        if word == "<s>":
+            phrase.remove(word)
     for n,i in enumerate(phrase):
         #print(n,i)
+        
         if i == "-":
             phrase[n+1] = "-" + phrase[n+1]
             phrase.pop(n)
@@ -133,13 +171,24 @@ def word_to_character(phrase):
     count = 0
     while count < len(phrase):
         for index,word in enumerate(phrase):
+            if word == "upper":
+                phrase[index+1] = phrase[index+1].upper()
+                phrase.pop(index)
+            if word == "lower":
+                phrase[index+1] = phrase[index+1].lower()
+                phrase.pop(index)
+            if word == "capital":
+                phrase[index+1] = phrase[index+1].capitalize()
+                phrase.pop(index)
+
             if  word == "." and index < len(phrase)-1:
                 if phrase[index+1] == ".":
                     phrase.pop(index+1)
 
+
                     phrase[index] = ".." + phrase[index+1]
                     phrase.pop(index+1)
-                    print("dot dot found!")
+                    #print("dot dot found!")
                 else:
                     phrase[index] = phrase[index-1] + "." + phrase[index+1]
                     phrase.pop(index-1)
@@ -148,7 +197,7 @@ def word_to_character(phrase):
             #print("prev_word is", prev_word)
             if prev_word[0]== "/" and word[0] == "/":
                 new_word = prev_word + word
-                print("new word is ",new_word)
+                #print("new word is ",new_word)
                 phrase[index] = new_word
                 phrase.pop(prev_index)
                 prev_word = new_word
@@ -162,9 +211,9 @@ def word_to_character(phrase):
     #print(phrase)
     #print(len(phrase))
 
-    
-    #print(phrase)
+    print("You said:\n%s" % " ".join(phrase))
     return phrase
+
 
 def update_log(phrase):
     """
@@ -172,6 +221,7 @@ def update_log(phrase):
     """
     with open('/home/g/year3/majel/majel_log.txt','a') as f:
         f.write(phrase+"\n")
+
 
 def more_than_one_ending_slash(phrase):
     flag = 0
@@ -182,6 +232,7 @@ def more_than_one_ending_slash(phrase):
         return True
     else:
         return False
+
 
 def get_quote():
     """
@@ -220,6 +271,17 @@ def is_repo(path):
         return True
 
 
+def show_pronouciation(word):
+    with open("/home/g/year3/majel/languages/cmd2/master.dict") as f:
+        master_dictionary = f.readlines()
+    found = False
+    for line in master_dictionary:
+        #print(lines)
+        if word.upper() in line:
+            print(line)
+            found = True
+    if not found:
+        print("%s is not in the dictionary."% word)
 #SETUP START-----------------------------
 #signal.signal(signal.SIGINT, signal.SIG_IGN)
 #signal.signal(signal.SIGTSTP, signal.SIG_IGN)
@@ -244,21 +306,23 @@ if (len(sys.argv) == 2 and sys.argv[1] == "setup") or not os.path.exists("/home/
     print("running setup....")
     if os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
         os.remove("/home/g/year3/majel/grammars/command.fsg")
-    setup.setup_dict_grammar()
-    test_recognition()
+    if is_connected("google.com"):
+        setup.setup_dict_grammar()
+        test_recognition()
+    else:
+        print("could not run setup! Check internet connection.")
 #SETUP END -----------------------------
 
 if __name__ == "__main__":
     #language setup - could be changed later
     l = ("/home/g/year3/majel/languages/acoustic-model","/home/g/year3/majel/languages/cmd1.lm","/home/g/year3/majel/languages/cmd2/master.dict")
     gram = "/home/g/year3/majel/grammars/command.gram"
-
     #display setup
     command_words = str()
     os.system('clear')
     username = getpass.getuser()
     hostname = socket.gethostname()
-   
+    
     #welcome message
     print("Welcome to Majel!\n" + "\x1b[3;39;40m" + get_quote() + "\x1b[0m")
     #prompt start
@@ -278,7 +342,7 @@ if __name__ == "__main__":
         command_words = shlex.split(input_string)
         if command_words == []:# use voice
             command_words  = get_command(l,gram)
-            print("You said:\n%s" % command_words)
+            
         command_words = word_to_character(command_words)
         update_log(" ".join(command_words))
         if len(command_words) != 0: # if some words were returned - the recogniser was successful

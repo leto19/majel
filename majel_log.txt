@@ -1578,3 +1578,345 @@ ls <s>
 ls <s>
 ls <s>
 exit <s>
+ls
+
+ls
+exit
+ls
+cpp ../
+cd ../
+
+ls
+cat world.class
+cd majel /
+ls <s>
+ls <s>
+exit <s>
+ls
+cd ../
+ls world
+ls hello
+nautilus
+ls
+cd ../
+exit
+nautilus
+sudo dir ../
+gdbus -v ../
+cd ../
+exit
+exit
+exit
+exit
+cd ..
+ls <s>
+exit
+exit
+
+cd ../
+cat world.class
+exit
+ls
+cd ..
+
+
+
+exit
+ls
+ls -a
+cd ..
+ls
+ls <s>
+
+
+cd ../
+ls
+cd ..
+python3
+exit
+ls
+ls -t
+cd ../
+cd majel /<s>
+ls
+exit <s>
+cd ../
+cd hpc /<s>
+cd cw /<s>
+cd cw /<s>
+cd world.sh
+cd data /<s>
+cd majel /<s>
+ls <s>
+cd majel /<s>
+ls
+cd majel
+ls
+ls
+
+ls
+ls capital readme
+ls capital hello.md
+ls capital majel.md
+exit
+chat capital readme.md
+cat capital readme.md
+exit
+cat README.md
+cd ../
+exit
+exit
+exit
+cd ../
+cd majel /<s>
+[A
+exit <s>
+cd ../<s>
+cd ../<s>
+cd ../<s>
+cd ../<s>
+cd ../
+ls <s>
+exit <s>
+ls
+cd ../
+cd ../
+cd ..
+ls -a
+ls
+cd ../
+ls
+cd ../
+ls -a
+exit
+cd ../
+cd ../<s>
+cd ../
+cd ../<s>
+cd ../
+cd ../
+cd ../
+cd ../
+cd ../
+cd ../
+cd ../
+ls -a
+cat world.class
+cd ../
+cd ../
+ls ../
+cd ../
+cd ../
+ls
+cd ../
+ls
+cd books /
+ls
+sudo pwd majel
+cd ../
+ls
+ls
+ls
+cd ..
+ls
+cd Desktop
+cd ../
+cd graphics /
+ls
+ls -a
+
+ls
+cd jogltest /
+ls
+cpp bin /
+cd bin /
+ls
+cat simple.class
+exit
+cd ../
+
+cd graphics /
+ls
+cd jogltest /
+ls
+cd bin /
+ls
+cat simple.class
+cat Simple.class
+nano Simple.class
+cd
+ls
+cd./
+cd ../
+ls
+cd g /
+nautilus
+ls
+
+cd drive /
+pip hello
+cd ../
+ls
+cd world
+cd ../
+ls
+ls -a
+
+cd DOWNLOADS /
+cd Downloads /
+ls
+cd ../hello
+
+cd ../
+ls
+cd Hello
+cd year 1
+ls
+cd year 1
+cd year 1
+ls
+cd year 1
+cd year3
+;s
+ls
+cd Documents
+
+cd downloads /
+cd Downloads /
+ls
+cd ..
+cd ../
+ls
+ls -a
+cd ..
+cd ../
+ls
+cd ../
+cd g/
+cd g /
+ls
+cd ../
+cd ../
+ls
+ls
+cd g
+
+
+
+ls
+cd documents /
+cd Documents /
+cd ..
+cd ../
+cd
+cd ../
+ls -a
+cd majel
+cd ../
+ls
+cd ../
+sudo ls
+cd year3
+exit
+cd ../
+ls
+cd compop /
+cd
+ls
+ls -a
+cd year3
+ls
+cd hpc /
+ls
+cd ../
+ls
+cat world.class
+cd majel /
+ls
+majel
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+ls -a
+cat Readme.md
+pip
+test README.md
+test compop /readme.md
+cat README.md
+ls
+cd ../
+ls
+cd multimedia /
+ls
+cat specenvol.m
+cat SpecEnvol.m
+cd ..
+ls
+l
+exit
+ls
+ls -a
+cd .vscode
+ls
+cat settings.txt
+cat settings.txt
+cat settings.txt
+cat settings.txt
+cat settings.gitignore
+cat settings.gitignore
+cat settings.gitignore
+cat settings.json
+cat settings.json
+exit hello
+mmajel_pronounce python
+majel_pronouce python
+majel_pronouce python
+exit
+majel_pronouce python
+exit
+majel_pronouce python
+exit
+majel_pronouce python
+majel_pronouce python
+majel_pronouce json
+
+exit
+majel_pronouce python
+majel_pronouce pythondsadasa
+majel_pronouce python3
+majel_pronouce cd
+ls
+exit
+sudo ls
+exit
+sudo ls
+exit
+sudo ls
+ls
+exit
+sudo ls
+exit
+sudo ls
+sudo ls
+sudo ls
+exit
+sudo ls
+exit
+ls
+cp grammar_test.sh grammar_test_copy.sh
+ls
+rm grammar_test_copy.sh
+ls
+mkdir test
+ls
+cd ..
+cd majel/
+ls
+rm test /
+rm -rf test
+ls
+git add *
