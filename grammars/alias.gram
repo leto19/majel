@@ -1,0 +1,5 @@
+#JSGF V1.0;
+grammar alias;
+public <root> = (<rule0>);
+<rule0> = P-THREE;
+

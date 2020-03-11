@@ -4,7 +4,8 @@ import <progs.gram>;
 import <folders.gram>;
 import <files.gram>;
 import <exts.gram>;
-public <command> = EXIT | ([SUDO]) (EXECUTE|<progs.root>) [<paramater>];
+import <alias.gram>;
+public <command> = EXIT | ([SUDO]) (EXECUTE|<progs.root>|<alias.root>) [<paramater>];
 
 
 <paramater> = [<option>][<pathexpr>[<file>]];

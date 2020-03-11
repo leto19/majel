@@ -72,7 +72,8 @@ def create_grammar(word_list, name, gram_file):
     for lines in word_list:
         rule_name = "rule" + str(i)
         upp = lines.upper().strip()
-        if upp.isalpha() is True:
+        print("upp is",upp)
+        if upp != "" and upp != "{" and upp != "}" and upp != "." and upp[0] != "_":
             r = PublicRule(rule_name, upp, case_sensitive=True)
             grammar.add_rule(r)
             upp_list.append(upp)
@@ -111,7 +112,10 @@ def get_directory(path=os.getcwd()):
     master_list = list()
     dirnames = [name for name in os.listdir(path)
                 if os.path.isdir(os.path.join(path, name))]
-    master_list += dirnames
+    for dirs in dirnames:
+        if dirs[0] != ".":
+            master_list.append(dirs)
+
     """
     for dirs in dirnames:
         print("dirs is ",dirs)
@@ -178,8 +182,8 @@ def add_to_grammar(grammar_path,file_path,gram_name):
     for lines in word_list:
         rule_name = "rule" + str(i)
         exp = lines.upper().strip()
-        # print("upp is ",exp)
-        if exp.isalpha() is True and exp not in old_rules_text:
+        print("upp is ",exp)
+        if exp not in old_rules_text and exp != "" and exp != "{" and exp != "}" and exp != ".":
             r = PublicRule(rule_name, exp, case_sensitive=True)
             new_gram.add_rule(r)
             i += 1
@@ -187,8 +191,15 @@ def add_to_grammar(grammar_path,file_path,gram_name):
     # compile new grammar back to file
     new_gram.compile_to_file(grammar_path,compile_as_root_grammar=True)
 
-
-
+def convert_underscores(word):
+    letter_list = list(word)
+    #print(letter_list)
+    for i,char in enumerate(letter_list):
+        print(i,char)
+        if char == "_":
+            letter_list[i] = " UNDERSCORE "
+    final_word = "".join(letter_list)
+    return final_word
 def update_file_grammar_dictionary(p):
     print("this is happening now")
     (file_list,ext_list) = get_filenames(p)
@@ -237,7 +248,13 @@ def combine_files(parent, child):
         with open(child, 'rt') as c:
             p.write(c.read())
 
-
+def get_alias():
+    with open("/home/g/year3/majel/alias.txt","r") as f:
+        lines = f.readlines()
+    a = list()
+    for l in lines:
+        a.append(l.split()[0])
+    return a
 def setup_dict_grammar():
     """
     create grammar and dictionary files for most commonly used
@@ -256,12 +273,15 @@ def setup_dict_grammar():
     master = generate_prog_list()
     # returns list of most common programs
     prog_list = compare_prog_list(master, data)
-    
     # writes program list to file
     write_list_to_file(prog_list, "/home/g/year3/majel/scripts/progs_out")
 
     # creates grammar and writes to file
     create_grammar(prog_list, "progs", "/home/g/year3/majel/grammars/progs.gram")
+
+    alias_list = get_alias()
+    write_list_to_file(alias_list,"/home/g/year3/majel/scripts/alias_out")
+    create_grammar(alias_list,"alias","/home/g/year3/majel/grammars/alias.gram")
 
     # use web service to create program dictionary
     #get_dictionary("/home/g/year3/majel/scripts/progs_out.txt",
@@ -315,6 +335,8 @@ def setup_dict_grammar():
                   "/home/g/year3/majel/scripts/file_out.txt")
     combine_files("/home/g/year3/majel/scripts/folders_out.txt",
                   "/home/g/year3/majel/scripts/exts_out.txt")
+    combine_files("/home/g/year3/majel/scripts/folders_out.txt",
+                  "/home/g/year3/majel/scripts/alias_out.txt")
     master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
     # use web service to create dictionary
     print("getting dictionary...")
@@ -327,6 +349,7 @@ def setup_dict_grammar():
     os.remove("/home/g/year3/majel/scripts/cmd_out.txt")
     os.remove("/home/g/year3/majel/scripts/exts_out.txt")
     os.remove("/home/g/year3/majel/scripts/file_out.txt")
+    os.remove("/home/g/year3/majel/scripts/alias_out.txt")
 
     os.remove("/home/g/year3/majel/scripts/progs.txt")
 
@@ -334,3 +357,4 @@ if __name__ == "__main__":
     setup_dict_grammar()
     #(file_list, ext_list) = get_filenames()
     #print(file_list, ext_list)
+    #print(convert_underscores("file_name"))

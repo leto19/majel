@@ -107,8 +107,11 @@ def run_command(command):
        print("set timeout to ",timeout)
     elif command[0] == "majel_pronouce" and len(command) == 2:
         show_pronouciation(command[1])
+    elif command[0] == "majel_alias" and len(command) == 3:
+        add_alias(command[1],command[2])
     else:
         try:
+            command = replace_alias(command)
             # command_exec = [command[0], "".join(command[1:])]
             # print(command_exec)
             # subprocess.run(command_exec)
@@ -129,6 +132,22 @@ def replace_in_list(phrase,to_replace,replaced):
     phrase = [s.replace(to_replace,replaced) for s in phrase]
     return phrase
 
+
+def add_alias(alias, command):
+    with open("/home/g/year3/majel/alias.txt",'r') as f:
+        lines = f.readlines()
+        print(lines)
+    a = list()
+    for l in lines:
+        a.append(l.split()[0])
+    print(a)
+    with open("/home/g/year3/majel/alias.txt", 'a') as f:
+        if alias not in a:
+            print("adding new alias %s for %s" % (alias, command))
+            f.write("%s %s\n"%(alias,command))
+        else:
+            print("an alias with that name already exists")
+
 def is_connected(hostname):
     #FROM https://stackoverflow.com/questions/20913411/test-if-an-internet-connection-is-present-in-python
     try:
@@ -144,11 +163,28 @@ def is_connected(hostname):
         pass
         return False
 
+
+
+def replace_alias(command):
+    alias_dict = dict()
+    with open("/home/g/year3/majel/alias.txt","r") as f:
+        lines = f.readlines()
+    for l in lines:
+        alias = l.split()[0]
+        file_command = l.split()[1]
+        alias_dict[alias] = file_command
+
+    for index,word in enumerate(command):
+        #print(index,word)
+        if word in alias_dict.keys():    
+            command[index]= alias_dict[word]
+    return command
+
 def word_to_character(phrase, speech = True):
     """
     converts spoken input string to exercutable command
     """
-
+   
     #print("phrase before replace step: ",phrase)
     phrase = replace_in_list(phrase,"dash","-")
     phrase = replace_in_list(phrase,"slash","/")
@@ -158,7 +194,7 @@ def word_to_character(phrase, speech = True):
         #print(word)
         if word == "<s>":
             phrase.remove(word)
-            
+            """
     for n,i in enumerate(phrase):
         #print(n,i)
         
@@ -167,14 +203,17 @@ def word_to_character(phrase, speech = True):
             #print("phrase[n+1] is ",phrase[n+1])
             phrase[n+1] =  "/" + phrase[n+1]
             phrase.pop(n)
+    """
     prev_word = "test"
+    
     #print("\n-------")
     #print(phrase)
     
     count = 0
     while count < len(phrase):
         for index,word in enumerate(phrase):
-            print(index,word)
+            #print(index,word)
+           
             if word == "upper":
                 phrase[index+1] = phrase[index+1].upper()
                 phrase.pop(index)
@@ -379,7 +418,7 @@ if __name__ == "__main__":
         if command_words == []:# use voice
             s = True
             command_words  = get_command(l,gram)
-        print(command_words)
+        #print(command_words)
         command_words = word_to_character(command_words,s)
         update_log(" ".join(command_words))
         if len(command_words) != 0: # if some words were returned - the recogniser was successful

@@ -3,6 +3,6 @@ grammar exts;
 public <root> = (<rule0>|<rule1>|<rule2>|<rule3>);
 <rule0> = MD;
 <rule1> = GITIGNORE;
-<rule2> = SH;
-<rule3> = TXT;
+<rule2> = TXT;
+<rule3> = SH;
 

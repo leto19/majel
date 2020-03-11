@@ -2065,3 +2065,109 @@ cat myscript.sh
 ./myscript.sh
 ./myscript.sh
 exit
+python3 scripts/setup.py
+exit
+exit
+ls
+exit
+exit
+exit
+ls
+ls -a
+cat majel_log.txt
+apt./grammar_test.txt
+apt./grammar_test.sh
+./grammar_test.sh
+discord
+ls
+exit
+cd ../
+ls -a
+ls -A
+ls -o
+ls -o
+ls -O
+firefox -V
+cpp graphics /
+cd majel /
+cd ../
+cd majel /
+ls
+cd scripts /
+ls
+cd sounds /
+
+cd ../
+cd scripts /
+ls -m
+ls
+cat README.md
+./myscript.sh
+./myscript
+./myscript.sh
+cat myscript.sh
+exit
+cd./
+cd./
+exit
+cd./
+majel_timeout 10
+cd./
+cd ../
+cd /
+cd ../
+ls
+cd majel /
+
+ls -A
+
+exit
+ls -a
+ls -T
+ls -A
+touch alias.txt
+ls
+exit
+majmajel_alias p-three python3
+majel_alias p-three python3
+exit
+majel_alias p-three python3
+exit
+majel_alias p-three python3
+majel_alias p-three python3
+with open(/home/g/year3/majel/alias.txt,r) as f:
+;s
+ls
+majel_alias p-three python3
+majel_alias p-three python3
+majel_alias p-three python3
+majel_alias p-three python3
+exit
+majel_alias p-three python3
+majel_alias p-three python3
+majel_alias p-three python3
+exit
+p y t h o n 3
+p y t h o n 3
+p y t h o n 3
+ls
+ls
+p-three
+exit
+ls
+ls
+exit
+ls
+ls
+python3
+python3 -v
+ls
+python3
+python3 majel
+exit
+majel_pronouce python3
+exit
+p-three
+p-three
+ls
+exit

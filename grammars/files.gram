@@ -1,8 +1,11 @@
 #JSGF V1.0;
 grammar files;
-public <root> = (<rule0>|<rule1>|<rule2>|<rule3>);
+public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>|<rule6>);
 <rule0> = README;
 <rule1> = MAJEL;
-<rule2> = MYSCRIPT;
-<rule3> = HELLO;
+<rule2> = ALIAS;
+<rule3> = MYSCRIPT;
+<rule4> = MAJEL_LOG;
+<rule5> = HELLO;
+<rule6> = GRAMMAR_TEST;
 
