@@ -4,11 +4,11 @@ import <progs.gram>;
 import <folders.gram>;
 import <files.gram>;
 import <exts.gram>;
-public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
+public <command> = EXIT | ([SUDO]) (EXECUTE|<progs.root>) [<paramater>];
+
 
 <paramater> = [<option>][<pathexpr>[<file>]];
-//<paramater> = [<option>][<pathexpr>];
-<option> = <dash><chars>;
+<option> = <dash>[CAPITAL]<chars>;
 <modifyier> = CAPITAL | UPPER | LOWER;
 <pathexpr> = <dot><slash><pathexpr>
             |<dot><dot><slash><pathexpr>
@@ -20,13 +20,9 @@ public <command> = EXIT | ([SUDO])<progs.root>[<paramater>];
 
 <chars> =  B | A | C | F | G | M | O | T | V | S;
 <slash> = SLASH;
+
 <dash> = DASH;
 <dot> = DOT;
-
-//<foldername> = ROOT | HOME | G | DOWNLOADS | DESKTOP;
 <foldername> = [<modifyier>]<folders.root>;
-//<filename> = HELLO | WORLD;
 <filename> = [<modifyier>]<files.root>;
 <fileextension> = <exts.root>;
-//<fileextension> = PY | M  | TXT;
-//<prog> =(CODE | GIT | CD | MV | LA | UNAME | LS| FIREFOX | PYTHON | NANO);

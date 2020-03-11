@@ -1,8 +1,0 @@
-grammars
-scripts
-data
-test
-.git
-.vscode
-sounds
-languages

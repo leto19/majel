@@ -1940,3 +1940,128 @@ ls -o
 ls -v
 ls -a
 exit
+ls
+exit
+ls
+exit
+gdbus
+exit
+ls
+who
+exit
+ls
+exit
+ls
+exit
+cd ../
+cd majel /
+ls
+exit
+ls
+exit
+ls
+cd ../
+ls
+ls
+cd majel /
+clear
+ls
+ls
+exit
+cd ../
+ls
+cd multimedia /
+ls -a
+cpp g.wav
+cvlc g.wav
+ls
+vlc c
+vlc c
+exit
+ls -a G
+
+
+ls -a G
+ls -a
+exit
+ls
+ls -a G
+exit
+
+
+ls -a G
+exit
+ls -a G
+exiy
+exit
+ls -capital a
+exit
+ls - a
+[
+exit
+ls - a
+exit
+ls - a
+exit - f
+ls
+ls -a
+ls -capital a
+exit
+ls -t
+ls -a
+[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+ls -capital a
+exit
+ls -a
+ls -capital --a
+[A
+exit
+ls -a
+ls A
+exit
+ls -a
+ls -A
+ls
+cd ..
+cd majel
+ls
+ls -a
+python
+ls
+cd ../
+cd multimedia /
+exit
+ls
+cd ..
+cd majel
+ls -t
+python
+firefox
+plog c.class
+cd ../
+ls
+cd multimedia /
+cd ..
+cd majelcd majel
+cd majel
+ls
+cat Readme.sh
+cat README.md
+exit
+ls
+exit
+gold./capital sounds /
+pip./hello
+exit
+top./upper readme.md
+/upper readme .
+
+exit
+execute
+exit
+pylint myscript.txt
+cat myscript.sh
+./myscript.sh
+./myscript.sh
+exit

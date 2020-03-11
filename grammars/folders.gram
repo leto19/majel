@@ -1,14 +1,10 @@
 #JSGF V1.0;
 grammar folders;
-public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>|<rule6>|<rule7>|<rule8>|<rule9>|<rule10>);
+public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>);
 <rule0> = COMPOP;
 <rule1> = MAJEL;
 <rule2> = HPC;
 <rule3> = SOUNDS;
 <rule4> = GRAPHICS;
 <rule5> = MULTIMEDIA;
-<rule6> = GRAMMARS;
-<rule7> = SCRIPTS;
-<rule8> = DATA;
-<rule9> = TEST;
-<rule10> = LANGUAGES;
+

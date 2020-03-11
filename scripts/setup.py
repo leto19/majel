@@ -298,6 +298,7 @@ def setup_dict_grammar():
     cmd_list.append("CAPITAL")
     cmd_list.append("UPPER")
     cmd_list.append("LOWER")
+    cmd_list.append("EXECUTE")
 
     cmd_list += ["A", "B", "C", "D", "E", "F",
                  "G", "H", "M", "O", "T", "V", "S"]

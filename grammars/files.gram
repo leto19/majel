@@ -3,5 +3,6 @@ grammar files;
 public <root> = (<rule0>|<rule1>|<rule2>|<rule3>);
 <rule0> = README;
 <rule1> = MAJEL;
-<rule2> = HELLO;
-<rule3> = WORLD;
+<rule2> = MYSCRIPT;
+<rule3> = HELLO;
+
