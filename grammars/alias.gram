@@ -1,5 +1,6 @@
 #JSGF V1.0;
 grammar alias;
-public <root> = (<rule0>);
-<rule0> = P-THREE;
+public <root> = (<rule0>|<rule1>);
+<rule0> = PY-3;
+<rule1> = LIST-DIRECTORY;
 

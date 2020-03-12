@@ -64,6 +64,7 @@ def show_possible(decoder):
         print(best.hypstr,best.score)
 
 
+
 def change_directory(command):
     try:
         if len(command) is 1:
@@ -109,6 +110,8 @@ def run_command(command):
         show_pronouciation(command[1])
     elif command[0] == "majel_alias" and len(command) == 3:
         add_alias(command[1],command[2])
+    elif command[0] == "majel_update" and len(command) == 1:
+        setup.update_all()
     else:
         try:
             command = replace_alias(command)
@@ -171,14 +174,23 @@ def replace_alias(command):
         lines = f.readlines()
     for l in lines:
         alias = l.split()[0]
-        file_command = l.split()[1]
+        file_command = l.split()[1:]
+        #print(alias,file_command)
         alias_dict[alias] = file_command
-
+    
+    #print(alias_dict)
+    out_command = command.copy()
     for index,word in enumerate(command):
         #print(index,word)
         if word in alias_dict.keys():    
-            command[index]= alias_dict[word]
-    return command
+            #print("found match!")
+            to_insert = alias_dict[word]
+            #print(to_insert)
+            out_command.pop(index)
+            out_command[index:index] = to_insert
+    #print("command is %s" % out_command)
+    
+    return out_command
 
 def word_to_character(phrase, speech = True):
     """
@@ -263,6 +275,8 @@ def word_to_character(phrase, speech = True):
     phrase = replace_in_list(phrase,"~","/home/g")
     #print(phrase)
     #print(len(phrase))
+    update_log(" ".join(phrase))
+
     if speech:
         print("You said: %s" % " ".join(phrase))
     return phrase
@@ -420,7 +434,6 @@ if __name__ == "__main__":
             command_words  = get_command(l,gram)
         #print(command_words)
         command_words = word_to_character(command_words,s)
-        update_log(" ".join(command_words))
         if len(command_words) != 0: # if some words were returned - the recogniser was successful
             run_command(command_words)
         else:

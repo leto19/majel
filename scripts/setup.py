@@ -201,7 +201,7 @@ def convert_underscores(word):
     final_word = "".join(letter_list)
     return final_word
 def update_file_grammar_dictionary(p):
-    print("this is happening now")
+   
     (file_list,ext_list) = get_filenames(p)
     write_list_to_file(file_list, "/home/g/year3/majel/scripts/files_out")
     write_list_to_file(ext_list, "/home/g/year3/majel/scripts/exts_out")
@@ -241,12 +241,40 @@ def update_folder_grammar_dictionary(p):
     combine_files(
         master_path, "/home/g/year3/majel/scripts/folders.dict")
     os.remove("/home/g/year3/majel/scripts/folders.dict")
-    #os.remove("/home/g/year3/majel/scripts/folders_out.txt")
+    os.remove("/home/g/year3/majel/scripts/folders_out.txt")
+
+def update_alias_grammar_dictionary():
+    if os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
+        os.remove("/home/g/year3/majel/grammars/command.fsg")
+    alias_list = get_alias()
+    write_list_to_file(
+        alias_list, "/home/g/year3/majel/scripts/alias_out")
+    add_to_grammar(
+        "/home/g/year3/majel/grammars/alias.gram","/home/g/year3/majel/scripts/alias_out.txt","alias")
+    # use web service to create folder dictionary
+    get_dictionary("/home/g/year3/majel/scripts/alias_out.txt",
+                        "/home/g/year3/majel/scripts/alias.dict")
+    master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
+
+    combine_files(
+        master_path, "/home/g/year3/majel/scripts/alias.dict")
+    os.remove("/home/g/year3/majel/scripts/alias.dict")
+    os.remove("/home/g/year3/majel/scripts/alias_out.txt")
+
+
+
 
 def combine_files(parent, child):
     with open(parent, 'a') as p:
         with open(child, 'rt') as c:
             p.write(c.read())
+
+
+
+def update_all(p=os.curdir):
+    update_folder_grammar_dictionary(p)
+    update_file_grammar_dictionary(p)
+    update_alias_grammar_dictionary()
 
 def get_alias():
     with open("/home/g/year3/majel/alias.txt","r") as f:
@@ -289,7 +317,8 @@ def setup_dict_grammar():
 
     # gets folder names from the given directory
     folder_list = get_directory("/home/g/year3")
-
+    if "__PYCACHE__" in folder_list:
+        folder_list.remove("__PYCACHE__")
     # writes folder list to file
     write_list_to_file(folder_list, "/home/g/year3/majel/scripts/folders_out")
 
