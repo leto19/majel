@@ -1,6 +1,8 @@
 #JSGF V1.0;
 grammar alias;
-public <root> = (<rule0>|<rule1>);
+public <root> = (<rule0>|<rule1>|<rule2>|<rule3>);
 <rule0> = PY-3;
 <rule1> = LIST-DIRECTORY;
+<rule2> = LIST-ROOT;
+<rule3> = SNAKE-THREE;
 

@@ -100,3 +100,116 @@ list-directory
 ./myscript.sh
 ./myscript.sh
 exit
+majel_alias list-/ ls /
+majel_update
+print MYSCRIPT
+list-root
+
+list-directory sounds /
+list-directory
+list-directory grammar_test.sh
+list-directory grammar_test.sh
+list-directory grammar_test.sh
+list-directory grammar_test.sh
+list-directory sounds /
+list-directory graphics /
+ls ../
+cd ../
+cat world.class
+ls majel /
+list-directory majel
+cd majel
+cd majel
+ls majel
+cd majel
+exit
+list-root
+
+./grammar_test.sh
+ls
+ls
+list-directory
+cd ../
+list-directory
+ls -o
+list-directory sounds /
+ls sounds / readme
+
+ls sounds /
+list-directory sounds /
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+ls
+exit
+gdbus HPC / myscript
+ls sounds
+list-directory sounds
+laptop-detect
+ls alias.sh
+ls alias
+ls myscript
+compgen
+compgen -c
+compgen
+exit
+fdisk -t readme
+list-directory
+cat majel_log.txt
+nano majel_log.txt
+./myscript.gitignore
+./myscript.sh
+list-directory
+python3
+majel_alias snake-three python3
+majel_update
+pip
+snake-three
+list-root
+ls
+ls grammar_test.sh
+ls graphics
+ls grammar_test.sh
+ls sounds
+list-directory sounds
+cd ../
+ls
+cd hpc
+ls
+cd cw1
+ls
+exit
+ls
+cat README.gitignore
+cat README.md
+ls
+cd -a./
+cd -a./
+cd -t
+cd hpc
+ls
+cd./
+ls grammar_test.sh
+ls grammar_test.sh
+cd data
+ls
+passwd progs.txt
+cat progs.jsgf
+cat progs.txt
+cd ../
+majel_update
+snake-three
+eixt
+exit
+[3/home/g
+0 ls
+0 a sudo
+0 apt git
+0 apt git
+exit
+python a
+ls
+cp pwd c python
+ls
+cat alias.md
+cat majel
+nano majel
+exit

@@ -31,7 +31,8 @@ def test_recognition():
     #print("testing ...\n %s" % out)
     os.system('clear')
 
-def get_command(lang,gram):
+
+def get_command(lang, gram, selective_mode=False):
     recog = sr.Recognizer()  # this is the object that recognises the speech
     
     
@@ -47,7 +48,12 @@ def get_command(lang,gram):
     try:
         print("working...")
         with suppress_stderr():
-            out = recog.recognize_sphinx(audio,language=lang,grammar=gram)
+            if selective_mode:
+                out2 = recog.recognize_sphinx(audio,language=lang,show_all=True)
+                out = show_possible(out2)
+
+            else:
+                out = recog.recognize_sphinx(audio,language=lang,grammar=gram)
         #os.system('clear')
 
 #show_possible(out)
@@ -59,11 +65,13 @@ def get_command(lang,gram):
     return out.lower().split()
 
 def show_possible(decoder):
+    hyp_list = list()
     #print("Best 10 hypothesis:")
     for best, i in zip(decoder.nbest(),range(10)):
-        print(best.hypstr,best.score)
-
-
+        print(i,best.hypstr)
+        hyp_list.append(best.hypstr)
+    selected = input("select the number of the command you want: ")
+    return hyp_list[int(selected)]
 
 def change_directory(command):
     try:
@@ -85,14 +93,9 @@ def change_directory(command):
             os.chdir("".join(command[1:]))
     except FileNotFoundError:
         print("no such directory: %s"   %(command[1]))
-        """
-        try:           
-            command[1] = command[1].capitalize()
-            #print(command)
-            change_directory(command)
-        except RecursionError:
-            print("no such directory: %s" % (command[1]))
-        """
+    except NotADirectoryError:
+        print("%s is not a directory" % command[1])
+        
 def run_command(command):
     """
         takes a command as a list of strings and exercutes it
@@ -111,7 +114,10 @@ def run_command(command):
     elif command[0] == "majel_alias" and len(command) == 3:
         add_alias(command[1],command[2])
     elif command[0] == "majel_update" and len(command) == 1:
-        setup.update_all()
+        if is_connected("google.com"):
+            setup.update_all()
+        else:
+            print("not connected!")
     else:
         try:
             command = replace_alias(command)
@@ -271,10 +277,12 @@ def word_to_character(phrase, speech = True):
                 prev_index = index
         #print(phrase)
         count+= 1
-    phrase = replace_in_list(phrase,"root","/")
+    #phrase = replace_in_list(phrase,"root","/")
     phrase = replace_in_list(phrase,"~","/home/g")
     #print(phrase)
     #print(len(phrase))
+    if phrase[-1] == "/":
+        phrase.pop(-1)
     update_log(" ".join(phrase))
 
     if speech:
@@ -390,13 +398,16 @@ asound.snd_lib_error_set_handler(c_error_handler)
 p = pyaudio.PyAudio()
 p.terminate()
 timeout = 2  # default timeout for speech
+selective_mode = False # experimental 
 if (len(sys.argv) == 2 and sys.argv[1] == "setup") or not os.path.exists("/home/g/year3/majel/grammars/progs.gram"):
     print("running setup....")
-    if os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
-        os.remove("/home/g/year3/majel/grammars/command.fsg")
     if is_connected("google.com"):
+        if os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
+            os.remove("/home/g/year3/majel/grammars/command.fsg")
         setup.setup_dict_grammar()
         test_recognition()
+        os.system('clear')
+
     else:
         print("could not run setup! Check internet connection.")
 #SETUP END -----------------------------
@@ -407,7 +418,6 @@ if __name__ == "__main__":
     gram = "/home/g/year3/majel/grammars/command.gram"
     #display setup
     command_words = str()
-    os.system('clear')
     username = getpass.getuser()
     hostname = socket.gethostname()
     
@@ -431,10 +441,11 @@ if __name__ == "__main__":
         s = False
         if command_words == []:# use voice
             s = True
-            command_words  = get_command(l,gram)
+            command_words  = get_command(l,gram,selective_mode)
         #print(command_words)
-        command_words = word_to_character(command_words,s)
-        if len(command_words) != 0: # if some words were returned - the recogniser was successful
+    
+        if len(command_words) != 0 and command_words != [""]: # if some words were returned - the recogniser was successful
+            command_words = word_to_character(command_words, s)
             run_command(command_words)
         else:
             print("I'm sorry %s, I'm afraid I can't do that." % username.capitalize())

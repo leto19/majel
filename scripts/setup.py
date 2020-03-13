@@ -223,8 +223,8 @@ def update_file_grammar_dictionary(p):
     os.remove("/home/g/year3/majel/scripts/files_out.txt")
     os.remove("/home/g/year3/majel/scripts/exts_out.txt")
     os.remove("/home/g/year3/majel/scripts/all_out.txt")
-
-    
+    if os.path.exists("/home/g/year3/majel/scripts/all.dict"):
+        os.remove("/home/g/year3/majel/scripts/all.dict")
 def update_folder_grammar_dictionary(p):
     #print(p)
     os.remove("/home/g/year3/majel/grammars/command.fsg")

@@ -1,2 +1,4 @@
 py-3 python3
 list-directory ls -o
+list-root ls /
+snake-three python3
