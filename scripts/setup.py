@@ -6,7 +6,7 @@ import getpass
 import os
 import requests
 import re
-
+from configparser import ConfigParser
 def generate_prog_list():
     """
     use cmd history files to get a list of programs
@@ -35,7 +35,7 @@ def generate_prog_list():
             if line_cleaned != []:
                 master_list.append(line_cleaned[0])
     # get majel history
-    with open("/home/%s/year3/majel/majel_log.txt" % user) as f:
+    with open("%s/majel_log.txt" % path) as f:
         majel_list = f.readlines()
 
     for line in majel_list:
@@ -113,7 +113,7 @@ def get_directory(path=os.getcwd()):
     dirnames = [name for name in os.listdir(path)
                 if os.path.isdir(os.path.join(path, name))]
     for dirs in dirnames:
-        if dirs[0] != ".":
+        if dirs[0] != "." and dirs[0] != "_":
             master_list.append(dirs)
 
     """
@@ -203,63 +203,80 @@ def convert_underscores(word):
 def update_file_grammar_dictionary(p):
    
     (file_list,ext_list) = get_filenames(p)
-    write_list_to_file(file_list, "/home/g/year3/majel/scripts/files_out")
-    write_list_to_file(ext_list, "/home/g/year3/majel/scripts/exts_out")
+    write_list_to_file(file_list, "%s/scripts/files_out" % path)
+    write_list_to_file(ext_list, "%s/scripts/exts_out"% path)
     add_to_grammar(
-        "/home/g/year3/majel/grammars/files.gram", "/home/g/year3/majel/scripts/files_out.txt", "files")
+        "%s/grammars/files.gram", "%s/scripts/files_out.txt" % path, "files")
     add_to_grammar(
-        "/home/g/year3/majel/grammars/exts.gram", "/home/g/year3/majel/scripts/exts_out.txt", "exts")
+        "%s/grammars/exts.gram" % path, "%s/scripts/exts_out.txt" % path, "exts")
     all_list = file_list + ext_list
-    write_list_to_file(all_list, "/home/g/year3/majel/scripts/all_out")
+    write_list_to_file(all_list, "%s/scripts/all_out" % path)
 
-    get_dictionary("/home/g/year3/majel/scripts/all_out.txt",
-                   "/home/g/year3/majel/scripts/all.dict")
+    get_dictionary("%s/scripts/all_out.txt" % path,
+                   "%s/scripts/all.dict" % path)
   
-    master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
+    master_path = "%s/languages/cmd2/master.dict" % path
 
     combine_files(
-        master_path, "/home/g/year3/majel/scripts/all.dict")
+        master_path, "%s/scripts/all.dict"% path)
     
-    os.remove("/home/g/year3/majel/scripts/files_out.txt")
-    os.remove("/home/g/year3/majel/scripts/exts_out.txt")
-    os.remove("/home/g/year3/majel/scripts/all_out.txt")
-    if os.path.exists("/home/g/year3/majel/scripts/all.dict"):
-        os.remove("/home/g/year3/majel/scripts/all.dict")
+    os.remove("%s/scripts/files_out.txt" % path)
+    os.remove("%s/scripts/exts_out.txt" % path)
+    os.remove("%s/scripts/all_out.txt" % path)
+    if os.path.exists("%s/scripts/all.dict" % path):
+        os.remove("%s/scripts/all.dict" % path)
+
+
+def read_cfg():
+    cfg = ConfigParser()
+    cfg.read('/home/g/year3/majel/scripts/config.ini')
+    global timeout,path
+    timeout = cfg.getint('general','timeout')
+    path = cfg.get('installation', 'location')
+
+def get_path():
+    cfg = ConfigParser()
+
+    cfg.read('/home/g/year3/majel/scripts/config.ini')
+    return cfg.get('installation', 'location')
+
 def update_folder_grammar_dictionary(p):
     #print(p)
-    os.remove("/home/g/year3/majel/grammars/command.fsg")
+    os.remove("%s/grammars/command.fsg" % path)
     folder_list = get_directory(p)
+    #print("FOLDER_LIST", folder_list)
+
     write_list_to_file(
-        folder_list, "/home/g/year3/majel/scripts/folders_out")
+        folder_list, "%s/scripts/folders_out" % path)
     add_to_grammar(
-        "/home/g/year3/majel/grammars/folders.gram","/home/g/year3/majel/scripts/folders_out.txt","folders")
+        "%s/grammars/folders.gram" % path,"%s/scripts/folders_out.txt" % path,"folders")
     # use web service to create folder dictionary
-    get_dictionary("/home/g/year3/majel/scripts/folders_out.txt",
-                        "/home/g/year3/majel/scripts/folders.dict")
-    master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
+    get_dictionary("%s/scripts/folders_out.txt" % path,
+                        "%s/scripts/folders.dict" % path)
+    master_path = "%s/languages/cmd2/master.dict" % path
 
     combine_files(
-        master_path, "/home/g/year3/majel/scripts/folders.dict")
-    os.remove("/home/g/year3/majel/scripts/folders.dict")
-    os.remove("/home/g/year3/majel/scripts/folders_out.txt")
+        master_path, "%s/scripts/folders.dict" % path)
+    os.remove("%s/scripts/folders.dict" % path)
+    os.remove("%s/scripts/folders_out.txt" % path)
 
 def update_alias_grammar_dictionary():
-    if os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
-        os.remove("/home/g/year3/majel/grammars/command.fsg")
+    if os.path.exists("%s/grammars/command.fsg" % path):
+        os.remove("%s/grammars/command.fsg" % path)
     alias_list = get_alias()
     write_list_to_file(
-        alias_list, "/home/g/year3/majel/scripts/alias_out")
+        alias_list, "%s/scripts/alias_out" % path)
     add_to_grammar(
-        "/home/g/year3/majel/grammars/alias.gram","/home/g/year3/majel/scripts/alias_out.txt","alias")
+        "%s/grammars/alias.gram" % path, "%s/scripts/alias_out.txt", "alias" % path)
     # use web service to create folder dictionary
-    get_dictionary("/home/g/year3/majel/scripts/alias_out.txt",
-                        "/home/g/year3/majel/scripts/alias.dict")
-    master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
+    get_dictionary("%s/scripts/alias_out.txt" % path,
+                        "%s/scripts/alias.dict" % path)
+    master_path = "%s/languages/cmd2/master.dict" % path
 
     combine_files(
-        master_path, "/home/g/year3/majel/scripts/alias.dict")
-    os.remove("/home/g/year3/majel/scripts/alias.dict")
-    os.remove("/home/g/year3/majel/scripts/alias_out.txt")
+        master_path, "%s/scripts/alias.dict" % path)
+    os.remove("%s/scripts/alias.dict" % path)
+    os.remove("%s/scripts/alias_out.txt" % path)
 
 
 
@@ -277,7 +294,8 @@ def update_all(p=os.curdir):
     update_alias_grammar_dictionary()
 
 def get_alias():
-    with open("/home/g/year3/majel/alias.txt","r") as f:
+    path = get_path()
+    with open("%s/alias.txt" % path, "r") as f:
         lines = f.readlines()
     a = list()
     for l in lines:
@@ -288,11 +306,12 @@ def setup_dict_grammar():
     create grammar and dictionary files for most commonly used
     programs and current directory.
     """
+    path = get_path()
     # exercute script that populates a file progs.txt
-    os.system('/home/g/year3/majel/scripts/compgen.sh')
+    os.system('%s/scripts/compgen.sh' % path)
 
     # get content of progs.txt
-    with open("/home/g/year3/majel/scripts/progs.txt", 'rt') as f:
+    with open("%s/scripts/progs.txt" % path, 'rt') as f:
         data = f.readlines()
     # formatting
     data = [s.replace("\n", "") for s in data]
@@ -302,39 +321,38 @@ def setup_dict_grammar():
     # returns list of most common programs
     prog_list = compare_prog_list(master, data)
     # writes program list to file
-    write_list_to_file(prog_list, "/home/g/year3/majel/scripts/progs_out")
+    write_list_to_file(prog_list, "%s/scripts/progs_out" % path)
 
     # creates grammar and writes to file
-    create_grammar(prog_list, "progs", "/home/g/year3/majel/grammars/progs.gram")
+    create_grammar(prog_list, "progs", "%s/grammars/progs.gram" % path)
 
     alias_list = get_alias()
-    write_list_to_file(alias_list,"/home/g/year3/majel/scripts/alias_out")
-    create_grammar(alias_list,"alias","/home/g/year3/majel/grammars/alias.gram")
+    write_list_to_file(alias_list,"%s/scripts/alias_out" % path)
+    create_grammar(alias_list, "alias", "%s/grammars/alias.gram" % path)
 
     # use web service to create program dictionary
-    #get_dictionary("/home/g/year3/majel/scripts/progs_out.txt",
-    #               "/home/g/year3/majel/scripts/progs.dict")
+    #get_dictionary("%s/scripts/progs_out.txt",
+    #               "%s/scripts/progs.dict")
 
     # gets folder names from the given directory
     folder_list = get_directory("/home/g/year3")
-    if "__PYCACHE__" in folder_list:
-        folder_list.remove("__PYCACHE__")
+    
     # writes folder list to file
-    write_list_to_file(folder_list, "/home/g/year3/majel/scripts/folders_out")
+    write_list_to_file(folder_list, "%s/scripts/folders_out" % path)
 
     # create grammar and writes to file
     create_grammar(folder_list, "folders",
-                   "/home/g/year3/majel/grammars/folders.gram")
+                   "%s/grammars/folders.gram" % path)
 
     #get file names and extensionsfrom the given directory:
     (file_list,ext_list) = get_filenames()
     print(file_list,ext_list)
-    write_list_to_file(file_list,"/home/g/year3/majel/scripts/file_out")
-    write_list_to_file(ext_list, "/home/g/year3/majel/scripts/exts_out")
+    write_list_to_file(file_list, "%s/scripts/file_out" % path)
+    write_list_to_file(ext_list, "%s/scripts/exts_out" % path)
     create_grammar(file_list, "files",
-                   "/home/g/year3/majel/grammars/files.gram")
+                   "%s/grammars/files.gram" % path)
     create_grammar(ext_list, "exts",
-                   "/home/g/year3/majel/grammars/exts.gram")
+                   "%s/grammars/exts.gram" % path)
 
     
     # make sure that command control words are in the dictionary
@@ -351,37 +369,38 @@ def setup_dict_grammar():
 
     cmd_list += ["A", "B", "C", "D", "E", "F",
                  "G", "H", "M", "O", "T", "V", "S"]
-    write_list_to_file(cmd_list, "/home/g/year3/majel/scripts/cmd_out")
+    write_list_to_file(cmd_list, "%s/scripts/cmd_out" % path)
     # no need to create grammar here, already hand written 
     
     # combines all word lists into one
     print("combining word lists...")
-    combine_files("/home/g/year3/majel/scripts/folders_out.txt",
-                       "/home/g/year3/majel/scripts/progs_out.txt")
-    combine_files("/home/g/year3/majel/scripts/folders_out.txt",
-                       "/home/g/year3/majel/scripts/cmd_out.txt")
-    combine_files("/home/g/year3/majel/scripts/folders_out.txt",
-                  "/home/g/year3/majel/scripts/file_out.txt")
-    combine_files("/home/g/year3/majel/scripts/folders_out.txt",
-                  "/home/g/year3/majel/scripts/exts_out.txt")
-    combine_files("/home/g/year3/majel/scripts/folders_out.txt",
-                  "/home/g/year3/majel/scripts/alias_out.txt")
-    master_path = "/home/g/year3/majel/languages/cmd2/master.dict"
+    combine_files("%s/scripts/folders_out.txt" % path,
+                       "%s/scripts/progs_out.txt" % path)
+    combine_files("%s/scripts/folders_out.txt" % path,
+                  "%s/scripts/cmd_out.txt" % path)
+    combine_files("%s/scripts/folders_out.txt" % path,
+                  "%s/scripts/file_out.txt" % path)
+    combine_files("%s/scripts/folders_out.txt" % path,
+                  "%s/scripts/exts_out.txt" % path)
+    combine_files("%s/scripts/folders_out.txt" % path,
+                  "%s/scripts/alias_out.txt" % path)
+    master_path = "%s/languages/cmd2/master.dict" % path
     # use web service to create dictionary
     print("getting dictionary...")
-    get_dictionary("/home/g/year3/majel/scripts/folders_out.txt",master_path)
+    get_dictionary("%s/scripts/folders_out.txt"% path,master_path)
     print("done!")
 
     # remove temporary files
-    os.remove("/home/g/year3/majel/scripts/folders_out.txt")
-    os.remove("/home/g/year3/majel/scripts/progs_out.txt")
-    os.remove("/home/g/year3/majel/scripts/cmd_out.txt")
-    os.remove("/home/g/year3/majel/scripts/exts_out.txt")
-    os.remove("/home/g/year3/majel/scripts/file_out.txt")
-    os.remove("/home/g/year3/majel/scripts/alias_out.txt")
+    os.remove("%s/scripts/folders_out.txt" % path)
+    os.remove("%s/scripts/progs_out.txt" % path)
+    os.remove("%s/scripts/cmd_out.txt" % path)
+    os.remove("%s/scripts/exts_out.txt" % path)
+    os.remove("%s/scripts/file_out.txt" % path)
+    os.remove("%s/scripts/alias_out.txt" % path)
 
-    os.remove("/home/g/year3/majel/scripts/progs.txt")
+    os.remove("%s/scripts/progs.txt" % path)
 
+path = get_path()
 if __name__ == "__main__":
     setup_dict_grammar()
     #(file_list, ext_list) = get_filenames()

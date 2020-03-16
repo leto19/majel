@@ -213,3 +213,38 @@ cat alias.md
 cat majel
 nano majel
 exit
+cd scripts/
+cd scripts
+cd scripts
+cd scripts
+cd scripts
+cd scripts/
+ls
+ls
+exit
+ls
+exit
+ls
+cd books
+cd ..
+ls
+cd ..
+ls
+cd ..
+cat questions.txt
+cd
+ls
+cat ques
+cat questions.txt
+ls /home
+ls
+ls root
+ls /.
+ls /home/g
+ls/home/g/year3
+ls /home/g/year3
+cat questions.txt
+exit
+exit
+ls
+exit

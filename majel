@@ -410,7 +410,7 @@ if (len(sys.argv) == 2 and sys.argv[1] == "setup") or not os.path.exists("/home/
 
     else:
         print("could not run setup! Check internet connection.")
-#SETUP END -----------------------------
+#SETUP END -----------------------------fasd
 
 if __name__ == "__main__":
     #language setup - could be changed later
