@@ -72,7 +72,7 @@ def create_grammar(word_list, name, gram_file):
     for lines in word_list:
         rule_name = "rule" + str(i)
         upp = lines.upper().strip()
-        print("upp is",upp)
+        #print("upp is",upp)
         if upp != "" and upp != "{" and upp != "}" and upp != "." and upp[0] != "_":
             r = PublicRule(rule_name, upp, case_sensitive=True)
             grammar.add_rule(r)
@@ -96,6 +96,7 @@ def get_filenames(path=os.getcwd()):
     filenames = list()
     for f in files:
         if len(f) <=20:
+            f = f.replace(" ","_")
             if "." in f:
                 if f.split(".")[1] not in ext:
                     ext.append(f.split(".")[1])
@@ -113,6 +114,9 @@ def get_directory(path=os.getcwd()):
     dirnames = [name for name in os.listdir(path)
                 if os.path.isdir(os.path.join(path, name))]
     for dirs in dirnames:
+        if " " in dirs:
+            print("there is a space in this filename!",dirs)
+            dirs = dirs.replace(" ","_")
         if dirs[0] != "." and dirs[0] != "_":
             master_list.append(dirs)
 
@@ -205,16 +209,28 @@ def update_file_grammar_dictionary(p):
     (file_list,ext_list) = get_filenames(p)
     write_list_to_file(file_list, "%s/scripts/files_out" % path)
     write_list_to_file(ext_list, "%s/scripts/exts_out"% path)
-    add_to_grammar(
-        "%s/grammars/files.gram", "%s/scripts/files_out.txt" % path, "files")
-    add_to_grammar(
-        "%s/grammars/exts.gram" % path, "%s/scripts/exts_out.txt" % path, "exts")
+    
     all_list = file_list + ext_list
     write_list_to_file(all_list, "%s/scripts/all_out" % path)
 
     get_dictionary("%s/scripts/all_out.txt" % path,
                    "%s/scripts/all.dict" % path)
-  
+    dict_list = get_words_from_dictionary()
+
+    print(file_list)
+    file_list = compare_lists(file_list,dict_list)
+    print(file_list)
+    ext_list = compare_lists(ext_list,dict_list)
+
+    write_list_to_file(file_list, "%s/scripts/files_out" % path)
+    write_list_to_file(ext_list, "%s/scripts/exts_out" % path)
+
+    add_to_grammar(
+        "%s/grammars/files.gram" % path, "%s/scripts/files_out.txt" % path, "files")
+    add_to_grammar(
+        "%s/grammars/exts.gram" % path, "%s/scripts/exts_out.txt" % path, "exts")
+
+
     master_path = "%s/languages/cmd2/master.dict" % path
 
     combine_files(
@@ -248,11 +264,18 @@ def update_folder_grammar_dictionary(p):
 
     write_list_to_file(
         folder_list, "%s/scripts/folders_out" % path)
-    add_to_grammar(
-        "%s/grammars/folders.gram" % path,"%s/scripts/folders_out.txt" % path,"folders")
+    
     # use web service to create folder dictionary
     get_dictionary("%s/scripts/folders_out.txt" % path,
                         "%s/scripts/folders.dict" % path)
+    dict_list = get_words_from_dictionary()
+
+    folder_list = compare_lists(folder_list,dict_list)
+    write_list_to_file(
+        folder_list, "%s/scripts/folders_out" % path)
+        
+    add_to_grammar(
+        "%s/grammars/folders.gram" % path, "%s/scripts/folders_out.txt" % path, "folders")
     master_path = "%s/languages/cmd2/master.dict" % path
 
     combine_files(
@@ -301,6 +324,7 @@ def get_alias():
     for l in lines:
         a.append(l.split()[0])
     return a
+
 def setup_dict_grammar():
     """
     create grammar and dictionary files for most commonly used
@@ -324,35 +348,29 @@ def setup_dict_grammar():
     write_list_to_file(prog_list, "%s/scripts/progs_out" % path)
 
     # creates grammar and writes to file
-    create_grammar(prog_list, "progs", "%s/grammars/progs.gram" % path)
 
     alias_list = get_alias()
     write_list_to_file(alias_list,"%s/scripts/alias_out" % path)
-    create_grammar(alias_list, "alias", "%s/grammars/alias.gram" % path)
 
     # use web service to create program dictionary
     #get_dictionary("%s/scripts/progs_out.txt",
     #               "%s/scripts/progs.dict")
 
     # gets folder names from the given directory
-    folder_list = get_directory("/home/g/year3")
+    folder_list = get_directory()
     
     # writes folder list to file
     write_list_to_file(folder_list, "%s/scripts/folders_out" % path)
 
     # create grammar and writes to file
-    create_grammar(folder_list, "folders",
-                   "%s/grammars/folders.gram" % path)
+  
 
-    #get file names and extensionsfrom the given directory:
+    #get file names and extensions from the given directory:
     (file_list,ext_list) = get_filenames()
     print(file_list,ext_list)
     write_list_to_file(file_list, "%s/scripts/file_out" % path)
     write_list_to_file(ext_list, "%s/scripts/exts_out" % path)
-    create_grammar(file_list, "files",
-                   "%s/grammars/files.gram" % path)
-    create_grammar(ext_list, "exts",
-                   "%s/grammars/exts.gram" % path)
+ 
 
     
     # make sure that command control words are in the dictionary
@@ -390,6 +408,25 @@ def setup_dict_grammar():
     get_dictionary("%s/scripts/folders_out.txt"% path,master_path)
     print("done!")
 
+    words_in_dictionary = get_words_from_dictionary()
+    #print(words_in_dictionary)
+    
+    #ensure that all words in grammars are in the dictionary 
+    prog_list = compare_lists(prog_list,words_in_dictionary)
+    file_list = compare_lists(file_list,words_in_dictionary)
+    ext_list = compare_lists(ext_list,words_in_dictionary)
+    folder_list = compare_lists(folder_list,words_in_dictionary)
+    alias_list = compare_lists(alias_list,words_in_dictionary)
+
+    create_grammar(prog_list, "progs", "%s/grammars/progs.gram" % path)
+    create_grammar(file_list, "files",
+                   "%s/grammars/files.gram" % path)
+    create_grammar(ext_list, "exts",
+                   "%s/grammars/exts.gram" % path)
+    create_grammar(folder_list, "folders",
+                   "%s/grammars/folders.gram" % path)
+    create_grammar(alias_list, "alias", "%s/grammars/alias.gram" % path)
+
     # remove temporary files
     os.remove("%s/scripts/folders_out.txt" % path)
     os.remove("%s/scripts/progs_out.txt" % path)
@@ -400,9 +437,31 @@ def setup_dict_grammar():
 
     os.remove("%s/scripts/progs.txt" % path)
 
+
+def compare_lists(to_change,to_compare):
+    for words in to_change:
+        if words.upper() not in to_compare:
+            to_change.remove(words)
+    return to_change
+    
+def get_words_from_dictionary():
+    with open('%s/languages/cmd2/master.dict'% path,'r') as f:
+        words = f.readlines()
+
+    out_list = list()
+    for w in words:
+        print("before",w)
+        if w != "":
+            w = w.split()
+            if len(w) > 0:
+                print("after", w[0])
+                out_list.append(w[0])
+    return out_list
+
 path = get_path()
 if __name__ == "__main__":
-    setup_dict_grammar()
+    print(get_directory("/home/g/"))
+    #setup_dict_grammar()
     #(file_list, ext_list) = get_filenames()
     #print(file_list, ext_list)
     #print(convert_underscores("file_name"))

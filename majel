@@ -77,13 +77,13 @@ def change_directory(command):
     try:
         if len(command) is 1:
             os.chdir("/home/%s/"% getpass.getuser())
-            if is_connected("google.com") and os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
+            if is_connected("google.com"):
                 setup.update_folder_grammar_dictionary("/home/%s/"% getpass.getuser())
                 setup.update_file_grammar_dictionary("/home/%s/" % getpass.getuser())
                 test_recognition()
         else:
-            #print("path is """.join(command[1:]))
-            if is_connected("google.com") and os.path.exists("/home/g/year3/majel/grammars/command.fsg"):
+            print("path is """.join(command[1:]))
+            if is_connected("google.com"):
                 setup.update_folder_grammar_dictionary("".join(command[1:]))
                 setup.update_file_grammar_dictionary("".join(command[1:]))
                 test_recognition()
@@ -198,6 +198,8 @@ def replace_alias(command):
     
     return out_command
 
+
+
 def word_to_character(phrase, speech = True):
     """
     converts spoken input string to exercutable command
@@ -279,12 +281,13 @@ def word_to_character(phrase, speech = True):
         count+= 1
     #phrase = replace_in_list(phrase,"root","/")
     phrase = replace_in_list(phrase,"~","/home/g")
+    phrase = replace_in_list(phrase,"_"," ")
     #print(phrase)
     #print(len(phrase))
     if phrase[-1] == "/":
         phrase.pop(-1)
     update_log(" ".join(phrase))
-
+    
     if speech:
         print("You said: %s" % " ".join(phrase))
     return phrase
@@ -420,7 +423,7 @@ if __name__ == "__main__":
     command_words = str()
     username = getpass.getuser()
     hostname = socket.gethostname()
-    
+    test_recognition()
     #welcome message
     print("Welcome to Majel!\n" + "\x1b[3;39;40m" + get_quote() + "\x1b[0m")
     #prompt start

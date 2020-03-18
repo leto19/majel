@@ -8,4 +8,3 @@ public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>|<rule5>|<rule6>);
 <rule4> = MAJEL_LOG;
 <rule5> = HELLO;
 <rule6> = GRAMMAR_TEST;
-

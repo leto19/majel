@@ -248,3 +248,119 @@ exit
 exit
 ls
 exit
+ls
+ls
+sudo firefox
+perlthanks
+cat hello.txt
+cd ..
+ls
+cd ../
+exit
+exit
+test
+test
+nautilus
+exit
+cd ../
+fg -s
+cd ../
+cd ../
+ls
+cd ../
+cd ../
+ls
+cd
+ls
+cd ../../
+ls
+exit
+cd ../
+cd ../
+exit
+cd ../
+cd ../
+ls
+ls grammars
+cd ../
+cd ../
+ls
+cd multimedia
+gdbus
+list-directory
+list-directory
+cd ../
+cd ../
+cd ../
+cd ../
+who alias
+ls
+ls
+cd year 1
+ls
+list-directory hello
+fdisk -o
+list-directory
+pdfunite assembly
+cd assembly
+dmesg
+sudo let hello
+exit
+cd ../
+pdfunite ../
+cd ../
+test
+list-directory
+cd hello
+cd
+ls
+exit hello
+cd
+fdisk -a
+test HELLO
+ls
+fg -v
+list-directory
+cd data
+cd
+ls hello
+ls
+cd DATA
+cd
+sudo then
+gsettings myscript
+snap
+while alias.md
+cd year-1
+then -m
+git HELLO
+cd
+ls
+sudo pic MAJEL LOG
+cd Documents
+cd
+cd Documents
+cd
+cd DOCUMENTS
+cd Documents
+cd Documents
+ls
+cd Documents
+cd snap
+ls
+cd books
+exit
+cd
+cd
+cd Documents
+ls -a
+cat logic notes
+cat logic notes
+exit
+cd
+list-directory
+cd snap
+cd ../
+cd year 1
+who downloads / hello
+exit
