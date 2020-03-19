@@ -89,6 +89,18 @@ def write_list_to_file(prog_list, filename):
         for e in prog_list:
             print(e, file=f)
 
+
+def set_override(word,pron):
+    word_list = get_words_from_dictionary()
+    if word not in word_list:
+        print("word %s not in dictionary!" % word)
+        return
+    if not os.path.exists("%s/scripts/hand.txt"% path):
+        open("%s/scripts/hand.txt" % path,"w")
+    with open("%s/scripts/hand.txt" % path,"a") as f:
+        f.write("%s	%s\n" % (word, pron))
+    update_all()
+
 def get_filenames(path=os.getcwd()):
     files = [name for name in os.listdir(path)
                  if os.path.isfile(os.path.join(path, name))]
@@ -103,8 +115,9 @@ def get_filenames(path=os.getcwd()):
                 filenames.append(f.split(".")[0])
             else: #file has no extension
                 filenames.append(f) 
-    print(filenames, ext)
+    #print(filenames, ext)
     return (filenames, ext)
+
 def get_directory(path=os.getcwd()):
     """takes a directory path and returns a
     list containing the names of all directories
@@ -140,10 +153,10 @@ def get_dictionary(file_read, file_write="words.dict"):
     a dictionary file (file_write) describing
     how to understand that word aloud.
     """
-
+    file_hand = "%s/scripts/hand.txt" % path
     url = "http://www.speech.cs.cmu.edu/cgi-bin/tools/logios/lextool.pl"
     print("reading %s..." % file_read)
-    files = {'wordfile': open(file_read, 'rb')}
+    files = {'wordfile': open(file_read, 'rb'), 'handfile': open(file_hand, 'rb')}
     r = requests.post(url, files=files)  # get HTML responce of file upload
     for lines in r.text.split(">"):  # find download link
         if "<!-- DICT " in lines:
@@ -204,6 +217,7 @@ def convert_underscores(word):
             letter_list[i] = " UNDERSCORE "
     final_word = "".join(letter_list)
     return final_word
+
 def update_file_grammar_dictionary(p):
    
     (file_list,ext_list) = get_filenames(p)
@@ -258,7 +272,8 @@ def get_path():
 
 def update_folder_grammar_dictionary(p):
     #print(p)
-    os.remove("%s/grammars/command.fsg" % path)
+    if os.path.exists("%s/grammars/command.fsg" % path):
+        os.remove("%s/grammars/command.fsg" % path)
     folder_list = get_directory(p)
     #print("FOLDER_LIST", folder_list)
 
@@ -290,7 +305,7 @@ def update_alias_grammar_dictionary():
     write_list_to_file(
         alias_list, "%s/scripts/alias_out" % path)
     add_to_grammar(
-        "%s/grammars/alias.gram" % path, "%s/scripts/alias_out.txt", "alias" % path)
+        "%s/grammars/alias.gram" % path, "%s/scripts/alias_out.txt" % path, "alias")
     # use web service to create folder dictionary
     get_dictionary("%s/scripts/alias_out.txt" % path,
                         "%s/scripts/alias.dict" % path)
@@ -450,18 +465,18 @@ def get_words_from_dictionary():
 
     out_list = list()
     for w in words:
-        print("before",w)
+        #print("before",w)
         if w != "":
             w = w.split()
             if len(w) > 0:
-                print("after", w[0])
+                #print("after", w[0])
                 out_list.append(w[0])
     return out_list
 
 path = get_path()
 if __name__ == "__main__":
-    print(get_directory("/home/g/"))
-    #setup_dict_grammar()
+    #print(get_directory("/home/g/"))
+    setup_dict_grammar()
     #(file_list, ext_list) = get_filenames()
     #print(file_list, ext_list)
     #print(convert_underscores("file_name"))

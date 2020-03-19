@@ -364,3 +364,112 @@ cd ../
 cd year 1
 who downloads / hello
 exit
+list-directory
+cd DATA
+cd ../
+git
+ls
+ls
+ls
+exit -f hello
+cd
+ls
+cd sounds
+ls
+cd ..
+exit
+list-directory
+passwd majel log.txt
+cat majel log.txt
+dsada
+ls dsadsa
+exit
+ls dsadas
+exit
+ls dasda
+ls
+ls sdasa
+cat majel log.txt
+passwd majel_log.txt
+cat majel_log.txt
+exit
+test majel_log.txt
+cat majel_log.txt
+cd
+cd year_1
+cd year_1
+paste sudo
+exit
+cd
+xset year_1
+cd year_1
+exit
+pdfunite
+cd
+cd year 1
+pip ls
+apt ls
+ls
+pic sudo
+exit
+apt ls
+pip ls
+ls
+list-directory
+snake-three
+cd
+list-directory
+cd year 1
+pip ls
+pylint
+apt ls
+list-root
+cd data
+cd data
+pip ls
+list-directory
+cd python
+pip ls
+ls
+snake-three Data
+snake-three ls.dmrc
+snake-3 codes.py
+python3 codes.py
+ls
+apt-get ALIAS
+cat Data
+cd ..
+cd python
+apt codes.dmrc
+apt codes.pulse-cookie
+snake-three codes.md
+snake-three codes.steampid
+snake-three codes.py
+cat codes.py
+code codes.dmrc
+exit
+ls sudo
+apt ls
+pip ls
+pic sudo
+exit
+cd grammars
+ls
+cat ls.profile
+apt ls.md
+cat ls.md
+cat ls.profile
+cd ../
+cd grammars
+cpp ../
+cd ../
+cd grammars
+cat ls.gram
+cat ls.gram
+cat sketchbook
+apt-get nix.gram
+apt command.gram
+cat command.gram
+nano command.gram
+ls
+exit

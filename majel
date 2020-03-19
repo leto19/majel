@@ -23,7 +23,7 @@ def test_recognition():
     lang = ("/home/g/year3/majel/languages/acoustic-model",
             "/home/g/year3/majel/languages/cmd1.lm", "/home/g/year3/majel/languages/cmd2/master.dict")
     gram = "/home/g/year3/majel/grammars/command.gram"
-    audio_file = sr.AudioFile("/home/g/year3/majel/sounds/ls.wav")
+    audio_file = sr.AudioFile("/home/g/year3/majel/sounds/test-ls.wav")
     with audio_file as source:
         test_sound = recog.record(source)
         recog.recognize_sphinx(test_sound, language=lang, grammar=gram)
@@ -34,8 +34,6 @@ def test_recognition():
 
 def get_command(lang, gram, selective_mode=False):
     recog = sr.Recognizer()  # this is the object that recognises the speech
-    
-    
     mic = sr.Microphone(chunk_size=1024, sample_rate=44100)
     with mic as source:
         #recog.adjust_for_ambient_noise(source)
@@ -55,8 +53,6 @@ def get_command(lang, gram, selective_mode=False):
             else:
                 out = recog.recognize_sphinx(audio,language=lang,grammar=gram)
         #os.system('clear')
-
-#show_possible(out)
     except sr.UnknownValueError:
         #out2 = recog.recognize_sphinx(audio,language=lang,show_all=True)
         print("didn't quite get that")
@@ -75,12 +71,14 @@ def show_possible(decoder):
 
 def change_directory(command):
     try:
-        if len(command) is 1:
+        if len(command) == 1:
             os.chdir("/home/%s/"% getpass.getuser())
             if is_connected("google.com"):
                 setup.update_folder_grammar_dictionary("/home/%s/"% getpass.getuser())
                 setup.update_file_grammar_dictionary("/home/%s/" % getpass.getuser())
                 test_recognition()
+            else:
+                print("Not connected - new names will not be updated.")
         else:
             print("path is """.join(command[1:]))
             if is_connected("google.com"):
@@ -88,11 +86,10 @@ def change_directory(command):
                 setup.update_file_grammar_dictionary("".join(command[1:]))
                 test_recognition()
             else:
-                
                 print("Not connected - new names will not be updated.")
             os.chdir("".join(command[1:]))
     except FileNotFoundError:
-        print("no such directory: %s"   %(command[1]))
+        print("no such directory: %s"   % command[1])
     except NotADirectoryError:
         print("%s is not a directory" % command[1])
         
@@ -114,10 +111,15 @@ def run_command(command):
     elif command[0] == "majel_alias" and len(command) == 3:
         add_alias(command[1],command[2])
     elif command[0] == "majel_update" and len(command) == 1:
+
         if is_connected("google.com"):
             setup.update_all()
         else:
             print("not connected!")
+    elif command[0] == "majel_hand":
+        word = input("Type the word you want to override the pronounciation for: ")
+        pronc = input("Type the pronounciation: ")
+        setup.set_override(word.upper(),pronc.upper())
     else:
         try:
             command = replace_alias(command)
@@ -129,9 +131,13 @@ def run_command(command):
                 p = input(
                     "are you sure you want to run the command: '%s'? (Y/N)─‣ " % " ".join(command))
                 if p in ["y","yes","Y","aye aye","sure","ok"]:
-                    subprocess.run(command)
+                    subprocess.run(command,check=True)
             else:
-                subprocess.run(command)
+                subprocess.run(command,check=True)
+        except subprocess.CalledProcessError:
+            print("reversing the polarity of the neutron flow...")
+            command = replace_in_list(command," ","_")
+            subprocess.run(command)
         except FileNotFoundError:
             print("Invalid Command: %s"%" ".join(command))
         except PermissionError:
@@ -281,7 +287,8 @@ def word_to_character(phrase, speech = True):
         count+= 1
     #phrase = replace_in_list(phrase,"root","/")
     phrase = replace_in_list(phrase,"~","/home/g")
-    phrase = replace_in_list(phrase,"_"," ")
+    phrase = replace_in_list(phrase, "_", " ")
+
     #print(phrase)
     #print(len(phrase))
     if phrase[-1] == "/":
