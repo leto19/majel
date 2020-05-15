@@ -473,3 +473,544 @@ cat command.gram
 nano command.gram
 ls
 exit
+majel hand
+majel timeout
+majel-hand
+ls
+exit
+ls
+gdbus -a readme
+nautilus -v
+ls -t
+list-directory
+ls -a -t
+exit myscript
+ls
+ping google.com
+ls
+exit
+ls -o test/
+ls
+clear
+ls
+clear
+ls -o test/
+exit
+sl
+ls
+clear
+ls -o test
+ls -o test
+clear
+ls -m test
+clear
+ls -m test
+clear
+clear
+ls -a test
+clear
+ls -o test
+clear
+ls -upper o test
+clear
+ls -a test
+ls test
+ls -upper o test
+ls -a test
+ls -lower t
+majel timeout 10
+majel-timeout 10
+ls -a test
+ls -o test
+clear
+ls -a test
+ls -upper o test
+ls -upper o test
+clear
+ls -a test
+exit
+ls
+ls -m test
+ls -a test
+ls -a test/
+exit
+ls -o
+ls -a test
+ls -upper o
+ls -upper o
+ls -upper o
+ls -o
+ls -a test
+ls -a test
+ls -a
+ls -lower a
+ls -a
+ls -upper a
+ls -upper a
+ls -upper a
+ls -upper t
+ls A
+ls -A
+ls -o
+alias -o test
+ls -o test
+ls -O test
+ls -O test
+ls -a test
+ls -o test
+ls -O test
+ls -a test
+ls -o test
+clear
+ls -o test
+ls -g test
+ls -O test
+ls -o test
+ls
+cd test/
+ls
+cd Projects
+touch new file.wav
+touch another new file.wav
+ls
+mkdir new directory
+mkdir another new directory
+ls
+ls -0
+ls -o
+exit
+cd Projects
+ls
+ls
+cd ..
+ls
+cd Projects
+ls
+cd new directory
+ls
+cd ..
+ls
+exit
+ls
+list-direcory
+list-directory
+clear
+majel-alias list-directory ls -o
+majel-update
+list-directory
+ls
+ls -A
+ls
+ls -O
+ls --help
+ls -H
+ls -a
+ls -A
+ls -A
+pylint -F
+ls -a -A -M
+ls -F word
+ls -F
+ls -C
+ls -F word
+ls -L
+ls -N
+ls -Q
+ls -t word
+ls -t WORD
+ls -T word
+ls -T word
+ls -T word
+ls
+ls -A word
+ls -A
+ls -a WORD Word
+ls -a WORD Word
+ls -R
+ls -A hello
+ls -A word
+ls -a word
+ls -s
+ls -S
+ls -x
+ls -X
+ls -Z
+ls -a hello.txt word
+ls -S
+ls -S
+ls -S
+ls -s
+ls -S
+exit
+ls -C word
+exit -a
+ls -a hello.txt
+ls -a hello.txt
+majel pronounce x
+majel-pronounce x
+majel-pronouce x
+ls -x
+ls -X
+ls -Q
+ls -q
+ls -Q
+clear
+ls -Q
+ls -V
+ls dsadsa
+dsads sadsadsa
+test
+apt hello
+reboot
+ls
+sudo ls
+sudo ls
+clear
+sudo ls
+exit
+sudo ls
+exit
+sudo ls
+majel-pronouce a
+exit
+majel-prononce a
+majel-pronounce a
+majel-pronouce a
+majel-pronounce a
+majel-pronounce a
+majel-pronounce A
+majel-pronounce a
+majel-pronouce a
+majel-pronouce a
+[A
+majel-pronouce a
+majel-hand
+majel-pronounce a
+exit
+majel-pronounce A
+==exit
+exit
+majel-pronounce A
+exit
+ls -o
+ls -T
+nautilus -T
+ls -T
+ls -b
+nautilus -v
+ls -f
+dmesg -o
+sudo test -t
+ls
+ls -t
+nautilus -t
+ls -v
+gdbus -t
+exit
+ls -v
+pylint -a
+ls -a -a
+ls -m
+ls -a -a
+ls -t
+ls -a
+ls -O
+ls -a hello
+gdbus -a
+ls -a
+ls -t
+ls
+ls
+ls
+ls
+ls
+ls
+sudo ls
+ls
+ls
+ls
+ls
+ls
+ls
+ping
+ls -m
+ls -m
+py-3
+py-3
+python3
+py-3 HELLO
+py-3
+py-3
+py-3
+python -A
+py-3
+exit
+python -v
+python -A
+python
+python
+python
+python
+python
+python
+python
+update-grub
+python
+python
+firefox -v
+firefox -v
+firefox -v
+firefox -v
+firefox -v
+firefox -v
+firefox -v
+firefox -v
+firefox -v
+firefox -v
+ls
+nano hello.txt
+nano hello.txt
+nano hello.txt
+nano hello.txt word
+nano hello.txt PY
+nano hello.txt py
+ls
+cd projects
+cd projects
+cd PROJECTS
+cd Projects
+cd ../
+cd Projects
+cd ..
+cd Projects
+cd ..
+cd Projects
+cd ..
+cd Projects
+cd ../
+cd Projects
+cd Projects / <s>
+cd Projects
+cd ..
+cd Projects / <s>
+cd Projects / <s>
+cd Projects
+cd Projects
+cd ..
+cd Projects
+exit
+ls
+cd projects
+cd PROJECTS
+cd Pictures
+cd ..
+cd projects
+cd PICTURES
+cd Projects
+cd Projects
+cd ..
+cd Projects
+cd ../ word
+cd ../ word
+cd ../
+cd Projects
+cd ..
+cd Pictures
+cd ../ word
+cd ../
+cd projects
+cd Projects
+list-directory
+list-root
+list-root
+list-root
+history HELLO
+history
+list-root -o
+list-root
+test word
+list-root
+list-root
+ls
+cd ..
+ls
+cat secret plans
+nano secret plans
+ls
+nano secret plans
+ls
+cat secret plans
+rm secret plans
+rm secret plans
+ls
+cat secret_plans
+nano secret_plans
+cat secret_plans
+sudo nano
+sudo nano secret_plans
+sudo nano secret_plans
+pdfunite secret_plans
+sudo nano secret_plans
+sudo nano secret_plans
+sudo nano secret_plans
+let secret_plans secret_plans
+sudo nano secret_plans
+sudo nano secret_plans
+sudo rnano secret_plans
+ls -H -o
+ls -A -o
+ls -o -A
+ls -o -a
+ls -H
+ls -x
+ls -t
+ls -u
+man ls
+ls -q
+ls -Q
+ls -Q -q
+ls -Q -O
+ls -a -Q
+ls -a hello -q
+ls -Q -a
+ls -Q -t
+ls -Q -a
+ls -Q -t
+ls -Q -t
+ls -Q -t
+ls -Q -t
+ls -Q -f
+ls -Q -o
+ls -Q -o word
+ls -Q -O
+ls -Q -O
+ls -a hello -Q
+exit
+ls -O word
+ls -Q -O
+ls -Q -O word
+ls -Q -o word
+ls -Q -O word
+ls -Q -O word
+ls
+cat word.py
+cp word.py world.py
+ls
+rm word.py hello WORD
+find word.py hello
+rm word.py hello hello
+rm word.py hello hello
+rm word HELLO word
+rm Word.py
+rm word.py word
+;s
+ls
+ls word
+sudo ls
+ls
+ls
+majel_update
+majel-update
+cd Projects
+cd ../
+ls word
+nautilus
+ls
+ls -O -t
+ls -A hello -t
+ls -A hello -t
+majel-timeout 10
+ls -A hello -a
+ls -A hello -A
+ls -O hello
+ls -o world
+ls -O
+ls -O
+ls -Q -a hello word.py
+ls -Q -O
+ls -Q -O
+ls -o
+ls -a hello -Q
+ls -a hello word
+ls -O word
+ls -Q -a hello
+ls -Q -O
+ls -Q -a hello
+ls -B
+ls -a hello
+majel-timeout 5
+ls -A -q
+ls -Q
+ls -Q -a hello
+ls -Q -o
+ls -Q -a hello
+ls -Q -O word
+ls -Q hello -O
+ls -q word -A
+ls -q -B
+ls -Q -a hello
+ls -Q -O
+ls -q -q word
+ls -Q
+ls -Q -a hello word
+ls -Q -a
+ls -Q -a -a
+ls -Q -t
+ls -q -t
+ls -Q -t
+ls -Q -a
+ls -Q -t
+ls -Q -t
+ls -Q -t
+ls -Q -t
+ls -Q -g -a
+ls -Q -v
+ls -Q -b
+ls -Q -a
+ls -Q -a
+ls -Q -a
+ls -Q -A
+ls -Q -A
+ls -q -a
+ls -Q -b
+ls -Q -A
+ls -Q -g
+gdbus -Q -m
+ls -Q -g
+ls -Q -a -a
+ls -Q -a
+ls -q -a
+ls -Q -A
+ls ../
+ls ../
+ls ../
+ls ../
+ls ../
+ls ../
+ls ../
+ls ../
+nautilus ../
+ls ../
+ls ../
+cd Projects
+cd ..
+cd Pictures
+nautilus ../ projects
+pip
+majel-timeout 10
+ls ../ Projects
+ls ../Prokects
+ls ../Projects
+gdbus projects
+ls projects
+exit World
+cd ../
+cd test
+ls
+gdbus ../ test
+ls ../ test
+ls ../ test
+ls
+who
+who
+exit

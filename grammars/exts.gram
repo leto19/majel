@@ -1,8 +1,6 @@
 #JSGF V1.0;
 grammar exts;
-public <root> = (<rule0>|<rule1>|<rule2>|<rule3>);
-<rule0> = MD;
-<rule1> = GITIGNORE;
-<rule2> = TXT;
-<rule3> = SH;
+public <root> = (<rule0>|<rule1>);
+<rule0> = PY;
+<rule1> = TXT;
 

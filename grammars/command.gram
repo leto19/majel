@@ -5,25 +5,25 @@ import <folders.gram>;
 import <files.gram>;
 import <exts.gram>;
 import <alias.gram>;
-public <command> = EXIT | ([SUDO]) (EXECUTE|<progs.root>|<alias.root>) [<paramater>];
+public <command> = EXIT | ([SUDO]) (EXECUTE|<progs.root>|<alias.root>) [<paramater>*];
 
 
 <paramater> = [<option>][<pathexpr>[<file>]];
-<option> = <dash>[CAPITAL]<chars>;
-<modifyier> = CAPITAL | UPPER | LOWER;
+<option> = <dash>[<modifyier>]<chars>;
 <pathexpr> = <dot><slash><pathexpr>
             |<dot><dot><slash><pathexpr>
-            |<foldername><slash><pathexpr>
+            |<foldername><slash><pathexpr>      
             |<NULL>;
             
 <file> = <filename><dot><fileextension>
         |<filename>;
 
-<chars> =  B | A | C | F | G | M | O | T | V | S;
-<slash> = SLASH;
-
-<dash> = DASH;
-<dot> = DOT;
 <foldername> = [<modifyier>]<folders.root>;
 <filename> = [<modifyier>]<files.root>;
 <fileextension> = <exts.root>;
+<chars> =  B | A | C | F | G | M | O | V | S | X | R | Q;
+<modifyier> = CAPITAL | UPPER | LOWER;
+<slash> = SLASH;
+<dash> = DASH;
+<dot> = DOT;
+

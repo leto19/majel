@@ -1,9 +1,7 @@
 #JSGF V1.0;
 grammar folders;
-public <root> = (<rule0>|<rule1>|<rule2>|<rule3>|<rule4>);
-<rule0> = GRAMMARS;
-<rule1> = SCRIPTS;
-<rule2> = DATA;
-<rule3> = SOUNDS;
-<rule4> = LANGUAGES;
+public <root> = (<rule0>|<rule1>|<rule2>);
+<rule0> = PROJECTS;
+<rule1> = DOWNLOADS;
+<rule2> = PICTURES;
 

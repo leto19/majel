@@ -62,9 +62,9 @@ def compare_prog_list(master_list, prog_list):
 
 def create_grammar(word_list, name, gram_file):
     """
-    read a list of programs in a text file ('progs.txt') and create
-    a grammar file for that list,
-    such that the speech can one of any of the programs
+    read a list in a text file (```word_list````) and create
+    a grammar (```name```) file (```gram_file```) for that list,
+    such that the speech can one of any of the elements of the list
     """
     upp_list = list()
     grammar = RootGrammar(name=name, case_sensitive=True)
@@ -115,7 +115,7 @@ def get_filenames(path=os.getcwd()):
                 filenames.append(f.split(".")[0])
             else: #file has no extension
                 filenames.append(f) 
-    #print(filenames, ext)
+    #       print(filenames, ext)
     return (filenames, ext)
 
 def get_directory(path=os.getcwd()):
@@ -247,7 +247,7 @@ def update_file_grammar_dictionary(p):
 
     master_path = "%s/languages/cmd2/master.dict" % path
 
-    combine_files(
+    combine_dictionaries(
         master_path, "%s/scripts/all.dict"% path)
     
     os.remove("%s/scripts/files_out.txt" % path)
@@ -292,8 +292,7 @@ def update_folder_grammar_dictionary(p):
     add_to_grammar(
         "%s/grammars/folders.gram" % path, "%s/scripts/folders_out.txt" % path, "folders")
     master_path = "%s/languages/cmd2/master.dict" % path
-
-    combine_files(
+    combine_dictionaries(
         master_path, "%s/scripts/folders.dict" % path)
     os.remove("%s/scripts/folders.dict" % path)
     os.remove("%s/scripts/folders_out.txt" % path)
@@ -311,7 +310,7 @@ def update_alias_grammar_dictionary():
                         "%s/scripts/alias.dict" % path)
     master_path = "%s/languages/cmd2/master.dict" % path
 
-    combine_files(
+    combine_dictionaries(
         master_path, "%s/scripts/alias.dict" % path)
     os.remove("%s/scripts/alias.dict" % path)
     os.remove("%s/scripts/alias_out.txt" % path)
@@ -325,6 +324,23 @@ def combine_files(parent, child):
             p.write(c.read())
 
 
+def combine_dictionaries(parent, child):
+    parent_list = list()
+    child_list = list()
+
+    with open(parent, 'r') as f:
+        parent_list = [current_place.rstrip()
+                  for current_place in f.readlines()]
+
+    with open(child, 'r') as f2:
+        child_list = [current_place.rstrip()
+                  for current_place in f2.readlines()]
+    for el in child_list:
+        if el not in parent_list:
+            parent_list.append(el)
+    print(parent_list)
+    with open(parent, 'w') as f:
+        f.writelines("%s\n" % place for place in parent_list)
 
 def update_all(p=os.curdir):
     update_folder_grammar_dictionary(p)
@@ -342,9 +358,9 @@ def get_alias():
 
 def setup_dict_grammar():
     """
-    create grammar and dictionary files for most commonly used
-    programs and current directory.
+    creates grammars and dictionary files.
     """
+    #get the installation location
     path = get_path()
     # exercute script that populates a file progs.txt
     os.system('%s/scripts/compgen.sh' % path)
@@ -354,36 +370,34 @@ def setup_dict_grammar():
         data = f.readlines()
     # formatting
     data = [s.replace("\n", "") for s in data]
-    # use cmd history files to get the most common commands used
 
+    # use cmd history files to get the most common commands used 
     master = generate_prog_list()
+
     # returns list of most common programs
     prog_list = compare_prog_list(master, data)
+
     # writes program list to file
     write_list_to_file(prog_list, "%s/scripts/progs_out" % path)
 
-    # creates grammar and writes to file
-
+    #get list of aliases
     alias_list = get_alias()
-    write_list_to_file(alias_list,"%s/scripts/alias_out" % path)
 
-    # use web service to create program dictionary
-    #get_dictionary("%s/scripts/progs_out.txt",
-    #               "%s/scripts/progs.dict")
+    #write alias list to file
+    write_list_to_file(alias_list,"%s/scripts/alias_out" % path)
 
     # gets folder names from the given directory
     folder_list = get_directory()
     
     # writes folder list to file
-    write_list_to_file(folder_list, "%s/scripts/folders_out" % path)
-
-    # create grammar and writes to file
-  
+    write_list_to_file(folder_list, "%s/scripts/folders_out" % path)  
 
     #get file names and extensions from the given directory:
     (file_list,ext_list) = get_filenames()
     print(file_list,ext_list)
+    #write file list to file
     write_list_to_file(file_list, "%s/scripts/file_out" % path)
+    #write file extensions list to file
     write_list_to_file(ext_list, "%s/scripts/exts_out" % path)
  
 
@@ -401,21 +415,21 @@ def setup_dict_grammar():
     cmd_list.append("EXECUTE")
 
     cmd_list += ["A", "B", "C", "D", "E", "F",
-                 "G", "H", "M", "O", "T", "V", "S"]
+                 "G", "H", "M", "O", "V", "S","X","R","Q"]
     write_list_to_file(cmd_list, "%s/scripts/cmd_out" % path)
     # no need to create grammar here, already hand written 
     
     # combines all word lists into one
     print("combining word lists...")
-    combine_files("%s/scripts/folders_out.txt" % path,
+    combine_dictionaries("%s/scripts/folders_out.txt" % path,
                        "%s/scripts/progs_out.txt" % path)
-    combine_files("%s/scripts/folders_out.txt" % path,
+    combine_dictionaries("%s/scripts/folders_out.txt" % path,
                   "%s/scripts/cmd_out.txt" % path)
-    combine_files("%s/scripts/folders_out.txt" % path,
+    combine_dictionaries("%s/scripts/folders_out.txt" % path,
                   "%s/scripts/file_out.txt" % path)
-    combine_files("%s/scripts/folders_out.txt" % path,
+    combine_dictionaries("%s/scripts/folders_out.txt" % path,
                   "%s/scripts/exts_out.txt" % path)
-    combine_files("%s/scripts/folders_out.txt" % path,
+    combine_dictionaries("%s/scripts/folders_out.txt" % path,
                   "%s/scripts/alias_out.txt" % path)
     master_path = "%s/languages/cmd2/master.dict" % path
     # use web service to create dictionary
@@ -477,6 +491,8 @@ path = get_path()
 if __name__ == "__main__":
     #print(get_directory("/home/g/"))
     setup_dict_grammar()
+    #combine_dictionaries('l1.txt', 'l2.txt')
     #(file_list, ext_list) = get_filenames()
     #print(file_list, ext_list)
     #print(convert_underscores("file_name"))
+    
